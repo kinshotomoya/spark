@@ -1,0 +1,60 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=54147" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:54147" "--executor-id" "1" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130152807-0002" "--worker-url" "spark://Worker@192.168.11.7:63968"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/30 15:28:10 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 9853@ST000000035
+21/01/30 15:28:10 INFO SignalUtils: Registered signal handler for TERM
+21/01/30 15:28:10 INFO SignalUtils: Registered signal handler for HUP
+21/01/30 15:28:10 INFO SignalUtils: Registered signal handler for INT
+21/01/30 15:28:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/30 15:28:11 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 15:28:11 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 15:28:11 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 15:28:11 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 15:28:11 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 15:28:13 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:54147 after 157 ms (0 ms spent in bootstraps)
+21/01/30 15:28:13 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 15:28:13 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 15:28:13 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 15:28:13 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 15:28:13 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 15:28:13 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:54147 after 19 ms (0 ms spent in bootstraps)
+21/01/30 15:28:13 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-da2674be-ccfd-48dc-baa0-16de900e8006/executor-b0a6909c-4c72-4bd7-8461-1edd7e29684d/blockmgr-f8b9dd39-ed06-499c-b286-648ee39be3c4
+21/01/30 15:28:13 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/01/30 15:28:14 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:54147
+21/01/30 15:28:14 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:63968
+21/01/30 15:28:14 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63968 after 35 ms (0 ms spent in bootstraps)
+21/01/30 15:28:14 INFO ResourceUtils: ==============================================================
+21/01/30 15:28:14 INFO ResourceUtils: Resources for spark.executor:
+
+21/01/30 15:28:14 INFO ResourceUtils: ==============================================================
+21/01/30 15:28:14 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/01/30 15:28:14 INFO Executor: Starting executor ID 1 on host 192.168.11.7
+21/01/30 15:28:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 54215.
+21/01/30 15:28:14 INFO NettyBlockTransferService: Server created on 192.168.11.7:54215
+21/01/30 15:28:14 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/01/30 15:28:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(1, 192.168.11.7, 54215, None)
+21/01/30 15:28:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(1, 192.168.11.7, 54215, None)
+21/01/30 15:28:14 INFO BlockManager: Initialized BlockManager: BlockManagerId(1, 192.168.11.7, 54215, None)
+21/01/30 15:28:21 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+21/01/30 15:28:21 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+21/01/30 15:28:21 INFO Executor: Fetching spark://192.168.11.7:54147/jars/simple-project_2.12-1.0.jar with timestamp 1611988087661
+21/01/30 15:28:21 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:54147 after 2 ms (0 ms spent in bootstraps)
+21/01/30 15:28:21 INFO Utils: Fetching spark://192.168.11.7:54147/jars/simple-project_2.12-1.0.jar to /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-da2674be-ccfd-48dc-baa0-16de900e8006/executor-b0a6909c-4c72-4bd7-8461-1edd7e29684d/spark-173bcb4d-9f4e-4469-8694-464d13f1b069/fetchFileTemp1436127827941867470.tmp
+21/01/30 15:28:21 INFO Utils: Copying /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-da2674be-ccfd-48dc-baa0-16de900e8006/executor-b0a6909c-4c72-4bd7-8461-1edd7e29684d/spark-173bcb4d-9f4e-4469-8694-464d13f1b069/6425434651611988087661_cache to /Users/kinsho/workspace/spark-3.0.1/work/app-20210130152807-0002/1/./simple-project_2.12-1.0.jar
+21/01/30 15:28:21 INFO Executor: Adding file:/Users/kinsho/workspace/spark-3.0.1/work/app-20210130152807-0002/1/./simple-project_2.12-1.0.jar to class loader
+21/01/30 15:28:21 INFO MapOutputTrackerWorker: Updating epoch to 1 and clearing cache
+21/01/30 15:28:21 INFO TorrentBroadcast: Started reading broadcast variable 4 with 1 pieces (estimated total size 4.0 MiB)
+21/01/30 15:28:21 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:54149 after 3 ms (0 ms spent in bootstraps)
+21/01/30 15:28:21 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 7.2 KiB, free 366.3 MiB)
+21/01/30 15:28:21 INFO TorrentBroadcast: Reading broadcast variable 4 took 120 ms
+21/01/30 15:28:21 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 15.0 KiB, free 366.3 MiB)
+21/01/30 15:28:22 INFO CodeGenerator: Code generated in 212.925007 ms
+21/01/30 15:28:22 INFO FileScanRDD: Reading File path: file:///Users/kinsho/workspace/spark-3.0.1/README.md, range: 0-4488, partition values: [empty row]
+21/01/30 15:28:22 INFO CodeGenerator: Code generated in 11.41229 ms
+21/01/30 15:28:22 INFO TorrentBroadcast: Started reading broadcast variable 3 with 1 pieces (estimated total size 4.0 MiB)
+21/01/30 15:28:22 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 24.0 KiB, free 366.3 MiB)
+21/01/30 15:28:22 INFO TorrentBroadcast: Reading broadcast variable 3 took 9 ms
+21/01/30 15:28:22 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 335.1 KiB, free 365.9 MiB)
+21/01/30 15:28:22 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 2022 bytes result sent to driver
+21/01/30 15:28:24 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown

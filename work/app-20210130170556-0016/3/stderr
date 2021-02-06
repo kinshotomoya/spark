@@ -1,0 +1,193 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=63556" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:63556" "--executor-id" "3" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130170556-0016" "--worker-url" "spark://Worker@192.168.11.7:63954"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/30 17:05:58 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 15922@ST000000035
+21/01/30 17:05:58 INFO SignalUtils: Registered signal handler for TERM
+21/01/30 17:05:58 INFO SignalUtils: Registered signal handler for HUP
+21/01/30 17:05:58 INFO SignalUtils: Registered signal handler for INT
+21/01/30 17:05:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/30 17:05:59 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 17:05:59 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 17:05:59 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 17:05:59 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 17:05:59 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 17:06:00 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63556 after 121 ms (0 ms spent in bootstraps)
+21/01/30 17:06:00 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 17:06:00 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 17:06:00 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 17:06:00 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 17:06:00 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 17:06:00 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63556 after 2 ms (0 ms spent in bootstraps)
+21/01/30 17:06:00 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-3ab0568a-ea0f-4ede-9044-9b9b119a7a74/executor-21e075d5-dfb8-4f27-8eb8-f8c475b57a10/blockmgr-d01e9644-43da-4c28-a1c1-09fcabf487f7
+21/01/30 17:06:00 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/01/30 17:06:01 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:63556
+21/01/30 17:06:01 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:63954
+21/01/30 17:06:01 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63954 after 3 ms (0 ms spent in bootstraps)
+21/01/30 17:06:01 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.11.7:63954
+21/01/30 17:06:01 INFO ResourceUtils: ==============================================================
+21/01/30 17:06:01 INFO ResourceUtils: Resources for spark.executor:
+
+21/01/30 17:06:01 INFO ResourceUtils: ==============================================================
+21/01/30 17:06:01 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/01/30 17:06:01 INFO Executor: Starting executor ID 3 on host 192.168.11.7
+21/01/30 17:06:01 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 63609.
+21/01/30 17:06:01 INFO NettyBlockTransferService: Server created on 192.168.11.7:63609
+21/01/30 17:06:01 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/01/30 17:06:01 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(3, 192.168.11.7, 63609, None)
+21/01/30 17:06:01 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(3, 192.168.11.7, 63609, None)
+21/01/30 17:06:01 INFO BlockManager: Initialized BlockManager: BlockManagerId(3, 192.168.11.7, 63609, None)
+21/01/30 17:06:07 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+21/01/30 17:06:07 INFO CoarseGrainedExecutorBackend: Got assigned task 12
+21/01/30 17:06:07 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+21/01/30 17:06:07 INFO Executor: Running task 10.0 in stage 2.0 (TID 12)
+21/01/30 17:06:07 INFO Executor: Fetching spark://192.168.11.7:63556/jars/simple-project_2.12-1.0.jar with timestamp 1611993956673
+21/01/30 17:06:07 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63556 after 2 ms (0 ms spent in bootstraps)
+21/01/30 17:06:07 INFO Utils: Fetching spark://192.168.11.7:63556/jars/simple-project_2.12-1.0.jar to /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-3ab0568a-ea0f-4ede-9044-9b9b119a7a74/executor-21e075d5-dfb8-4f27-8eb8-f8c475b57a10/spark-52a570c9-e223-4f02-919b-22acaa444eb9/fetchFileTemp7140046561410722424.tmp
+21/01/30 17:06:07 INFO Utils: Copying /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-3ab0568a-ea0f-4ede-9044-9b9b119a7a74/executor-21e075d5-dfb8-4f27-8eb8-f8c475b57a10/spark-52a570c9-e223-4f02-919b-22acaa444eb9/18568370291611993956673_cache to /Users/kinsho/workspace/spark-3.0.1/work/app-20210130170556-0016/3/./simple-project_2.12-1.0.jar
+21/01/30 17:06:07 INFO Executor: Adding file:/Users/kinsho/workspace/spark-3.0.1/work/app-20210130170556-0016/3/./simple-project_2.12-1.0.jar to class loader
+21/01/30 17:06:07 INFO TorrentBroadcast: Started reading broadcast variable 6 with 1 pieces (estimated total size 4.0 MiB)
+21/01/30 17:06:08 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63562 after 32 ms (0 ms spent in bootstraps)
+21/01/30 17:06:08 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 58.3 KiB, free 366.2 MiB)
+21/01/30 17:06:08 INFO TorrentBroadcast: Reading broadcast variable 6 took 388 ms
+21/01/30 17:06:08 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 166.6 KiB, free 366.1 MiB)
+21/01/30 17:06:11 INFO CodeGenerator: Code generated in 798.155308 ms
+21/01/30 17:06:11 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:06:11 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:06:12 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:06:12 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:06:12 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 1342177280-1476395008, partition values: [empty row]
+21/01/30 17:06:12 INFO CodeGenerator: Code generated in 179.012737 ms
+21/01/30 17:06:12 INFO TorrentBroadcast: Started reading broadcast variable 5 with 1 pieces (estimated total size 4.0 MiB)
+21/01/30 17:06:12 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63607 after 2 ms (0 ms spent in bootstraps)
+21/01/30 17:06:12 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 0-134217728, partition values: [empty row]
+21/01/30 17:06:12 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 24.0 KiB, free 366.1 MiB)
+21/01/30 17:06:12 INFO TorrentBroadcast: Reading broadcast variable 5 took 39 ms
+21/01/30 17:06:12 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 336.8 KiB, free 365.7 MiB)
+21/01/30 17:06:32 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000000_2' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000000
+21/01/30 17:06:32 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000000_2: Committed
+21/01/30 17:06:32 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 2356 bytes result sent to driver
+21/01/30 17:06:32 INFO CoarseGrainedExecutorBackend: Got assigned task 28
+21/01/30 17:06:32 INFO Executor: Running task 26.0 in stage 2.0 (TID 28)
+21/01/30 17:06:32 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:06:32 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:06:32 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 3489660928-3623878656, partition values: [empty row]
+21/01/30 17:06:33 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000010_12' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000010
+21/01/30 17:06:33 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000010_12: Committed
+21/01/30 17:06:33 INFO Executor: Finished task 10.0 in stage 2.0 (TID 12). 2313 bytes result sent to driver
+21/01/30 17:06:33 INFO CoarseGrainedExecutorBackend: Got assigned task 33
+21/01/30 17:06:33 INFO Executor: Running task 31.0 in stage 2.0 (TID 33)
+21/01/30 17:06:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:06:34 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:06:34 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 4160749568-4294967296, partition values: [empty row]
+21/01/30 17:06:53 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000026_28' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000026
+21/01/30 17:06:53 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000026_28: Committed
+21/01/30 17:06:53 INFO Executor: Finished task 26.0 in stage 2.0 (TID 28). 2313 bytes result sent to driver
+21/01/30 17:06:53 INFO CoarseGrainedExecutorBackend: Got assigned task 52
+21/01/30 17:06:53 INFO Executor: Running task 50.0 in stage 2.0 (TID 52)
+21/01/30 17:06:53 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:06:53 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:06:53 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 6710886400-6845104128, partition values: [empty row]
+21/01/30 17:06:53 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000031_33' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000031
+21/01/30 17:06:53 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000031_33: Committed
+21/01/30 17:06:53 INFO Executor: Finished task 31.0 in stage 2.0 (TID 33). 2313 bytes result sent to driver
+21/01/30 17:06:53 INFO CoarseGrainedExecutorBackend: Got assigned task 54
+21/01/30 17:06:53 INFO Executor: Running task 52.0 in stage 2.0 (TID 54)
+21/01/30 17:06:53 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:06:53 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:06:53 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 6979321856-7113539584, partition values: [empty row]
+21/01/30 17:07:12 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000050_52' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000050
+21/01/30 17:07:12 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000050_52: Committed
+21/01/30 17:07:12 INFO Executor: Finished task 50.0 in stage 2.0 (TID 52). 2313 bytes result sent to driver
+21/01/30 17:07:12 INFO CoarseGrainedExecutorBackend: Got assigned task 72
+21/01/30 17:07:12 INFO Executor: Running task 70.0 in stage 2.0 (TID 72)
+21/01/30 17:07:12 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:07:12 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:07:12 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 9395240960-9529458688, partition values: [empty row]
+21/01/30 17:07:12 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000052_54' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000052
+21/01/30 17:07:12 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000052_54: Committed
+21/01/30 17:07:12 INFO Executor: Finished task 52.0 in stage 2.0 (TID 54). 2313 bytes result sent to driver
+21/01/30 17:07:12 INFO CoarseGrainedExecutorBackend: Got assigned task 73
+21/01/30 17:07:12 INFO Executor: Running task 71.0 in stage 2.0 (TID 73)
+21/01/30 17:07:12 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:07:12 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:07:12 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 9529458688-9663676416, partition values: [empty row]
+21/01/30 17:07:29 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000070_72' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000070
+21/01/30 17:07:29 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000070_72: Committed
+21/01/30 17:07:29 INFO Executor: Finished task 70.0 in stage 2.0 (TID 72). 2313 bytes result sent to driver
+21/01/30 17:07:29 INFO CoarseGrainedExecutorBackend: Got assigned task 92
+21/01/30 17:07:29 INFO Executor: Running task 90.0 in stage 2.0 (TID 92)
+21/01/30 17:07:29 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:07:29 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:07:29 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 12079595520-12213813248, partition values: [empty row]
+21/01/30 17:07:30 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000071_73' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000071
+21/01/30 17:07:30 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000071_73: Committed
+21/01/30 17:07:30 INFO Executor: Finished task 71.0 in stage 2.0 (TID 73). 2313 bytes result sent to driver
+21/01/30 17:07:30 INFO CoarseGrainedExecutorBackend: Got assigned task 94
+21/01/30 17:07:30 INFO Executor: Running task 92.0 in stage 2.0 (TID 94)
+21/01/30 17:07:30 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:07:30 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:07:30 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 12348030976-12482248704, partition values: [empty row]
+21/01/30 17:07:47 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000090_92' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000090
+21/01/30 17:07:47 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000090_92: Committed
+21/01/30 17:07:47 INFO Executor: Finished task 90.0 in stage 2.0 (TID 92). 2313 bytes result sent to driver
+21/01/30 17:07:48 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000092_94' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000092
+21/01/30 17:07:48 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000092_94: Committed
+21/01/30 17:07:48 INFO Executor: Finished task 92.0 in stage 2.0 (TID 94). 2313 bytes result sent to driver
+21/01/30 17:07:54 INFO CoarseGrainedExecutorBackend: Got assigned task 112
+21/01/30 17:07:54 INFO Executor: Running task 110.0 in stage 2.0 (TID 112)
+21/01/30 17:07:54 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:07:54 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:07:54 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 14763950080-14898167808, partition values: [empty row]
+21/01/30 17:08:02 INFO CoarseGrainedExecutorBackend: Got assigned task 114
+21/01/30 17:08:02 INFO Executor: Running task 112.0 in stage 2.0 (TID 114)
+21/01/30 17:08:02 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:08:02 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:08:02 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 15032385536-15166603264, partition values: [empty row]
+21/01/30 17:08:07 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000110_112' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000110
+21/01/30 17:08:07 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000110_112: Committed
+21/01/30 17:08:07 INFO Executor: Finished task 110.0 in stage 2.0 (TID 112). 2313 bytes result sent to driver
+21/01/30 17:08:15 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000112_114' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000112
+21/01/30 17:08:15 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000112_114: Committed
+21/01/30 17:08:15 INFO Executor: Finished task 112.0 in stage 2.0 (TID 114). 2313 bytes result sent to driver
+21/01/30 17:08:19 INFO CoarseGrainedExecutorBackend: Got assigned task 132
+21/01/30 17:08:19 INFO Executor: Running task 130.0 in stage 2.0 (TID 132)
+21/01/30 17:08:19 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:08:19 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:08:19 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 17448304640-17582522368, partition values: [empty row]
+21/01/30 17:08:25 INFO CoarseGrainedExecutorBackend: Got assigned task 135
+21/01/30 17:08:25 INFO Executor: Running task 133.0 in stage 2.0 (TID 135)
+21/01/30 17:08:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:08:25 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:08:25 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 17850957824-17985175552, partition values: [empty row]
+21/01/30 17:08:40 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000130_132' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000130
+21/01/30 17:08:40 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000130_132: Committed
+21/01/30 17:08:40 INFO Executor: Finished task 130.0 in stage 2.0 (TID 132). 2313 bytes result sent to driver
+21/01/30 17:08:40 INFO CoarseGrainedExecutorBackend: Got assigned task 152
+21/01/30 17:08:40 INFO Executor: Running task 150.0 in stage 2.0 (TID 152)
+21/01/30 17:08:40 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:08:40 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:08:40 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 20132659200-20266876928, partition values: [empty row]
+21/01/30 17:08:49 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000133_135' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000133
+21/01/30 17:08:49 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000133_135: Committed
+21/01/30 17:08:49 INFO Executor: Finished task 133.0 in stage 2.0 (TID 135). 2313 bytes result sent to driver
+21/01/30 17:08:49 INFO CoarseGrainedExecutorBackend: Got assigned task 157
+21/01/30 17:08:49 INFO Executor: Running task 155.0 in stage 2.0 (TID 157)
+21/01/30 17:08:49 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:08:49 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:08:49 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 20803747840-20937965568, partition values: [empty row]
+21/01/30 17:09:03 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000150_152' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000150
+21/01/30 17:09:03 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000150_152: Committed
+21/01/30 17:09:03 INFO Executor: Finished task 150.0 in stage 2.0 (TID 152). 2313 bytes result sent to driver
+21/01/30 17:09:03 INFO CoarseGrainedExecutorBackend: Got assigned task 172
+21/01/30 17:09:03 INFO Executor: Running task 170.0 in stage 2.0 (TID 172)
+21/01/30 17:09:03 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/30 17:09:03 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+21/01/30 17:09:03 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 22817013760-22951231488, partition values: [empty row]
+21/01/30 17:09:11 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000155_157' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000155
+21/01/30 17:09:11 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000155_157: Committed
+21/01/30 17:09:11 INFO Executor: Finished task 155.0 in stage 2.0 (TID 157). 2356 bytes result sent to driver
+21/01/30 17:09:20 INFO FileOutputCommitter: Saved output of task 'attempt_20210130170607_0002_m_000170_172' to file:/Users/kinsho/Desktop/struct-impression-log.csv/_temporary/0/task_20210130170607_0002_m_000170
+21/01/30 17:09:20 INFO SparkHadoopMapRedUtil: attempt_20210130170607_0002_m_000170_172: Committed
+21/01/30 17:09:20 INFO Executor: Finished task 170.0 in stage 2.0 (TID 172). 2313 bytes result sent to driver
+21/01/30 17:09:26 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown

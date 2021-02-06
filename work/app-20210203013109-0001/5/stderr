@@ -1,0 +1,407 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=49804" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:49804" "--executor-id" "5" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210203013109-0001" "--worker-url" "spark://Worker@192.168.11.7:53735"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/02/03 01:31:11 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 73755@ST000000035
+21/02/03 01:31:11 INFO SignalUtils: Registered signal handler for TERM
+21/02/03 01:31:11 INFO SignalUtils: Registered signal handler for HUP
+21/02/03 01:31:11 INFO SignalUtils: Registered signal handler for INT
+21/02/03 01:31:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/02/03 01:31:12 INFO SecurityManager: Changing view acls to: kinsho
+21/02/03 01:31:12 INFO SecurityManager: Changing modify acls to: kinsho
+21/02/03 01:31:12 INFO SecurityManager: Changing view acls groups to: 
+21/02/03 01:31:12 INFO SecurityManager: Changing modify acls groups to: 
+21/02/03 01:31:12 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/02/03 01:31:13 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49804 after 121 ms (0 ms spent in bootstraps)
+21/02/03 01:31:13 INFO SecurityManager: Changing view acls to: kinsho
+21/02/03 01:31:13 INFO SecurityManager: Changing modify acls to: kinsho
+21/02/03 01:31:13 INFO SecurityManager: Changing view acls groups to: 
+21/02/03 01:31:13 INFO SecurityManager: Changing modify acls groups to: 
+21/02/03 01:31:13 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/02/03 01:31:13 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49804 after 2 ms (0 ms spent in bootstraps)
+21/02/03 01:31:13 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-62c47c20-c00e-48af-bca3-ad3263f4d8da/executor-2f5beb03-ff86-4161-8f32-3c36b698607b/blockmgr-0df3bcad-0823-446b-bb66-2f20e7ceacc6
+21/02/03 01:31:13 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/03 01:31:14 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:49804
+21/02/03 01:31:14 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:53735
+21/02/03 01:31:14 INFO ResourceUtils: ==============================================================
+21/02/03 01:31:14 INFO ResourceUtils: Resources for spark.executor:
+
+21/02/03 01:31:14 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:53735 after 14 ms (0 ms spent in bootstraps)
+21/02/03 01:31:14 INFO ResourceUtils: ==============================================================
+21/02/03 01:31:14 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/02/03 01:31:14 INFO Executor: Starting executor ID 5 on host 192.168.11.7
+21/02/03 01:31:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 49867.
+21/02/03 01:31:14 INFO NettyBlockTransferService: Server created on 192.168.11.7:49867
+21/02/03 01:31:14 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/03 01:31:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(5, 192.168.11.7, 49867, None)
+21/02/03 01:31:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(5, 192.168.11.7, 49867, None)
+21/02/03 01:31:14 INFO BlockManager: Initialized BlockManager: BlockManagerId(5, 192.168.11.7, 49867, None)
+21/02/03 01:31:19 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+21/02/03 01:31:19 INFO CoarseGrainedExecutorBackend: Got assigned task 13
+21/02/03 01:31:19 INFO Executor: Running task 2.0 in stage 1.0 (TID 3)
+21/02/03 01:31:19 INFO Executor: Running task 12.0 in stage 1.0 (TID 13)
+21/02/03 01:31:19 INFO Executor: Fetching spark://192.168.11.7:49804/jars/simple-project_2.12-1.0.jar with timestamp 1612283469539
+21/02/03 01:31:19 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49804 after 3 ms (0 ms spent in bootstraps)
+21/02/03 01:31:19 INFO Utils: Fetching spark://192.168.11.7:49804/jars/simple-project_2.12-1.0.jar to /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-62c47c20-c00e-48af-bca3-ad3263f4d8da/executor-2f5beb03-ff86-4161-8f32-3c36b698607b/spark-39f6e70a-c033-4d7d-9caa-e98ac261b00b/fetchFileTemp279074784464423684.tmp
+21/02/03 01:31:19 INFO Utils: Copying /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-62c47c20-c00e-48af-bca3-ad3263f4d8da/executor-2f5beb03-ff86-4161-8f32-3c36b698607b/spark-39f6e70a-c033-4d7d-9caa-e98ac261b00b/373031751612283469539_cache to /Users/kinsho/workspace/spark-3.0.1/work/app-20210203013109-0001/5/./simple-project_2.12-1.0.jar
+21/02/03 01:31:19 INFO Executor: Adding file:/Users/kinsho/workspace/spark-3.0.1/work/app-20210203013109-0001/5/./simple-project_2.12-1.0.jar to class loader
+21/02/03 01:31:19 INFO TorrentBroadcast: Started reading broadcast variable 4 with 1 pieces (estimated total size 4.0 MiB)
+21/02/03 01:31:20 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49810 after 33 ms (0 ms spent in bootstraps)
+21/02/03 01:31:20 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 31.0 KiB, free 366.3 MiB)
+21/02/03 01:31:20 INFO TorrentBroadcast: Reading broadcast variable 4 took 409 ms
+21/02/03 01:31:20 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 81.9 KiB, free 366.2 MiB)
+21/02/03 01:31:24 INFO CodeGenerator: Code generated in 1304.623892 ms
+21/02/03 01:31:24 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 1610612736-1744830464, partition values: [empty row]
+21/02/03 01:31:24 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 268435456-402653184, partition values: [empty row]
+21/02/03 01:31:24 INFO CodeGenerator: Code generated in 212.935918 ms
+21/02/03 01:31:24 INFO TorrentBroadcast: Started reading broadcast variable 3 with 1 pieces (estimated total size 4.0 MiB)
+21/02/03 01:31:24 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 24.0 KiB, free 366.2 MiB)
+21/02/03 01:31:24 INFO TorrentBroadcast: Reading broadcast variable 3 took 10 ms
+21/02/03 01:31:25 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 336.9 KiB, free 365.8 MiB)
+21/02/03 01:31:25 INFO CodeGenerator: Code generated in 136.93692 ms
+21/02/03 01:31:35 INFO MemoryStore: Block rdd_13_2 stored as values in memory (estimated size 1290.1 KiB, free 364.6 MiB)
+21/02/03 01:31:35 INFO MemoryStore: Block rdd_13_12 stored as values in memory (estimated size 827.6 KiB, free 363.8 MiB)
+21/02/03 01:31:35 INFO CodeGenerator: Code generated in 35.575416 ms
+21/02/03 01:31:35 INFO CodeGenerator: Code generated in 125.337279 ms
+21/02/03 01:31:35 INFO CodeGenerator: Code generated in 242.253397 ms
+21/02/03 01:31:35 INFO CodeGenerator: Code generated in 24.731667 ms
+21/02/03 01:31:35 INFO CodeGenerator: Code generated in 10.273591 ms
+21/02/03 01:31:35 INFO CodeGenerator: Code generated in 14.661609 ms
+21/02/03 01:31:36 INFO CodeGenerator: Code generated in 121.103248 ms
+21/02/03 01:31:36 INFO Executor: Finished task 2.0 in stage 1.0 (TID 3). 2777 bytes result sent to driver
+21/02/03 01:31:36 INFO Executor: Finished task 12.0 in stage 1.0 (TID 13). 2777 bytes result sent to driver
+21/02/03 01:31:36 INFO CoarseGrainedExecutorBackend: Got assigned task 23
+21/02/03 01:31:36 INFO Executor: Running task 22.0 in stage 1.0 (TID 23)
+21/02/03 01:31:36 INFO CoarseGrainedExecutorBackend: Got assigned task 24
+21/02/03 01:31:36 INFO Executor: Running task 23.0 in stage 1.0 (TID 24)
+21/02/03 01:31:36 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 2952790016-3087007744, partition values: [empty row]
+21/02/03 01:31:36 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 3087007744-3221225472, partition values: [empty row]
+21/02/03 01:31:43 INFO MemoryStore: Block rdd_13_22 stored as values in memory (estimated size 647.6 KiB, free 363.1 MiB)
+21/02/03 01:31:43 INFO MemoryStore: Block rdd_13_23 stored as values in memory (estimated size 650.7 KiB, free 354.5 MiB)
+21/02/03 01:31:43 INFO Executor: Finished task 22.0 in stage 1.0 (TID 23). 2777 bytes result sent to driver
+21/02/03 01:31:43 INFO CoarseGrainedExecutorBackend: Got assigned task 45
+21/02/03 01:31:43 INFO Executor: Running task 44.0 in stage 1.0 (TID 45)
+21/02/03 01:31:43 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 5905580032-6039797760, partition values: [empty row]
+21/02/03 01:31:44 INFO Executor: Finished task 23.0 in stage 1.0 (TID 24). 2777 bytes result sent to driver
+21/02/03 01:31:44 INFO CoarseGrainedExecutorBackend: Got assigned task 49
+21/02/03 01:31:44 INFO Executor: Running task 48.0 in stage 1.0 (TID 49)
+21/02/03 01:31:44 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 6442450944-6576668672, partition values: [empty row]
+21/02/03 01:31:49 INFO MemoryStore: Block rdd_13_44 stored as values in memory (estimated size 1130.4 KiB, free 361.4 MiB)
+21/02/03 01:31:49 INFO MemoryStore: Block rdd_13_48 stored as values in memory (estimated size 1040.9 KiB, free 352.4 MiB)
+21/02/03 01:31:49 INFO Executor: Finished task 44.0 in stage 1.0 (TID 45). 2777 bytes result sent to driver
+21/02/03 01:31:49 INFO CoarseGrainedExecutorBackend: Got assigned task 65
+21/02/03 01:31:49 INFO Executor: Running task 64.0 in stage 1.0 (TID 65)
+21/02/03 01:31:49 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 8589934592-8724152320, partition values: [empty row]
+21/02/03 01:31:49 INFO Executor: Finished task 48.0 in stage 1.0 (TID 49). 2777 bytes result sent to driver
+21/02/03 01:31:49 INFO CoarseGrainedExecutorBackend: Got assigned task 66
+21/02/03 01:31:49 INFO Executor: Running task 65.0 in stage 1.0 (TID 66)
+21/02/03 01:31:50 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 8724152320-8858370048, partition values: [empty row]
+21/02/03 01:31:55 INFO MemoryStore: Block rdd_13_64 stored as values in memory (estimated size 1175.9 KiB, free 359.2 MiB)
+21/02/03 01:31:55 INFO Executor: Finished task 64.0 in stage 1.0 (TID 65). 2777 bytes result sent to driver
+21/02/03 01:31:55 INFO CoarseGrainedExecutorBackend: Got assigned task 85
+21/02/03 01:31:55 INFO Executor: Running task 84.0 in stage 1.0 (TID 85)
+21/02/03 01:31:55 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 11274289152-11408506880, partition values: [empty row]
+21/02/03 01:31:55 INFO MemoryStore: Block rdd_13_65 stored as values in memory (estimated size 1163.2 KiB, free 358.1 MiB)
+21/02/03 01:31:55 INFO Executor: Finished task 65.0 in stage 1.0 (TID 66). 2777 bytes result sent to driver
+21/02/03 01:31:55 INFO CoarseGrainedExecutorBackend: Got assigned task 86
+21/02/03 01:31:55 INFO Executor: Running task 85.0 in stage 1.0 (TID 86)
+21/02/03 01:31:55 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 11408506880-11542724608, partition values: [empty row]
+21/02/03 01:32:01 INFO MemoryStore: Block rdd_13_84 stored as values in memory (estimated size 1246.6 KiB, free 356.9 MiB)
+21/02/03 01:32:01 INFO Executor: Finished task 84.0 in stage 1.0 (TID 85). 2777 bytes result sent to driver
+21/02/03 01:32:01 INFO CoarseGrainedExecutorBackend: Got assigned task 105
+21/02/03 01:32:01 INFO Executor: Running task 104.0 in stage 1.0 (TID 105)
+21/02/03 01:32:01 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 13958643712-14092861440, partition values: [empty row]
+21/02/03 01:32:01 INFO MemoryStore: Block rdd_13_85 stored as values in memory (estimated size 1287.4 KiB, free 355.6 MiB)
+21/02/03 01:32:01 INFO Executor: Finished task 85.0 in stage 1.0 (TID 86). 2777 bytes result sent to driver
+21/02/03 01:32:01 INFO CoarseGrainedExecutorBackend: Got assigned task 106
+21/02/03 01:32:01 INFO Executor: Running task 105.0 in stage 1.0 (TID 106)
+21/02/03 01:32:02 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 14092861440-14227079168, partition values: [empty row]
+21/02/03 01:32:07 INFO MemoryStore: Block rdd_13_104 stored as values in memory (estimated size 1250.7 KiB, free 354.4 MiB)
+21/02/03 01:32:07 INFO Executor: Finished task 104.0 in stage 1.0 (TID 105). 2777 bytes result sent to driver
+21/02/03 01:32:07 INFO CoarseGrainedExecutorBackend: Got assigned task 125
+21/02/03 01:32:07 INFO Executor: Running task 124.0 in stage 1.0 (TID 125)
+21/02/03 01:32:07 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 16642998272-16777216000, partition values: [empty row]
+21/02/03 01:32:07 INFO MemoryStore: Block rdd_13_105 stored as values in memory (estimated size 1404.0 KiB, free 353.0 MiB)
+21/02/03 01:32:07 INFO Executor: Finished task 105.0 in stage 1.0 (TID 106). 2777 bytes result sent to driver
+21/02/03 01:32:07 INFO CoarseGrainedExecutorBackend: Got assigned task 126
+21/02/03 01:32:07 INFO Executor: Running task 125.0 in stage 1.0 (TID 126)
+21/02/03 01:32:07 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 16777216000-16911433728, partition values: [empty row]
+21/02/03 01:32:13 INFO MemoryStore: Block rdd_13_124 stored as values in memory (estimated size 1299.5 KiB, free 351.8 MiB)
+21/02/03 01:32:13 INFO Executor: Finished task 124.0 in stage 1.0 (TID 125). 2777 bytes result sent to driver
+21/02/03 01:32:13 INFO CoarseGrainedExecutorBackend: Got assigned task 145
+21/02/03 01:32:13 INFO Executor: Running task 144.0 in stage 1.0 (TID 145)
+21/02/03 01:32:13 INFO MemoryStore: Block rdd_13_125 stored as values in memory (estimated size 1311.6 KiB, free 350.5 MiB)
+21/02/03 01:32:13 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 19327352832-19461570560, partition values: [empty row]
+21/02/03 01:32:13 INFO Executor: Finished task 125.0 in stage 1.0 (TID 126). 2777 bytes result sent to driver
+21/02/03 01:32:13 INFO CoarseGrainedExecutorBackend: Got assigned task 146
+21/02/03 01:32:13 INFO Executor: Running task 145.0 in stage 1.0 (TID 146)
+21/02/03 01:32:13 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 19461570560-19595788288, partition values: [empty row]
+21/02/03 01:32:19 INFO MemoryStore: Block rdd_13_144 stored as values in memory (estimated size 1182.0 KiB, free 349.3 MiB)
+21/02/03 01:32:19 INFO Executor: Finished task 144.0 in stage 1.0 (TID 145). 2777 bytes result sent to driver
+21/02/03 01:32:19 INFO CoarseGrainedExecutorBackend: Got assigned task 165
+21/02/03 01:32:19 INFO Executor: Running task 164.0 in stage 1.0 (TID 165)
+21/02/03 01:32:19 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 22011707392-22145925120, partition values: [empty row]
+21/02/03 01:32:19 INFO MemoryStore: Block rdd_13_145 stored as values in memory (estimated size 1220.4 KiB, free 348.1 MiB)
+21/02/03 01:32:19 INFO Executor: Finished task 145.0 in stage 1.0 (TID 146). 2777 bytes result sent to driver
+21/02/03 01:32:19 INFO CoarseGrainedExecutorBackend: Got assigned task 166
+21/02/03 01:32:19 INFO Executor: Running task 165.0 in stage 1.0 (TID 166)
+21/02/03 01:32:19 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 22145925120-22280142848, partition values: [empty row]
+21/02/03 01:32:24 INFO MemoryStore: Block rdd_13_164 stored as values in memory (estimated size 1311.6 KiB, free 346.9 MiB)
+21/02/03 01:32:24 INFO Executor: Finished task 164.0 in stage 1.0 (TID 165). 2777 bytes result sent to driver
+21/02/03 01:32:24 INFO MemoryStore: Block rdd_13_165 stored as values in memory (estimated size 1306.6 KiB, free 345.6 MiB)
+21/02/03 01:32:24 INFO Executor: Finished task 165.0 in stage 1.0 (TID 166). 2777 bytes result sent to driver
+21/02/03 01:32:24 INFO CoarseGrainedExecutorBackend: Got assigned task 180
+21/02/03 01:32:24 INFO CoarseGrainedExecutorBackend: Got assigned task 190
+21/02/03 01:32:24 INFO Executor: Running task 3.0 in stage 2.0 (TID 180)
+21/02/03 01:32:24 INFO Executor: Running task 13.0 in stage 2.0 (TID 190)
+21/02/03 01:32:24 INFO MapOutputTrackerWorker: Updating epoch to 1 and clearing cache
+21/02/03 01:32:24 INFO TorrentBroadcast: Started reading broadcast variable 5 with 1 pieces (estimated total size 4.0 MiB)
+21/02/03 01:32:24 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 82.3 KiB, free 345.5 MiB)
+21/02/03 01:32:24 INFO TorrentBroadcast: Reading broadcast variable 5 took 30 ms
+21/02/03 01:32:24 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 226.6 KiB, free 345.3 MiB)
+21/02/03 01:32:25 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+21/02/03 01:32:25 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+21/02/03 01:32:25 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@192.168.11.7:49804)
+21/02/03 01:32:25 INFO MapOutputTrackerWorker: Got the output locations
+21/02/03 01:32:25 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:25 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:25 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 12 ms
+21/02/03 01:32:25 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 12 ms
+21/02/03 01:32:25 INFO CodeGenerator: Code generated in 28.64405 ms
+21/02/03 01:32:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:25 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:25 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:25 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:25 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:25 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000003_180
+21/02/03 01:32:25 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000013_190
+21/02/03 01:32:25 INFO Executor: Finished task 3.0 in stage 2.0 (TID 180). 4435 bytes result sent to driver
+21/02/03 01:32:25 INFO Executor: Finished task 13.0 in stage 2.0 (TID 190). 4435 bytes result sent to driver
+21/02/03 01:32:25 INFO CoarseGrainedExecutorBackend: Got assigned task 217
+21/02/03 01:32:25 INFO Executor: Running task 40.0 in stage 2.0 (TID 217)
+21/02/03 01:32:25 INFO CoarseGrainedExecutorBackend: Got assigned task 218
+21/02/03 01:32:25 INFO Executor: Running task 41.0 in stage 2.0 (TID 218)
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000041_218
+21/02/03 01:32:26 INFO Executor: Finished task 41.0 in stage 2.0 (TID 218). 4392 bytes result sent to driver
+21/02/03 01:32:26 INFO CoarseGrainedExecutorBackend: Got assigned task 228
+21/02/03 01:32:26 INFO Executor: Running task 51.0 in stage 2.0 (TID 228)
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000040_217
+21/02/03 01:32:26 INFO Executor: Finished task 40.0 in stage 2.0 (TID 217). 4392 bytes result sent to driver
+21/02/03 01:32:26 INFO CoarseGrainedExecutorBackend: Got assigned task 229
+21/02/03 01:32:26 INFO Executor: Running task 52.0 in stage 2.0 (TID 229)
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000051_228
+21/02/03 01:32:26 INFO Executor: Finished task 51.0 in stage 2.0 (TID 228). 4392 bytes result sent to driver
+21/02/03 01:32:26 INFO CoarseGrainedExecutorBackend: Got assigned task 241
+21/02/03 01:32:26 INFO Executor: Running task 64.0 in stage 2.0 (TID 241)
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000052_229
+21/02/03 01:32:26 INFO Executor: Finished task 52.0 in stage 2.0 (TID 229). 4392 bytes result sent to driver
+21/02/03 01:32:26 INFO CoarseGrainedExecutorBackend: Got assigned task 244
+21/02/03 01:32:26 INFO Executor: Running task 67.0 in stage 2.0 (TID 244)
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Getting 176 (20.0 KiB) non-empty blocks including 18 (2.0 KiB) local and 0 (0.0 B) host-local and 158 (18.0 KiB) remote blocks
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49868 after 33 ms (0 ms spent in bootstraps)
+21/02/03 01:32:26 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000067_244
+21/02/03 01:32:26 INFO Executor: Finished task 67.0 in stage 2.0 (TID 244). 4392 bytes result sent to driver
+21/02/03 01:32:26 INFO CoarseGrainedExecutorBackend: Got assigned task 260
+21/02/03 01:32:26 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49861 after 4 ms (0 ms spent in bootstraps)
+21/02/03 01:32:26 INFO Executor: Running task 83.0 in stage 2.0 (TID 260)
+21/02/03 01:32:26 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49857 after 1 ms (0 ms spent in bootstraps)
+21/02/03 01:32:26 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49869 after 1 ms (0 ms spent in bootstraps)
+21/02/03 01:32:26 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49870 after 1 ms (0 ms spent in bootstraps)
+21/02/03 01:32:26 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49866 after 2 ms (0 ms spent in bootstraps)
+21/02/03 01:32:26 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49863 after 2 ms (0 ms spent in bootstraps)
+21/02/03 01:32:26 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49859 after 92 ms (0 ms spent in bootstraps)
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:26 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:49860 after 6 ms (0 ms spent in bootstraps)
+21/02/03 01:32:26 INFO ShuffleBlockFetcherIterator: Started 9 remote fetches in 257 ms
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000083_260
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:26 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:26 INFO Executor: Finished task 83.0 in stage 2.0 (TID 260). 4392 bytes result sent to driver
+21/02/03 01:32:26 INFO CoarseGrainedExecutorBackend: Got assigned task 269
+21/02/03 01:32:26 INFO Executor: Running task 92.0 in stage 2.0 (TID 269)
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000092_269
+21/02/03 01:32:27 INFO Executor: Finished task 92.0 in stage 2.0 (TID 269). 4392 bytes result sent to driver
+21/02/03 01:32:27 INFO CoarseGrainedExecutorBackend: Got assigned task 286
+21/02/03 01:32:27 INFO Executor: Running task 109.0 in stage 2.0 (TID 286)
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO CodecConfig: Compression: SNAPPY
+21/02/03 01:32:27 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000109_286
+21/02/03 01:32:27 INFO CodecConfig: Compression: SNAPPY
+21/02/03 01:32:27 INFO Executor: Finished task 109.0 in stage 2.0 (TID 286). 4392 bytes result sent to driver
+21/02/03 01:32:27 INFO CoarseGrainedExecutorBackend: Got assigned task 294
+21/02/03 01:32:27 INFO Executor: Running task 117.0 in stage 2.0 (TID 294)
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000117_294
+21/02/03 01:32:27 INFO Executor: Finished task 117.0 in stage 2.0 (TID 294). 4392 bytes result sent to driver
+21/02/03 01:32:27 INFO CoarseGrainedExecutorBackend: Got assigned task 304
+21/02/03 01:32:27 INFO Executor: Running task 127.0 in stage 2.0 (TID 304)
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 9 ms
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000127_304
+21/02/03 01:32:27 INFO Executor: Finished task 127.0 in stage 2.0 (TID 304). 4392 bytes result sent to driver
+21/02/03 01:32:27 INFO CoarseGrainedExecutorBackend: Got assigned task 317
+21/02/03 01:32:27 INFO Executor: Running task 140.0 in stage 2.0 (TID 317)
+21/02/03 01:32:27 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/02/03 01:32:27 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/02/03 01:32:27 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/02/03 01:32:27 INFO ParquetOutputFormat: Dictionary is on
+21/02/03 01:32:27 INFO ParquetOutputFormat: Validation is off
+21/02/03 01:32:27 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/02/03 01:32:27 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/02/03 01:32:27 INFO ParquetOutputFormat: Page size checking is: estimated
+21/02/03 01:32:27 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/02/03 01:32:27 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000140_317
+21/02/03 01:32:27 INFO Executor: Finished task 140.0 in stage 2.0 (TID 317). 4392 bytes result sent to driver
+21/02/03 01:32:27 INFO CoarseGrainedExecutorBackend: Got assigned task 335
+21/02/03 01:32:27 INFO Executor: Running task 158.0 in stage 2.0 (TID 335)
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:27 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:27 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000158_335
+21/02/03 01:32:27 INFO Executor: Finished task 158.0 in stage 2.0 (TID 335). 4392 bytes result sent to driver
+21/02/03 01:32:27 INFO CoarseGrainedExecutorBackend: Got assigned task 349
+21/02/03 01:32:27 INFO Executor: Running task 172.0 in stage 2.0 (TID 349)
+21/02/03 01:32:28 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:28 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:28 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:28 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:28 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:28 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000172_349
+21/02/03 01:32:28 INFO Executor: Finished task 172.0 in stage 2.0 (TID 349). 4392 bytes result sent to driver
+21/02/03 01:32:28 INFO CoarseGrainedExecutorBackend: Got assigned task 363
+21/02/03 01:32:28 INFO Executor: Running task 186.0 in stage 2.0 (TID 363)
+21/02/03 01:32:28 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:28 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:28 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:28 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:28 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:28 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000186_363
+21/02/03 01:32:28 INFO Executor: Finished task 186.0 in stage 2.0 (TID 363). 4392 bytes result sent to driver
+21/02/03 01:32:28 INFO CoarseGrainedExecutorBackend: Got assigned task 376
+21/02/03 01:32:28 INFO Executor: Running task 199.0 in stage 2.0 (TID 376)
+21/02/03 01:32:28 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:32:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:32:28 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:28 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:28 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/02/03 01:32:28 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/02/03 01:32:28 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20210203013119_0002_m_000199_376
+21/02/03 01:32:28 INFO Executor: Finished task 199.0 in stage 2.0 (TID 376). 4392 bytes result sent to driver
+21/02/03 01:32:28 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "avg_cpc",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "avg_originalScore",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "min_cpc",
+    "type" : "long",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "cnt_imps",
+    "type" : "long",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary buckettype (UTF8);
+  optional double avg_cpc;
+  optional double avg_originalScore;
+  optional int64 min_cpc;
+  required int64 cnt_imps;
+}
+
+       
+21/02/03 01:32:28 INFO CodecPool: Got brand-new compressor [.snappy]
+21/02/03 01:32:28 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 73
+21/02/03 01:32:29 INFO FileOutputCommitter: Saved output of task 'attempt_20210203013119_0002_m_000064_241' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210203013119_0002_m_000064
+21/02/03 01:32:29 INFO SparkHadoopMapRedUtil: attempt_20210203013119_0002_m_000064_241: Committed
+21/02/03 01:32:29 INFO Executor: Finished task 64.0 in stage 2.0 (TID 241). 4521 bytes result sent to driver
+21/02/03 01:32:29 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown

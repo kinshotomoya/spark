@@ -1,0 +1,377 @@
+Spark Command: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java -cp /Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host ST000000035 --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/02/02 22:30:42 INFO Master: Started daemon with process name: 66988@ST000000035
+21/02/02 22:30:42 INFO SignalUtils: Registered signal handler for TERM
+21/02/02 22:30:42 INFO SignalUtils: Registered signal handler for HUP
+21/02/02 22:30:42 INFO SignalUtils: Registered signal handler for INT
+21/02/02 22:30:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/02/02 22:30:42 INFO SecurityManager: Changing view acls to: kinsho
+21/02/02 22:30:42 INFO SecurityManager: Changing modify acls to: kinsho
+21/02/02 22:30:42 INFO SecurityManager: Changing view acls groups to: 
+21/02/02 22:30:42 INFO SecurityManager: Changing modify acls groups to: 
+21/02/02 22:30:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/02/02 22:30:43 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+21/02/02 22:30:43 INFO Master: Starting Spark master at spark://ST000000035:7077
+21/02/02 22:30:43 INFO Master: Running Spark version 3.0.1
+21/02/02 22:30:43 WARN Utils: Service 'MasterUI' could not bind on port 8080. Attempting port 8081.
+21/02/02 22:30:43 INFO Utils: Successfully started service 'MasterUI' on port 8081.
+21/02/02 22:30:43 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://192.168.11.7:8081
+21/02/02 22:30:43 INFO Master: I have been elected leader! New state: ALIVE
+21/02/02 22:31:18 INFO Master: Registering worker 192.168.11.7:53672 with 2 cores, 1024.0 MiB RAM
+21/02/02 22:31:20 INFO Master: Registering worker 192.168.11.7:53683 with 2 cores, 1024.0 MiB RAM
+21/02/02 22:31:23 INFO Master: Registering worker 192.168.11.7:53697 with 2 cores, 1024.0 MiB RAM
+21/02/02 22:31:25 INFO Master: Registering worker 192.168.11.7:53707 with 2 cores, 1024.0 MiB RAM
+21/02/02 22:31:28 INFO Master: Registering worker 192.168.11.7:53721 with 2 cores, 1024.0 MiB RAM
+21/02/02 22:31:30 INFO Master: Registering worker 192.168.11.7:53735 with 2 cores, 1024.0 MiB RAM
+21/02/02 22:31:33 INFO Master: Registering worker 192.168.11.7:53745 with 2 cores, 1024.0 MiB RAM
+21/02/02 22:31:36 INFO Master: Registering worker 192.168.11.7:53759 with 2 cores, 1024.0 MiB RAM
+21/02/02 22:31:38 INFO Master: Registering worker 192.168.11.7:53770 with 2 cores, 1024.0 MiB RAM
+21/02/02 22:31:41 INFO Master: Registering worker 192.168.11.7:53784 with 2 cores, 1024.0 MiB RAM
+21/02/03 01:02:37 INFO Master: Registering app LogCalculation
+21/02/03 01:02:37 INFO Master: Registered app LogCalculation with ID app-20210203010237-0000
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/0 on worker worker-20210202223140-192.168.11.7-53784
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/1 on worker worker-20210202223120-192.168.11.7-53683
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/2 on worker worker-20210202223128-192.168.11.7-53721
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/3 on worker worker-20210202223135-192.168.11.7-53759
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/4 on worker worker-20210202223133-192.168.11.7-53745
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/5 on worker worker-20210202223130-192.168.11.7-53735
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/6 on worker worker-20210202223122-192.168.11.7-53697
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/7 on worker worker-20210202223125-192.168.11.7-53707
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/8 on worker worker-20210202223138-192.168.11.7-53770
+21/02/03 01:02:37 INFO Master: Launching executor app-20210203010237-0000/9 on worker worker-20210202223117-192.168.11.7-53672
+21/02/03 01:04:18 INFO Master: Received unregister request from application app-20210203010237-0000
+21/02/03 01:04:18 INFO Master: Removing app app-20210203010237-0000
+21/02/03 01:04:18 INFO Master: 192.168.11.7:58964 got disassociated, removing it.
+21/02/03 01:04:18 INFO Master: 192.168.11.7:58963 got disassociated, removing it.
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/6
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/2
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/1
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/5
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/7
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/9
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/4
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/8
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/3
+21/02/03 01:04:19 WARN Master: Got status update for unknown executor app-20210203010237-0000/0
+21/02/03 01:31:09 INFO Master: Registering app LogCalculation
+21/02/03 01:31:09 INFO Master: Registered app LogCalculation with ID app-20210203013109-0001
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/0 on worker worker-20210202223140-192.168.11.7-53784
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/1 on worker worker-20210202223120-192.168.11.7-53683
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/2 on worker worker-20210202223128-192.168.11.7-53721
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/3 on worker worker-20210202223135-192.168.11.7-53759
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/4 on worker worker-20210202223133-192.168.11.7-53745
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/5 on worker worker-20210202223130-192.168.11.7-53735
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/6 on worker worker-20210202223122-192.168.11.7-53697
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/7 on worker worker-20210202223125-192.168.11.7-53707
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/8 on worker worker-20210202223138-192.168.11.7-53770
+21/02/03 01:31:09 INFO Master: Launching executor app-20210203013109-0001/9 on worker worker-20210202223117-192.168.11.7-53672
+21/02/03 01:32:29 INFO Master: Received unregister request from application app-20210203013109-0001
+21/02/03 01:32:29 INFO Master: Removing app app-20210203013109-0001
+21/02/03 01:32:29 INFO Master: 192.168.11.7:49809 got disassociated, removing it.
+21/02/03 01:32:29 INFO Master: 192.168.11.7:49804 got disassociated, removing it.
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/8
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/2
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/5
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/3
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/0
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/4
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/9
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/6
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/1
+21/02/03 01:32:29 WARN Master: Got status update for unknown executor app-20210203013109-0001/7
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223117-192.168.11.7-53672 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223117-192.168.11.7-53672 on 192.168.11.7:53672
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223117-192.168.11.7-53672
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223138-192.168.11.7-53770 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223138-192.168.11.7-53770 on 192.168.11.7:53770
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223138-192.168.11.7-53770
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223125-192.168.11.7-53707 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223125-192.168.11.7-53707 on 192.168.11.7:53707
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223125-192.168.11.7-53707
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223122-192.168.11.7-53697 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223122-192.168.11.7-53697 on 192.168.11.7:53697
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223122-192.168.11.7-53697
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223130-192.168.11.7-53735 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223130-192.168.11.7-53735 on 192.168.11.7:53735
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223130-192.168.11.7-53735
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223133-192.168.11.7-53745 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223133-192.168.11.7-53745 on 192.168.11.7:53745
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223133-192.168.11.7-53745
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223135-192.168.11.7-53759 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223135-192.168.11.7-53759 on 192.168.11.7:53759
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223135-192.168.11.7-53759
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223128-192.168.11.7-53721 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223128-192.168.11.7-53721 on 192.168.11.7:53721
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223128-192.168.11.7-53721
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223120-192.168.11.7-53683 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223120-192.168.11.7-53683 on 192.168.11.7:53683
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223120-192.168.11.7-53683
+21/02/03 03:50:52 WARN Master: Removing worker-20210202223140-192.168.11.7-53784 because we got no heartbeat in 60 seconds
+21/02/03 03:50:52 INFO Master: Removing worker worker-20210202223140-192.168.11.7-53784 on 192.168.11.7:53784
+21/02/03 03:50:52 INFO Master: Telling app of lost worker: worker-20210202223140-192.168.11.7-53784
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:57 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:50:59 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 03:51:00 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 03:51:00 INFO Master: Registering worker 192.168.11.7:53770 with 2 cores, 1024.0 MiB RAM
+21/02/03 03:51:00 INFO Master: Registering worker 192.168.11.7:53759 with 2 cores, 1024.0 MiB RAM
+21/02/03 03:51:00 INFO Master: Registering worker 192.168.11.7:53697 with 2 cores, 1024.0 MiB RAM
+21/02/03 03:51:00 INFO Master: Registering worker 192.168.11.7:53683 with 2 cores, 1024.0 MiB RAM
+21/02/03 03:51:07 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 03:51:07 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Removing worker-20210202223135-192.168.11.7-53759 because we got no heartbeat in 60 seconds
+21/02/03 08:15:08 INFO Master: Removing worker worker-20210202223135-192.168.11.7-53759 on 192.168.11.7:53759
+21/02/03 08:15:08 INFO Master: Telling app of lost worker: worker-20210202223135-192.168.11.7-53759
+21/02/03 08:15:08 WARN Master: Removing worker-20210202223122-192.168.11.7-53697 because we got no heartbeat in 60 seconds
+21/02/03 08:15:08 INFO Master: Removing worker worker-20210202223122-192.168.11.7-53697 on 192.168.11.7:53697
+21/02/03 08:15:08 INFO Master: Telling app of lost worker: worker-20210202223122-192.168.11.7-53697
+21/02/03 08:15:08 WARN Master: Removing worker-20210202223120-192.168.11.7-53683 because we got no heartbeat in 60 seconds
+21/02/03 08:15:08 INFO Master: Removing worker worker-20210202223120-192.168.11.7-53683 on 192.168.11.7:53683
+21/02/03 08:15:08 INFO Master: Telling app of lost worker: worker-20210202223120-192.168.11.7-53683
+21/02/03 08:15:08 WARN Master: Removing worker-20210202223138-192.168.11.7-53770 because we got no heartbeat in 60 seconds
+21/02/03 08:15:08 INFO Master: Removing worker worker-20210202223138-192.168.11.7-53770 on 192.168.11.7:53770
+21/02/03 08:15:08 INFO Master: Telling app of lost worker: worker-20210202223138-192.168.11.7-53770
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 08:15:08 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 08:15:09 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 08:15:09 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223138-192.168.11.7-53770. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223120-192.168.11.7-53683. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223122-192.168.11.7-53697. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223135-192.168.11.7-53759. Asking it to re-register.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 08:15:10 INFO Master: Registering worker 192.168.11.7:53770 with 2 cores, 1024.0 MiB RAM
+21/02/03 08:15:10 INFO Master: Registering worker 192.168.11.7:53759 with 2 cores, 1024.0 MiB RAM
+21/02/03 08:15:10 INFO Master: Registering worker 192.168.11.7:53683 with 2 cores, 1024.0 MiB RAM
+21/02/03 08:15:10 INFO Master: Registering worker 192.168.11.7:53697 with 2 cores, 1024.0 MiB RAM
+21/02/03 09:18:05 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:06 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:06 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:07 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:09 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:10 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:16 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:17 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:19 WARN Master: Removing worker-20210202223138-192.168.11.7-53770 because we got no heartbeat in 60 seconds
+21/02/03 09:18:19 INFO Master: Removing worker worker-20210202223138-192.168.11.7-53770 on 192.168.11.7:53770
+21/02/03 09:18:19 INFO Master: Telling app of lost worker: worker-20210202223138-192.168.11.7-53770
+21/02/03 09:18:19 WARN Master: Removing worker-20210202223122-192.168.11.7-53697 because we got no heartbeat in 60 seconds
+21/02/03 09:18:19 INFO Master: Removing worker worker-20210202223122-192.168.11.7-53697 on 192.168.11.7:53697
+21/02/03 09:18:19 INFO Master: Telling app of lost worker: worker-20210202223122-192.168.11.7-53697
+21/02/03 09:18:19 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:22 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:24 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:24 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:31 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:32 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:34 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:37 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:38 INFO Master: Registering worker 192.168.11.7:53697 with 2 cores, 1024.0 MiB RAM
+21/02/03 09:18:39 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:39 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:46 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:47 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:49 INFO Master: Registering worker 192.168.11.7:53770 with 2 cores, 1024.0 MiB RAM
+21/02/03 09:18:49 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:52 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:54 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:18:54 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:01 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:02 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:04 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:07 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:09 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:09 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:16 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:17 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:19 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:22 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:24 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:24 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:31 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:32 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:34 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:37 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:39 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:39 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:46 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:47 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:49 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:52 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:54 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:19:54 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:01 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:02 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:04 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:07 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:09 WARN Master: Got heartbeat from unregistered worker worker-20210202223117-192.168.11.7-53672. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:09 WARN Master: Got heartbeat from unregistered worker worker-20210202223133-192.168.11.7-53745. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:16 WARN Master: Got heartbeat from unregistered worker worker-20210202223125-192.168.11.7-53707. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:17 WARN Master: Got heartbeat from unregistered worker worker-20210202223140-192.168.11.7-53784. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:19 WARN Master: Got heartbeat from unregistered worker worker-20210202223128-192.168.11.7-53721. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:22 WARN Master: Got heartbeat from unregistered worker worker-20210202223130-192.168.11.7-53735. This worker was never registered, so ignoring the heartbeat.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53673 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53672 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53688 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53683 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: Removing worker worker-20210202223120-192.168.11.7-53683 on 192.168.11.7:53683
+21/02/03 09:20:23 INFO Master: Telling app of lost worker: worker-20210202223120-192.168.11.7-53683
+21/02/03 09:20:23 INFO Master: 192.168.11.7:54688 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53697 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: Removing worker worker-20210202223122-192.168.11.7-53697 on 192.168.11.7:53697
+21/02/03 09:20:23 INFO Master: Telling app of lost worker: worker-20210202223122-192.168.11.7-53697
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53712 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53707 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53722 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53721 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53736 got disassociated, removing it.
+21/02/03 09:20:23 INFO Master: 192.168.11.7:53735 got disassociated, removing it.
+21/02/03 09:20:24 INFO Master: 192.168.11.7:53746 got disassociated, removing it.
+21/02/03 09:20:24 INFO Master: 192.168.11.7:53745 got disassociated, removing it.
+21/02/03 09:20:24 INFO Master: 192.168.11.7:53760 got disassociated, removing it.
+21/02/03 09:20:24 INFO Master: 192.168.11.7:53759 got disassociated, removing it.
+21/02/03 09:20:24 INFO Master: Removing worker worker-20210202223135-192.168.11.7-53759 on 192.168.11.7:53759
+21/02/03 09:20:24 INFO Master: Telling app of lost worker: worker-20210202223135-192.168.11.7-53759
+21/02/03 09:20:24 INFO Master: 192.168.11.7:54730 got disassociated, removing it.
+21/02/03 09:20:24 INFO Master: 192.168.11.7:53770 got disassociated, removing it.
+21/02/03 09:20:24 INFO Master: Removing worker worker-20210202223138-192.168.11.7-53770 on 192.168.11.7:53770
+21/02/03 09:20:24 INFO Master: Telling app of lost worker: worker-20210202223138-192.168.11.7-53770
+21/02/03 09:20:24 INFO Master: 192.168.11.7:53785 got disassociated, removing it.
+21/02/03 09:20:24 INFO Master: 192.168.11.7:53784 got disassociated, removing it.
+21/02/03 09:20:26 ERROR Master: RECEIVED SIGNAL TERM

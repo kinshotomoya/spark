@@ -1,0 +1,3 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=59135" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:59135" "--executor-id" "9" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130185409-0024" "--worker-url" "spark://Worker@192.168.11.7:63926"
+========================================
+

@@ -1,0 +1,2685 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=57817" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:57817" "--executor-id" "7" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131143845-0032" "--worker-url" "spark://Worker@192.168.11.7:63861"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/31 14:38:47 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 28700@ST000000035
+21/01/31 14:38:47 INFO SignalUtils: Registered signal handler for TERM
+21/01/31 14:38:47 INFO SignalUtils: Registered signal handler for HUP
+21/01/31 14:38:47 INFO SignalUtils: Registered signal handler for INT
+21/01/31 14:38:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/31 14:38:48 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 14:38:48 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 14:38:48 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 14:38:48 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 14:38:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 14:38:49 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:57817 after 119 ms (0 ms spent in bootstraps)
+21/01/31 14:38:49 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 14:38:49 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 14:38:49 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 14:38:49 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 14:38:49 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 14:38:49 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:57817 after 5 ms (0 ms spent in bootstraps)
+21/01/31 14:38:49 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-25de37d2-ff0b-4e7a-8da1-628ca4e62b74/executor-9cbf0fac-9ac0-438b-b1cf-5d27dde8149e/blockmgr-41c8ff53-14f6-44ed-b814-8a5991d7245f
+21/01/31 14:38:49 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/01/31 14:38:50 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:57817
+21/01/31 14:38:50 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:63861
+21/01/31 14:38:50 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63861 after 3 ms (0 ms spent in bootstraps)
+21/01/31 14:38:50 INFO ResourceUtils: ==============================================================
+21/01/31 14:38:50 INFO ResourceUtils: Resources for spark.executor:
+
+21/01/31 14:38:50 INFO ResourceUtils: ==============================================================
+21/01/31 14:38:50 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.11.7:63861
+21/01/31 14:38:50 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/01/31 14:38:50 INFO Executor: Starting executor ID 7 on host 192.168.11.7
+21/01/31 14:38:50 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 57881.
+21/01/31 14:38:50 INFO NettyBlockTransferService: Server created on 192.168.11.7:57881
+21/01/31 14:38:50 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/01/31 14:38:50 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(7, 192.168.11.7, 57881, None)
+21/01/31 14:38:50 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(7, 192.168.11.7, 57881, None)
+21/01/31 14:38:50 INFO BlockManager: Initialized BlockManager: BlockManagerId(7, 192.168.11.7, 57881, None)
+21/01/31 14:38:52 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+21/01/31 14:38:52 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+21/01/31 14:38:52 INFO Executor: Fetching spark://192.168.11.7:57817/jars/simple-project_2.12-1.0.jar with timestamp 1612071524858
+21/01/31 14:38:52 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:57817 after 1 ms (0 ms spent in bootstraps)
+21/01/31 14:38:52 INFO Utils: Fetching spark://192.168.11.7:57817/jars/simple-project_2.12-1.0.jar to /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-25de37d2-ff0b-4e7a-8da1-628ca4e62b74/executor-9cbf0fac-9ac0-438b-b1cf-5d27dde8149e/spark-757abfef-9e51-412c-8bf8-c1b377c4cc86/fetchFileTemp7691115589390688425.tmp
+21/01/31 14:38:52 INFO Utils: Copying /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-25de37d2-ff0b-4e7a-8da1-628ca4e62b74/executor-9cbf0fac-9ac0-438b-b1cf-5d27dde8149e/spark-757abfef-9e51-412c-8bf8-c1b377c4cc86/15175652501612071524858_cache to /Users/kinsho/workspace/spark-3.0.1/work/app-20210131143845-0032/7/./simple-project_2.12-1.0.jar
+21/01/31 14:38:52 INFO Executor: Adding file:/Users/kinsho/workspace/spark-3.0.1/work/app-20210131143845-0032/7/./simple-project_2.12-1.0.jar to class loader
+21/01/31 14:38:52 INFO TorrentBroadcast: Started reading broadcast variable 1 with 1 pieces (estimated total size 4.0 MiB)
+21/01/31 14:38:52 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:57823 after 1 ms (0 ms spent in bootstraps)
+21/01/31 14:38:52 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.3 KiB, free 366.3 MiB)
+21/01/31 14:38:52 INFO TorrentBroadcast: Reading broadcast variable 1 took 103 ms
+21/01/31 14:38:52 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 10.7 KiB, free 366.3 MiB)
+21/01/31 14:38:53 INFO CodeGenerator: Code generated in 141.457708 ms
+21/01/31 14:38:53 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 0-134217728, partition values: [empty row]
+21/01/31 14:38:53 INFO CodeGenerator: Code generated in 10.116264 ms
+21/01/31 14:38:53 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+21/01/31 14:38:53 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 24.0 KiB, free 366.3 MiB)
+21/01/31 14:38:53 INFO TorrentBroadcast: Reading broadcast variable 0 took 8 ms
+21/01/31 14:38:53 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 336.8 KiB, free 365.9 MiB)
+21/01/31 14:38:53 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1897 bytes result sent to driver
+21/01/31 14:38:54 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+21/01/31 14:38:54 INFO Executor: Running task 1.0 in stage 1.0 (TID 2)
+21/01/31 14:38:54 INFO CoarseGrainedExecutorBackend: Got assigned task 12
+21/01/31 14:38:54 INFO Executor: Running task 11.0 in stage 1.0 (TID 12)
+21/01/31 14:38:54 INFO TorrentBroadcast: Started reading broadcast variable 4 with 1 pieces (estimated total size 4.0 MiB)
+21/01/31 14:38:54 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 68.7 KiB, free 365.9 MiB)
+21/01/31 14:38:54 INFO TorrentBroadcast: Reading broadcast variable 4 took 12 ms
+21/01/31 14:38:54 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 193.8 KiB, free 365.7 MiB)
+21/01/31 14:38:55 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 1476395008-1610612736, partition values: [empty row]
+21/01/31 14:38:55 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 134217728-268435456, partition values: [empty row]
+21/01/31 14:38:55 INFO CodeGenerator: Code generated in 257.831838 ms
+21/01/31 14:38:55 INFO TorrentBroadcast: Started reading broadcast variable 3 with 1 pieces (estimated total size 4.0 MiB)
+21/01/31 14:38:55 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 24.0 KiB, free 365.7 MiB)
+21/01/31 14:38:55 INFO TorrentBroadcast: Reading broadcast variable 3 took 12 ms
+21/01/31 14:38:55 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 336.8 KiB, free 365.3 MiB)
+21/01/31 14:39:27 INFO MemoryStore: Will not store rdd_12_11
+21/01/31 14:39:27 WARN MemoryStore: Not enough space to cache rdd_12_11 in memory! (computed 135.8 MiB so far)
+21/01/31 14:39:27 INFO MemoryStore: Memory use = 984.1 KiB (blocks) + 310.3 MiB (scratch space shared across 2 tasks(s)) = 311.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:39:27 WARN BlockManager: Persisting block rdd_12_11 to disk instead.
+21/01/31 14:39:32 INFO MemoryStore: Block rdd_12_1 stored as values in memory (estimated size 164.0 MiB, free 201.4 MiB)
+21/01/31 14:39:32 INFO CodeGenerator: Code generated in 21.303526 ms
+21/01/31 14:39:32 INFO CodeGenerator: Code generated in 84.411322 ms
+21/01/31 14:39:32 INFO CodeGenerator: Code generated in 52.585971 ms
+21/01/31 14:39:32 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:39:32 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:39:32 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:39:32 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:39:32 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:39:32 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:39:33 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:39:33 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:39:33 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:39:33 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:39:33 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:39:33 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:39:33 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:39:33 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:39:33 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:39:33 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:39:33 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:39:33 INFO CodecPool: Got brand-new compressor [.snappy]
+21/01/31 14:39:39 INFO MemoryStore: Will not store rdd_12_11
+21/01/31 14:39:39 WARN MemoryStore: Not enough space to cache rdd_12_11 in memory! (computed 135.8 MiB so far)
+21/01/31 14:39:39 INFO MemoryStore: Memory use = 164.9 MiB (blocks) + 103.6 MiB (scratch space shared across 1 tasks(s)) = 268.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:39:39 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:39:39 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:39:39 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:39:39 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:39:39 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:39:39 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:39:39 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:39:39 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:39:39 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:39:39 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:39:39 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:39:39 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:39:39 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:39:39 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:39:39 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:39:39 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:39:39 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:39:40 INFO CodecPool: Got brand-new compressor [.snappy]
+21/01/31 14:39:45 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 37907071
+21/01/31 14:39:45 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000001_2' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000001
+21/01/31 14:39:45 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000001_2: Committed
+21/01/31 14:39:45 INFO Executor: Finished task 1.0 in stage 1.0 (TID 2). 2504 bytes result sent to driver
+21/01/31 14:39:45 INFO CoarseGrainedExecutorBackend: Got assigned task 21
+21/01/31 14:39:45 INFO Executor: Running task 20.0 in stage 1.0 (TID 21)
+21/01/31 14:39:45 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 2684354560-2818572288, partition values: [empty row]
+21/01/31 14:39:50 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 40739463
+21/01/31 14:39:51 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000011_12' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000011
+21/01/31 14:39:51 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000011_12: Committed
+21/01/31 14:39:51 INFO Executor: Finished task 11.0 in stage 1.0 (TID 12). 2461 bytes result sent to driver
+21/01/31 14:39:51 INFO CoarseGrainedExecutorBackend: Got assigned task 26
+21/01/31 14:39:51 INFO Executor: Running task 25.0 in stage 1.0 (TID 26)
+21/01/31 14:39:51 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 3355443200-3489660928, partition values: [empty row]
+21/01/31 14:40:05 INFO MemoryStore: Will not store rdd_12_25
+21/01/31 14:40:05 WARN MemoryStore: Not enough space to cache rdd_12_25 in memory! (computed 68.8 MiB so far)
+21/01/31 14:40:05 INFO MemoryStore: Memory use = 164.9 MiB (blocks) + 154.7 MiB (scratch space shared across 2 tasks(s)) = 319.6 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:40:05 WARN BlockManager: Persisting block rdd_12_25 to disk instead.
+21/01/31 14:40:34 INFO MemoryStore: Block rdd_12_20 stored as values in memory (estimated size 188.2 MiB, free 13.2 MiB)
+21/01/31 14:40:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:40:34 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:40:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:40:34 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:40:34 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:40:34 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:40:34 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:40:34 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:40:34 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:40:34 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:40:34 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:40:34 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:40:34 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:40:34 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:40:34 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:40:34 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:40:34 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:40:37 INFO MemoryStore: Will not store rdd_12_25
+21/01/31 14:40:37 WARN MemoryStore: Not enough space to cache rdd_12_25 in memory! (computed 35.2 MiB so far)
+21/01/31 14:40:37 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.1 MiB (scratch space shared across 1 tasks(s)) = 356.2 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:40:37 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:40:37 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:40:37 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:40:37 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:40:37 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:40:37 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:40:37 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:40:37 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:40:37 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:40:37 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:40:37 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:40:37 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:40:37 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:40:37 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:40:37 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:40:37 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:40:37 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:40:42 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 42615494
+21/01/31 14:40:43 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000020_21' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000020
+21/01/31 14:40:43 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000020_21: Committed
+21/01/31 14:40:43 INFO Executor: Finished task 20.0 in stage 1.0 (TID 21). 2461 bytes result sent to driver
+21/01/31 14:40:43 INFO CoarseGrainedExecutorBackend: Got assigned task 43
+21/01/31 14:40:43 INFO Executor: Running task 42.0 in stage 1.0 (TID 43)
+21/01/31 14:40:43 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 5637144576-5771362304, partition values: [empty row]
+21/01/31 14:40:45 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 40610475
+21/01/31 14:40:45 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000025_26' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000025
+21/01/31 14:40:45 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000025_26: Committed
+21/01/31 14:40:45 INFO Executor: Finished task 25.0 in stage 1.0 (TID 26). 2461 bytes result sent to driver
+21/01/31 14:40:45 INFO CoarseGrainedExecutorBackend: Got assigned task 48
+21/01/31 14:40:45 INFO Executor: Running task 47.0 in stage 1.0 (TID 48)
+21/01/31 14:40:46 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 6308233216-6442450944, partition values: [empty row]
+21/01/31 14:40:50 INFO MemoryStore: Will not store rdd_12_42
+21/01/31 14:40:50 WARN MemoryStore: Not enough space to cache rdd_12_42 in memory! (computed 35.9 MiB so far)
+21/01/31 14:40:50 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 6.3 MiB (scratch space shared across 2 tasks(s)) = 359.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:40:50 WARN BlockManager: Persisting block rdd_12_42 to disk instead.
+21/01/31 14:40:53 INFO MemoryStore: Will not store rdd_12_47
+21/01/31 14:40:53 WARN MemoryStore: Not enough space to cache rdd_12_47 in memory! (computed 36.0 MiB so far)
+21/01/31 14:40:53 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 356.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:40:53 WARN BlockManager: Persisting block rdd_12_47 to disk instead.
+21/01/31 14:41:19 INFO MemoryStore: Will not store rdd_12_42
+21/01/31 14:41:19 WARN MemoryStore: Not enough space to cache rdd_12_42 in memory! (computed 35.9 MiB so far)
+21/01/31 14:41:19 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.1 MiB (scratch space shared across 1 tasks(s)) = 356.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:41:19 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:41:19 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:41:19 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:41:19 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:41:19 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:41:19 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:41:19 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:41:19 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:41:19 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:41:19 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:41:19 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:41:19 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:41:19 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:41:19 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:41:19 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:41:19 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:41:19 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:41:20 INFO MemoryStore: Will not store rdd_12_47
+21/01/31 14:41:20 WARN MemoryStore: Not enough space to cache rdd_12_47 in memory! (computed 36.0 MiB so far)
+21/01/31 14:41:20 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 356.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:41:20 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:41:20 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:41:20 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:41:20 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:41:20 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:41:20 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:41:20 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:41:20 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:41:20 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:41:20 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:41:20 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:41:20 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:41:20 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:41:20 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:41:20 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:41:20 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:41:20 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:41:27 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 38127032
+21/01/31 14:41:27 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000042_43' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000042
+21/01/31 14:41:27 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000042_43: Committed
+21/01/31 14:41:27 INFO Executor: Finished task 42.0 in stage 1.0 (TID 43). 2461 bytes result sent to driver
+21/01/31 14:41:27 INFO CoarseGrainedExecutorBackend: Got assigned task 68
+21/01/31 14:41:27 INFO Executor: Running task 67.0 in stage 1.0 (TID 68)
+21/01/31 14:41:27 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 8992587776-9126805504, partition values: [empty row]
+21/01/31 14:41:29 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 38337680
+21/01/31 14:41:29 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000047_48' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000047
+21/01/31 14:41:29 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000047_48: Committed
+21/01/31 14:41:29 INFO Executor: Finished task 47.0 in stage 1.0 (TID 48). 2461 bytes result sent to driver
+21/01/31 14:41:29 INFO CoarseGrainedExecutorBackend: Got assigned task 72
+21/01/31 14:41:29 INFO Executor: Running task 71.0 in stage 1.0 (TID 72)
+21/01/31 14:41:29 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 9529458688-9663676416, partition values: [empty row]
+21/01/31 14:41:35 INFO MemoryStore: Will not store rdd_12_67
+21/01/31 14:41:35 WARN MemoryStore: Not enough space to cache rdd_12_67 in memory! (computed 35.1 MiB so far)
+21/01/31 14:41:35 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 6.4 MiB (scratch space shared across 2 tasks(s)) = 359.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:41:35 WARN BlockManager: Persisting block rdd_12_67 to disk instead.
+21/01/31 14:41:36 INFO MemoryStore: Will not store rdd_12_71
+21/01/31 14:41:36 WARN MemoryStore: Not enough space to cache rdd_12_71 in memory! (computed 35.7 MiB so far)
+21/01/31 14:41:36 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.1 MiB (scratch space shared across 1 tasks(s)) = 356.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:41:36 WARN BlockManager: Persisting block rdd_12_71 to disk instead.
+21/01/31 14:42:04 INFO MemoryStore: Will not store rdd_12_67
+21/01/31 14:42:04 WARN MemoryStore: Not enough space to cache rdd_12_67 in memory! (computed 35.1 MiB so far)
+21/01/31 14:42:04 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 356.4 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:42:04 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:42:04 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:42:04 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:42:04 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:42:04 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:42:04 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:42:04 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:42:04 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:42:04 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:42:04 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:42:04 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:42:04 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:42:04 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:42:04 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:42:04 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:42:04 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:42:04 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:42:05 INFO MemoryStore: Will not store rdd_12_71
+21/01/31 14:42:05 WARN MemoryStore: Not enough space to cache rdd_12_71 in memory! (computed 35.7 MiB so far)
+21/01/31 14:42:05 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.1 MiB (scratch space shared across 1 tasks(s)) = 356.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:42:05 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:42:05 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:42:05 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:42:05 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:42:05 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:42:05 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:42:05 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:42:05 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:42:05 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:42:05 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:42:05 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:42:05 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:42:05 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:42:05 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:42:05 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:42:05 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:42:05 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:42:10 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 36902869
+21/01/31 14:42:11 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000067_68' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000067
+21/01/31 14:42:11 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000067_68: Committed
+21/01/31 14:42:11 INFO Executor: Finished task 67.0 in stage 1.0 (TID 68). 2461 bytes result sent to driver
+21/01/31 14:42:11 INFO CoarseGrainedExecutorBackend: Got assigned task 90
+21/01/31 14:42:11 INFO Executor: Running task 89.0 in stage 1.0 (TID 90)
+21/01/31 14:42:11 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 11945377792-12079595520, partition values: [empty row]
+21/01/31 14:42:12 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 36880359
+21/01/31 14:42:12 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000071_72' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000071
+21/01/31 14:42:12 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000071_72: Committed
+21/01/31 14:42:12 INFO Executor: Finished task 71.0 in stage 1.0 (TID 72). 2461 bytes result sent to driver
+21/01/31 14:42:12 INFO CoarseGrainedExecutorBackend: Got assigned task 93
+21/01/31 14:42:12 INFO Executor: Running task 92.0 in stage 1.0 (TID 93)
+21/01/31 14:42:12 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 12348030976-12482248704, partition values: [empty row]
+21/01/31 14:42:18 INFO MemoryStore: Will not store rdd_12_89
+21/01/31 14:42:18 WARN MemoryStore: Not enough space to cache rdd_12_89 in memory! (computed 35.9 MiB so far)
+21/01/31 14:42:18 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 6.4 MiB (scratch space shared across 2 tasks(s)) = 359.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:42:18 WARN BlockManager: Persisting block rdd_12_89 to disk instead.
+21/01/31 14:42:19 INFO MemoryStore: Will not store rdd_12_92
+21/01/31 14:42:19 WARN MemoryStore: Not enough space to cache rdd_12_92 in memory! (computed 34.7 MiB so far)
+21/01/31 14:42:19 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 356.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:42:19 WARN BlockManager: Persisting block rdd_12_92 to disk instead.
+21/01/31 14:42:44 INFO MemoryStore: Will not store rdd_12_89
+21/01/31 14:42:44 WARN MemoryStore: Not enough space to cache rdd_12_89 in memory! (computed 35.9 MiB so far)
+21/01/31 14:42:44 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 356.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:42:44 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:42:44 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:42:44 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:42:44 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:42:44 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:42:44 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:42:44 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:42:44 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:42:44 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:42:44 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:42:44 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:42:44 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:42:44 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:42:44 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:42:44 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:42:44 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:42:44 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:42:46 INFO MemoryStore: Will not store rdd_12_92
+21/01/31 14:42:46 WARN MemoryStore: Not enough space to cache rdd_12_92 in memory! (computed 34.7 MiB so far)
+21/01/31 14:42:46 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 356.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:42:46 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:42:46 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:42:46 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:42:46 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:42:46 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:42:46 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:42:46 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:42:46 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:42:46 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:42:46 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:42:46 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:42:46 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:42:46 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:42:46 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:42:46 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:42:46 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:42:46 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:42:51 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 35842362
+21/01/31 14:42:51 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000089_90' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000089
+21/01/31 14:42:51 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000089_90: Committed
+21/01/31 14:42:51 INFO Executor: Finished task 89.0 in stage 1.0 (TID 90). 2461 bytes result sent to driver
+21/01/31 14:42:51 INFO CoarseGrainedExecutorBackend: Got assigned task 112
+21/01/31 14:42:51 INFO Executor: Running task 111.0 in stage 1.0 (TID 112)
+21/01/31 14:42:51 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 14898167808-15032385536, partition values: [empty row]
+21/01/31 14:42:52 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 35293916
+21/01/31 14:42:53 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000092_93' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000092
+21/01/31 14:42:53 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000092_93: Committed
+21/01/31 14:42:53 INFO Executor: Finished task 92.0 in stage 1.0 (TID 93). 2461 bytes result sent to driver
+21/01/31 14:42:53 INFO CoarseGrainedExecutorBackend: Got assigned task 115
+21/01/31 14:42:53 INFO Executor: Running task 114.0 in stage 1.0 (TID 115)
+21/01/31 14:42:53 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 15300820992-15435038720, partition values: [empty row]
+21/01/31 14:43:00 INFO MemoryStore: Will not store rdd_12_111
+21/01/31 14:43:00 WARN MemoryStore: Not enough space to cache rdd_12_111 in memory! (computed 35.2 MiB so far)
+21/01/31 14:43:00 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 5.9 MiB (scratch space shared across 2 tasks(s)) = 359.0 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:43:00 WARN BlockManager: Persisting block rdd_12_111 to disk instead.
+21/01/31 14:43:02 INFO MemoryStore: Will not store rdd_12_114
+21/01/31 14:43:02 WARN MemoryStore: Not enough space to cache rdd_12_114 in memory! (computed 35.8 MiB so far)
+21/01/31 14:43:02 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.0 MiB (scratch space shared across 1 tasks(s)) = 356.2 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:43:02 WARN BlockManager: Persisting block rdd_12_114 to disk instead.
+21/01/31 14:43:29 INFO MemoryStore: Will not store rdd_12_111
+21/01/31 14:43:29 WARN MemoryStore: Not enough space to cache rdd_12_111 in memory! (computed 35.2 MiB so far)
+21/01/31 14:43:29 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 2.9 MiB (scratch space shared across 1 tasks(s)) = 356.0 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:43:29 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:43:29 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:43:29 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:43:29 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:43:29 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:43:29 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:43:29 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:43:29 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:43:29 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:43:29 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:43:29 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:43:29 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:43:29 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:43:29 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:43:29 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:43:29 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:43:29 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:43:31 INFO MemoryStore: Will not store rdd_12_114
+21/01/31 14:43:31 WARN MemoryStore: Not enough space to cache rdd_12_114 in memory! (computed 35.8 MiB so far)
+21/01/31 14:43:31 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 5.9 MiB (scratch space shared across 2 tasks(s)) = 359.0 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:43:31 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:43:31 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:43:31 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:43:31 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:43:31 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:43:31 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:43:31 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:43:31 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:43:31 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:43:31 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:43:31 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:43:31 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:43:31 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:43:31 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:43:31 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:43:31 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:43:31 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:43:37 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 34172326
+21/01/31 14:43:38 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000111_112' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000111
+21/01/31 14:43:38 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000111_112: Committed
+21/01/31 14:43:38 INFO Executor: Finished task 111.0 in stage 1.0 (TID 112). 2461 bytes result sent to driver
+21/01/31 14:43:38 INFO CoarseGrainedExecutorBackend: Got assigned task 133
+21/01/31 14:43:38 INFO Executor: Running task 132.0 in stage 1.0 (TID 133)
+21/01/31 14:43:38 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 17716740096-17850957824, partition values: [empty row]
+21/01/31 14:43:39 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 34989216
+21/01/31 14:43:39 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000114_115' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000114
+21/01/31 14:43:39 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000114_115: Committed
+21/01/31 14:43:39 INFO Executor: Finished task 114.0 in stage 1.0 (TID 115). 2461 bytes result sent to driver
+21/01/31 14:43:39 INFO CoarseGrainedExecutorBackend: Got assigned task 135
+21/01/31 14:43:39 INFO Executor: Running task 134.0 in stage 1.0 (TID 135)
+21/01/31 14:43:39 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 17985175552-18119393280, partition values: [empty row]
+21/01/31 14:43:45 INFO MemoryStore: Will not store rdd_12_132
+21/01/31 14:43:45 WARN MemoryStore: Not enough space to cache rdd_12_132 in memory! (computed 36.1 MiB so far)
+21/01/31 14:43:45 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 6.4 MiB (scratch space shared across 2 tasks(s)) = 359.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:43:45 WARN BlockManager: Persisting block rdd_12_132 to disk instead.
+21/01/31 14:43:46 INFO MemoryStore: Will not store rdd_12_134
+21/01/31 14:43:46 WARN MemoryStore: Not enough space to cache rdd_12_134 in memory! (computed 35.2 MiB so far)
+21/01/31 14:43:46 INFO MemoryStore: Memory use = 353.1 MiB (blocks) + 3.0 MiB (scratch space shared across 1 tasks(s)) = 356.2 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:43:46 WARN BlockManager: Persisting block rdd_12_134 to disk instead.
+21/01/31 14:45:29 WARN BlockManager: Putting block rdd_12_132 failed due to exception java.io.IOException: No space left on device.
+21/01/31 14:45:29 WARN BlockManager: Block rdd_12_132 could not be removed as it was not found on disk or in memory
+21/01/31 14:45:31 WARN Executor: Issue communicating with driver in heartbeater
+org.apache.spark.rpc.RpcTimeoutException: Cannot receive any reply from 192.168.11.7:57817 in 10000 milliseconds. This timeout is controlled by spark.executor.heartbeatInterval
+	at org.apache.spark.rpc.RpcTimeout.org$apache$spark$rpc$RpcTimeout$$createRpcTimeoutException(RpcTimeout.scala:47)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:62)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:58)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.util.Failure.recover(Try.scala:234)
+	at scala.concurrent.Future.$anonfun$recover$1(Future.scala:395)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at org.apache.spark.util.ThreadUtils$$anon$1.execute(ThreadUtils.scala:100)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at scala.concurrent.BatchingExecutor$Batch.processBatch$1(BatchingExecutor.scala:67)
+	at scala.concurrent.BatchingExecutor$Batch.$anonfun$run$1(BatchingExecutor.scala:82)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:59)
+	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:875)
+	at scala.concurrent.BatchingExecutor.execute(BatchingExecutor.scala:110)
+	at scala.concurrent.BatchingExecutor.execute$(BatchingExecutor.scala:107)
+	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:873)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.tryFailure(Promise.scala:112)
+	at scala.concurrent.Promise.tryFailure$(Promise.scala:112)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryFailure(Promise.scala:187)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.org$apache$spark$rpc$netty$NettyRpcEnv$$onFailure$1(NettyRpcEnv.scala:214)
+	at org.apache.spark.rpc.netty.NettyRpcEnv$$anon$1.run(NettyRpcEnv.scala:257)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.TimeoutException: Cannot receive any reply from 192.168.11.7:57817 in 10000 milliseconds
+	at org.apache.spark.rpc.netty.NettyRpcEnv$$anon$1.run(NettyRpcEnv.scala:258)
+	... 7 more
+21/01/31 14:45:38 WARN TransportResponseHandler: Ignoring response for RPC 5447650807299265379 from /192.168.11.7:57817 (81 bytes) since it is not outstanding
+21/01/31 14:45:38 INFO Executor: Told to re-register on heartbeat
+21/01/31 14:45:38 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+21/01/31 14:45:38 INFO BlockManager: BlockManager BlockManagerId(7, 192.168.11.7, 57881, None) re-registering with master
+21/01/31 14:45:38 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(7, 192.168.11.7, 57881, None)
+21/01/31 14:45:38 ERROR Executor: Exception in task 132.0 in stage 1.0 (TID 133)
+java.io.IOException: No space left on device
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:60)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:211)
+	at org.apache.spark.storage.CountingWritableChannel.write(DiskStore.scala:339)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78)
+	at java.nio.channels.Channels.writeFully(Channels.java:101)
+	at java.nio.channels.Channels.access$000(Channels.java:61)
+	at java.nio.channels.Channels$1.write(Channels.java:174)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.drain(ObjectOutputStream.java:1877)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.write(ObjectOutputStream.java:1848)
+	at java.io.ObjectOutputStream.writeArray(ObjectOutputStream.java:1334)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1174)
+	at java.io.ObjectOutputStream.writeArray(ObjectOutputStream.java:1378)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1174)
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1509)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.apache.spark.serializer.JavaSerializationStream.writeObject(JavaSerializer.scala:44)
+	at org.apache.spark.serializer.SerializationStream.writeAll(Serializer.scala:140)
+	at org.apache.spark.serializer.SerializerManager.dataSerializeStream(SerializerManager.scala:176)
+	at org.apache.spark.storage.BlockManager.$anonfun$doPutIterator$3(BlockManager.scala:1380)
+	at org.apache.spark.storage.BlockManager.$anonfun$doPutIterator$3$adapted(BlockManager.scala:1378)
+	at org.apache.spark.storage.DiskStore.put(DiskStore.scala:70)
+	at org.apache.spark.storage.BlockManager.$anonfun$doPutIterator$1(BlockManager.scala:1378)
+	at org.apache.spark.storage.BlockManager.org$apache$spark$storage$BlockManager$$doPut(BlockManager.scala:1298)
+	at org.apache.spark.storage.BlockManager.doPutIterator(BlockManager.scala:1362)
+	at org.apache.spark.storage.BlockManager.getOrElseUpdate(BlockManager.scala:1186)
+	at org.apache.spark.rdd.RDD.getOrCompute(RDD.scala:360)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:311)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/01/31 14:45:38 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(7, 192.168.11.7, 57881, None)
+21/01/31 14:45:38 INFO BlockManager: Reporting 19 blocks to the master.
+21/01/31 14:45:38 ERROR BlockManager: Failed to report rdd_12_25 to master; giving up.

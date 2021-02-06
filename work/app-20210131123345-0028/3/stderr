@@ -1,0 +1,241 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=59391" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:59391" "--executor-id" "3" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131123345-0028" "--worker-url" "spark://Worker@192.168.11.7:63901"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/31 12:33:47 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 26187@ST000000035
+21/01/31 12:33:47 INFO SignalUtils: Registered signal handler for TERM
+21/01/31 12:33:47 INFO SignalUtils: Registered signal handler for HUP
+21/01/31 12:33:47 INFO SignalUtils: Registered signal handler for INT
+21/01/31 12:33:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/31 12:33:48 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 12:33:48 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 12:33:48 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 12:33:48 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 12:33:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 12:33:48 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59391 after 112 ms (0 ms spent in bootstraps)
+21/01/31 12:33:49 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 12:33:49 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 12:33:49 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 12:33:49 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 12:33:49 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 12:33:49 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59391 after 2 ms (0 ms spent in bootstraps)
+21/01/31 12:33:49 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-102929ca-e5d8-4f9d-8f5f-261f7d02820c/executor-44c37901-a20a-4988-801a-0898515ba8d7/blockmgr-37170583-d890-4e21-957a-d22dac847fb8
+21/01/31 12:33:49 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/01/31 12:33:49 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:59391
+21/01/31 12:33:49 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:63901
+21/01/31 12:33:50 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63901 after 13 ms (0 ms spent in bootstraps)
+21/01/31 12:33:50 INFO ResourceUtils: ==============================================================
+21/01/31 12:33:50 INFO ResourceUtils: Resources for spark.executor:
+
+21/01/31 12:33:50 INFO ResourceUtils: ==============================================================
+21/01/31 12:33:50 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/01/31 12:33:50 INFO Executor: Starting executor ID 3 on host 192.168.11.7
+21/01/31 12:33:50 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59457.
+21/01/31 12:33:50 INFO NettyBlockTransferService: Server created on 192.168.11.7:59457
+21/01/31 12:33:50 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/01/31 12:33:50 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(3, 192.168.11.7, 59457, None)
+21/01/31 12:33:50 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(3, 192.168.11.7, 59457, None)
+21/01/31 12:33:50 INFO BlockManager: Initialized BlockManager: BlockManagerId(3, 192.168.11.7, 59457, None)
+21/01/31 12:33:54 INFO CoarseGrainedExecutorBackend: Got assigned task 4
+21/01/31 12:33:54 INFO CoarseGrainedExecutorBackend: Got assigned task 14
+21/01/31 12:33:54 INFO Executor: Running task 13.0 in stage 1.0 (TID 14)
+21/01/31 12:33:54 INFO Executor: Running task 3.0 in stage 1.0 (TID 4)
+21/01/31 12:33:54 INFO Executor: Fetching spark://192.168.11.7:59391/jars/simple-project_2.12-1.0.jar with timestamp 1612064024967
+21/01/31 12:33:54 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59391 after 4 ms (0 ms spent in bootstraps)
+21/01/31 12:33:54 INFO Utils: Fetching spark://192.168.11.7:59391/jars/simple-project_2.12-1.0.jar to /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-102929ca-e5d8-4f9d-8f5f-261f7d02820c/executor-44c37901-a20a-4988-801a-0898515ba8d7/spark-4fb35f6e-0e97-4695-87f5-4913ff69a02d/fetchFileTemp2504503374220054654.tmp
+21/01/31 12:33:54 INFO Utils: Copying /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-102929ca-e5d8-4f9d-8f5f-261f7d02820c/executor-44c37901-a20a-4988-801a-0898515ba8d7/spark-4fb35f6e-0e97-4695-87f5-4913ff69a02d/764906791612064024967_cache to /Users/kinsho/workspace/spark-3.0.1/work/app-20210131123345-0028/3/./simple-project_2.12-1.0.jar
+21/01/31 12:33:54 INFO Executor: Adding file:/Users/kinsho/workspace/spark-3.0.1/work/app-20210131123345-0028/3/./simple-project_2.12-1.0.jar to class loader
+21/01/31 12:33:54 INFO TorrentBroadcast: Started reading broadcast variable 4 with 1 pieces (estimated total size 4.0 MiB)
+21/01/31 12:33:54 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59456 after 2 ms (0 ms spent in bootstraps)
+21/01/31 12:33:54 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 18.1 KiB, free 366.3 MiB)
+21/01/31 12:33:54 INFO TorrentBroadcast: Reading broadcast variable 4 took 261 ms
+21/01/31 12:33:55 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 43.3 KiB, free 366.2 MiB)
+21/01/31 12:33:56 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 402653184-536870912, partition values: [empty row]
+21/01/31 12:33:56 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 1744830464-1879048192, partition values: [empty row]
+21/01/31 12:33:58 INFO CodeGenerator: Code generated in 1009.217289 ms
+21/01/31 12:33:58 INFO TorrentBroadcast: Started reading broadcast variable 3 with 1 pieces (estimated total size 4.0 MiB)
+21/01/31 12:33:58 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59397 after 2 ms (0 ms spent in bootstraps)
+21/01/31 12:33:58 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 24.0 KiB, free 366.2 MiB)
+21/01/31 12:33:58 INFO TorrentBroadcast: Reading broadcast variable 3 took 13 ms
+21/01/31 12:33:58 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 336.8 KiB, free 365.9 MiB)
+21/01/31 12:34:34 INFO MemoryStore: Will not store rdd_12_13
+21/01/31 12:34:34 WARN MemoryStore: Not enough space to cache rdd_12_13 in memory! (computed 135.6 MiB so far)
+21/01/31 12:34:34 INFO MemoryStore: Memory use = 422.1 KiB (blocks) + 310.9 MiB (scratch space shared across 2 tasks(s)) = 311.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:34:34 WARN BlockManager: Persisting block rdd_12_13 to disk instead.
+21/01/31 12:34:40 INFO MemoryStore: Block rdd_12_3 stored as values in memory (estimated size 163.6 MiB, free 202.3 MiB)
+21/01/31 12:34:40 INFO CodeGenerator: Code generated in 9.007864 ms
+21/01/31 12:34:40 INFO CodeGenerator: Code generated in 79.710445 ms
+21/01/31 12:34:40 INFO CodeGenerator: Code generated in 23.372403 ms
+21/01/31 12:34:40 INFO Executor: Finished task 3.0 in stage 1.0 (TID 4). 2151 bytes result sent to driver
+21/01/31 12:34:40 INFO CoarseGrainedExecutorBackend: Got assigned task 23
+21/01/31 12:34:40 INFO Executor: Running task 22.0 in stage 1.0 (TID 23)
+21/01/31 12:34:41 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 2952790016-3087007744, partition values: [empty row]
+21/01/31 12:34:47 INFO MemoryStore: Will not store rdd_12_13
+21/01/31 12:34:47 WARN MemoryStore: Not enough space to cache rdd_12_13 in memory! (computed 135.6 MiB so far)
+21/01/31 12:34:47 INFO MemoryStore: Memory use = 164.0 MiB (blocks) + 106.5 MiB (scratch space shared across 2 tasks(s)) = 270.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:34:48 INFO Executor: Finished task 13.0 in stage 1.0 (TID 14). 2108 bytes result sent to driver
+21/01/31 12:34:48 INFO CoarseGrainedExecutorBackend: Got assigned task 33
+21/01/31 12:34:48 INFO Executor: Running task 32.0 in stage 1.0 (TID 33)
+21/01/31 12:34:48 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 4294967296-4429185024, partition values: [empty row]
+21/01/31 12:35:01 INFO MemoryStore: Will not store rdd_12_32
+21/01/31 12:35:01 WARN MemoryStore: Not enough space to cache rdd_12_32 in memory! (computed 68.6 MiB so far)
+21/01/31 12:35:01 INFO MemoryStore: Memory use = 164.0 MiB (blocks) + 155.6 MiB (scratch space shared across 2 tasks(s)) = 319.6 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:35:01 WARN BlockManager: Persisting block rdd_12_32 to disk instead.
+21/01/31 12:35:08 INFO MemoryStore: 3 blocks selected for dropping (398.1 KiB bytes)
+21/01/31 12:35:08 INFO BlockManager: Dropping block broadcast_4_piece0 from memory
+21/01/31 12:35:08 INFO BlockManager: Writing block broadcast_4_piece0 to disk
+21/01/31 12:35:08 INFO BlockManager: Dropping block broadcast_4 from memory
+21/01/31 12:35:08 INFO BlockManager: Writing block broadcast_4 to disk
+21/01/31 12:35:08 INFO BlockManager: Dropping block broadcast_3 from memory
+21/01/31 12:35:08 INFO BlockManager: Writing block broadcast_3 to disk
+21/01/31 12:35:08 INFO MemoryStore: After dropping 3 blocks, free memory is 202.7 MiB
+21/01/31 12:35:18 INFO MemoryStore: Block rdd_12_22 stored as values in memory (estimated size 184.6 MiB, free 18.0 MiB)
+21/01/31 12:35:18 INFO Executor: Finished task 22.0 in stage 1.0 (TID 23). 2108 bytes result sent to driver
+21/01/31 12:35:18 INFO CoarseGrainedExecutorBackend: Got assigned task 45
+21/01/31 12:35:18 INFO Executor: Running task 44.0 in stage 1.0 (TID 45)
+21/01/31 12:35:18 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 5905580032-6039797760, partition values: [empty row]
+21/01/31 12:35:23 INFO MemoryStore: Will not store rdd_12_32
+21/01/31 12:35:23 WARN MemoryStore: Not enough space to cache rdd_12_32 in memory! (computed 35.5 MiB so far)
+21/01/31 12:35:23 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.3 MiB (scratch space shared across 2 tasks(s)) = 354.6 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:35:24 INFO Executor: Finished task 32.0 in stage 1.0 (TID 33). 2108 bytes result sent to driver
+21/01/31 12:35:24 INFO CoarseGrainedExecutorBackend: Got assigned task 53
+21/01/31 12:35:24 INFO Executor: Running task 52.0 in stage 1.0 (TID 53)
+21/01/31 12:35:24 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 6979321856-7113539584, partition values: [empty row]
+21/01/31 12:35:27 INFO MemoryStore: Will not store rdd_12_44
+21/01/31 12:35:27 WARN MemoryStore: Not enough space to cache rdd_12_44 in memory! (computed 36.3 MiB so far)
+21/01/31 12:35:27 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.4 MiB (scratch space shared across 2 tasks(s)) = 354.7 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:35:27 WARN BlockManager: Persisting block rdd_12_44 to disk instead.
+21/01/31 12:35:32 INFO MemoryStore: Will not store rdd_12_52
+21/01/31 12:35:32 WARN MemoryStore: Not enough space to cache rdd_12_52 in memory! (computed 36.1 MiB so far)
+21/01/31 12:35:32 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 351.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:35:32 WARN BlockManager: Persisting block rdd_12_52 to disk instead.
+21/01/31 12:35:55 INFO MemoryStore: Will not store rdd_12_44
+21/01/31 12:35:55 WARN MemoryStore: Not enough space to cache rdd_12_44 in memory! (computed 36.3 MiB so far)
+21/01/31 12:35:55 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 351.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:35:55 INFO Executor: Finished task 44.0 in stage 1.0 (TID 45). 2108 bytes result sent to driver
+21/01/31 12:35:55 INFO CoarseGrainedExecutorBackend: Got assigned task 65
+21/01/31 12:35:55 INFO Executor: Running task 64.0 in stage 1.0 (TID 65)
+21/01/31 12:35:55 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 8589934592-8724152320, partition values: [empty row]
+21/01/31 12:35:59 INFO MemoryStore: Will not store rdd_12_52
+21/01/31 12:35:59 WARN MemoryStore: Not enough space to cache rdd_12_52 in memory! (computed 36.1 MiB so far)
+21/01/31 12:35:59 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.4 MiB (scratch space shared across 2 tasks(s)) = 354.7 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:36:00 INFO Executor: Finished task 52.0 in stage 1.0 (TID 53). 2108 bytes result sent to driver
+21/01/31 12:36:00 INFO CoarseGrainedExecutorBackend: Got assigned task 74
+21/01/31 12:36:00 INFO Executor: Running task 73.0 in stage 1.0 (TID 74)
+21/01/31 12:36:00 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 9797894144-9932111872, partition values: [empty row]
+21/01/31 12:36:02 INFO MemoryStore: Will not store rdd_12_64
+21/01/31 12:36:02 WARN MemoryStore: Not enough space to cache rdd_12_64 in memory! (computed 35.8 MiB so far)
+21/01/31 12:36:02 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.4 MiB (scratch space shared across 2 tasks(s)) = 354.6 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:36:02 WARN BlockManager: Persisting block rdd_12_64 to disk instead.
+21/01/31 12:36:07 INFO MemoryStore: Will not store rdd_12_73
+21/01/31 12:36:07 WARN MemoryStore: Not enough space to cache rdd_12_73 in memory! (computed 36.2 MiB so far)
+21/01/31 12:36:07 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 351.4 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:36:07 WARN BlockManager: Persisting block rdd_12_73 to disk instead.
+21/01/31 12:36:28 INFO MemoryStore: Will not store rdd_12_64
+21/01/31 12:36:28 WARN MemoryStore: Not enough space to cache rdd_12_64 in memory! (computed 35.8 MiB so far)
+21/01/31 12:36:28 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 351.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:36:28 INFO Executor: Finished task 64.0 in stage 1.0 (TID 65). 2108 bytes result sent to driver
+21/01/31 12:36:28 INFO CoarseGrainedExecutorBackend: Got assigned task 85
+21/01/31 12:36:28 INFO Executor: Running task 84.0 in stage 1.0 (TID 85)
+21/01/31 12:36:28 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 11274289152-11408506880, partition values: [empty row]
+21/01/31 12:36:33 INFO MemoryStore: Will not store rdd_12_73
+21/01/31 12:36:33 WARN MemoryStore: Not enough space to cache rdd_12_73 in memory! (computed 36.2 MiB so far)
+21/01/31 12:36:33 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.3 MiB (scratch space shared across 2 tasks(s)) = 354.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:36:33 INFO Executor: Finished task 73.0 in stage 1.0 (TID 74). 2108 bytes result sent to driver
+21/01/31 12:36:33 INFO CoarseGrainedExecutorBackend: Got assigned task 96
+21/01/31 12:36:33 INFO Executor: Running task 95.0 in stage 1.0 (TID 96)
+21/01/31 12:36:33 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 12750684160-12884901888, partition values: [empty row]
+21/01/31 12:36:35 INFO MemoryStore: Will not store rdd_12_84
+21/01/31 12:36:35 WARN MemoryStore: Not enough space to cache rdd_12_84 in memory! (computed 34.9 MiB so far)
+21/01/31 12:36:35 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.4 MiB (scratch space shared across 2 tasks(s)) = 354.7 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:36:35 WARN BlockManager: Persisting block rdd_12_84 to disk instead.
+21/01/31 12:36:40 INFO MemoryStore: Will not store rdd_12_95
+21/01/31 12:36:40 WARN MemoryStore: Not enough space to cache rdd_12_95 in memory! (computed 35.2 MiB so far)
+21/01/31 12:36:40 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.3 MiB (scratch space shared across 1 tasks(s)) = 351.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:36:40 WARN BlockManager: Persisting block rdd_12_95 to disk instead.
+21/01/31 12:36:59 INFO MemoryStore: Will not store rdd_12_84
+21/01/31 12:36:59 WARN MemoryStore: Not enough space to cache rdd_12_84 in memory! (computed 34.9 MiB so far)
+21/01/31 12:36:59 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.1 MiB (scratch space shared across 1 tasks(s)) = 351.4 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:37:00 INFO Executor: Finished task 84.0 in stage 1.0 (TID 85). 2108 bytes result sent to driver
+21/01/31 12:37:00 INFO CoarseGrainedExecutorBackend: Got assigned task 106
+21/01/31 12:37:00 INFO Executor: Running task 105.0 in stage 1.0 (TID 106)
+21/01/31 12:37:00 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 14092861440-14227079168, partition values: [empty row]
+21/01/31 12:37:05 INFO MemoryStore: Will not store rdd_12_95
+21/01/31 12:37:05 WARN MemoryStore: Not enough space to cache rdd_12_95 in memory! (computed 35.2 MiB so far)
+21/01/31 12:37:05 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.5 MiB (scratch space shared across 2 tasks(s)) = 354.7 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:37:05 INFO Executor: Finished task 95.0 in stage 1.0 (TID 96). 2108 bytes result sent to driver
+21/01/31 12:37:05 INFO CoarseGrainedExecutorBackend: Got assigned task 117
+21/01/31 12:37:05 INFO Executor: Running task 116.0 in stage 1.0 (TID 117)
+21/01/31 12:37:05 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 15569256448-15703474176, partition values: [empty row]
+21/01/31 12:37:07 INFO MemoryStore: Will not store rdd_12_105
+21/01/31 12:37:07 WARN MemoryStore: Not enough space to cache rdd_12_105 in memory! (computed 35.4 MiB so far)
+21/01/31 12:37:07 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.3 MiB (scratch space shared across 2 tasks(s)) = 354.6 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:37:07 WARN BlockManager: Persisting block rdd_12_105 to disk instead.
+21/01/31 12:37:12 INFO MemoryStore: Will not store rdd_12_116
+21/01/31 12:37:12 WARN MemoryStore: Not enough space to cache rdd_12_116 in memory! (computed 35.1 MiB so far)
+21/01/31 12:37:12 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.1 MiB (scratch space shared across 1 tasks(s)) = 351.4 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:37:12 WARN BlockManager: Persisting block rdd_12_116 to disk instead.
+21/01/31 12:37:30 INFO MemoryStore: Will not store rdd_12_105
+21/01/31 12:37:30 WARN MemoryStore: Not enough space to cache rdd_12_105 in memory! (computed 35.4 MiB so far)
+21/01/31 12:37:30 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 351.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:37:31 INFO Executor: Finished task 105.0 in stage 1.0 (TID 106). 2108 bytes result sent to driver
+21/01/31 12:37:31 INFO CoarseGrainedExecutorBackend: Got assigned task 127
+21/01/31 12:37:31 INFO Executor: Running task 126.0 in stage 1.0 (TID 127)
+21/01/31 12:37:31 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 16911433728-17045651456, partition values: [empty row]
+21/01/31 12:37:36 INFO MemoryStore: Will not store rdd_12_116
+21/01/31 12:37:36 WARN MemoryStore: Not enough space to cache rdd_12_116 in memory! (computed 35.1 MiB so far)
+21/01/31 12:37:36 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.1 MiB (scratch space shared across 2 tasks(s)) = 354.4 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:37:36 INFO Executor: Finished task 116.0 in stage 1.0 (TID 117). 2108 bytes result sent to driver
+21/01/31 12:37:36 INFO CoarseGrainedExecutorBackend: Got assigned task 137
+21/01/31 12:37:36 INFO Executor: Running task 136.0 in stage 1.0 (TID 137)
+21/01/31 12:37:36 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 18253611008-18387828736, partition values: [empty row]
+21/01/31 12:37:38 INFO MemoryStore: Will not store rdd_12_126
+21/01/31 12:37:38 WARN MemoryStore: Not enough space to cache rdd_12_126 in memory! (computed 35.8 MiB so far)
+21/01/31 12:37:38 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.3 MiB (scratch space shared across 2 tasks(s)) = 354.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:37:38 WARN BlockManager: Persisting block rdd_12_126 to disk instead.
+21/01/31 12:37:43 INFO MemoryStore: Will not store rdd_12_136
+21/01/31 12:37:43 WARN MemoryStore: Not enough space to cache rdd_12_136 in memory! (computed 36.3 MiB so far)
+21/01/31 12:37:43 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 351.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:37:43 WARN BlockManager: Persisting block rdd_12_136 to disk instead.
+21/01/31 12:38:02 INFO MemoryStore: Will not store rdd_12_126
+21/01/31 12:38:02 WARN MemoryStore: Not enough space to cache rdd_12_126 in memory! (computed 35.8 MiB so far)
+21/01/31 12:38:02 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.1 MiB (scratch space shared across 1 tasks(s)) = 351.3 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:38:02 INFO Executor: Finished task 126.0 in stage 1.0 (TID 127). 2108 bytes result sent to driver
+21/01/31 12:38:02 INFO CoarseGrainedExecutorBackend: Got assigned task 148
+21/01/31 12:38:02 INFO Executor: Running task 147.0 in stage 1.0 (TID 148)
+21/01/31 12:38:02 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 19730006016-19864223744, partition values: [empty row]
+21/01/31 12:38:07 INFO MemoryStore: Will not store rdd_12_136
+21/01/31 12:38:07 WARN MemoryStore: Not enough space to cache rdd_12_136 in memory! (computed 36.3 MiB so far)
+21/01/31 12:38:07 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.4 MiB (scratch space shared across 2 tasks(s)) = 354.7 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:38:07 INFO Executor: Finished task 136.0 in stage 1.0 (TID 137). 2108 bytes result sent to driver
+21/01/31 12:38:07 INFO CoarseGrainedExecutorBackend: Got assigned task 157
+21/01/31 12:38:07 INFO Executor: Running task 156.0 in stage 1.0 (TID 157)
+21/01/31 12:38:07 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 20937965568-21072183296, partition values: [empty row]
+21/01/31 12:38:09 INFO MemoryStore: Will not store rdd_12_147
+21/01/31 12:38:09 WARN MemoryStore: Not enough space to cache rdd_12_147 in memory! (computed 36.6 MiB so far)
+21/01/31 12:38:09 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.6 MiB (scratch space shared across 2 tasks(s)) = 354.8 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:38:09 WARN BlockManager: Persisting block rdd_12_147 to disk instead.
+21/01/31 12:38:14 INFO MemoryStore: Will not store rdd_12_156
+21/01/31 12:38:14 WARN MemoryStore: Not enough space to cache rdd_12_156 in memory! (computed 37.1 MiB so far)
+21/01/31 12:38:14 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.3 MiB (scratch space shared across 1 tasks(s)) = 351.6 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:38:14 WARN BlockManager: Persisting block rdd_12_156 to disk instead.
+21/01/31 12:38:32 INFO MemoryStore: Will not store rdd_12_147
+21/01/31 12:38:32 WARN MemoryStore: Not enough space to cache rdd_12_147 in memory! (computed 36.6 MiB so far)
+21/01/31 12:38:32 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.2 MiB (scratch space shared across 1 tasks(s)) = 351.5 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:38:33 INFO Executor: Finished task 147.0 in stage 1.0 (TID 148). 2108 bytes result sent to driver
+21/01/31 12:38:33 INFO CoarseGrainedExecutorBackend: Got assigned task 168
+21/01/31 12:38:33 INFO Executor: Running task 167.0 in stage 1.0 (TID 168)
+21/01/31 12:38:33 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 22414360576-22548578304, partition values: [empty row]
+21/01/31 12:38:37 INFO MemoryStore: Will not store rdd_12_156
+21/01/31 12:38:37 WARN MemoryStore: Not enough space to cache rdd_12_156 in memory! (computed 37.1 MiB so far)
+21/01/31 12:38:37 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 6.7 MiB (scratch space shared across 2 tasks(s)) = 354.9 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:38:38 INFO Executor: Finished task 156.0 in stage 1.0 (TID 157). 2108 bytes result sent to driver
+21/01/31 12:38:40 INFO MemoryStore: Will not store rdd_12_167
+21/01/31 12:38:40 WARN MemoryStore: Not enough space to cache rdd_12_167 in memory! (computed 37.4 MiB so far)
+21/01/31 12:38:40 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.3 MiB (scratch space shared across 1 tasks(s)) = 351.6 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:38:40 WARN BlockManager: Persisting block rdd_12_167 to disk instead.
+21/01/31 12:38:55 INFO MemoryStore: Will not store rdd_12_167
+21/01/31 12:38:55 WARN MemoryStore: Not enough space to cache rdd_12_167 in memory! (computed 37.4 MiB so far)
+21/01/31 12:38:55 INFO MemoryStore: Memory use = 348.3 MiB (blocks) + 3.3 MiB (scratch space shared across 1 tasks(s)) = 351.6 MiB. Storage limit = 366.3 MiB.
+21/01/31 12:38:55 INFO Executor: Finished task 167.0 in stage 1.0 (TID 168). 2108 bytes result sent to driver
+21/01/31 12:38:57 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown

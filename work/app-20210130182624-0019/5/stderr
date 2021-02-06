@@ -1,0 +1,120 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=51577" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:51577" "--executor-id" "5" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130182624-0019" "--worker-url" "spark://Worker@192.168.11.7:63944"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/30 18:26:26 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 19051@ST000000035
+21/01/30 18:26:26 INFO SignalUtils: Registered signal handler for TERM
+21/01/30 18:26:26 INFO SignalUtils: Registered signal handler for HUP
+21/01/30 18:26:26 INFO SignalUtils: Registered signal handler for INT
+21/01/30 18:26:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/30 18:26:27 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:26:27 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:26:27 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:26:27 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:26:27 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:26:28 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:51577 after 108 ms (0 ms spent in bootstraps)
+21/01/30 18:26:28 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:26:28 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:26:28 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:26:28 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:26:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:26:29 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:51577 after 2 ms (0 ms spent in bootstraps)
+21/01/30 18:26:29 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-b22e2ad3-deb4-457b-874f-8b2b4492df5b/executor-116ff476-0b19-447f-b3c9-b5f81c188919/blockmgr-a7dccf3a-ff65-4608-bbb6-4d6ba50e37f4
+21/01/30 18:26:29 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/01/30 18:26:29 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:51577
+21/01/30 18:26:29 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:63944
+21/01/30 18:26:29 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63944 after 4 ms (0 ms spent in bootstraps)
+21/01/30 18:26:29 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.11.7:63944
+21/01/30 18:26:29 INFO ResourceUtils: ==============================================================
+21/01/30 18:26:29 INFO ResourceUtils: Resources for spark.executor:
+
+21/01/30 18:26:29 INFO ResourceUtils: ==============================================================
+21/01/30 18:26:29 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/01/30 18:26:29 INFO Executor: Starting executor ID 5 on host 192.168.11.7
+21/01/30 18:26:30 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51643.
+21/01/30 18:26:30 INFO NettyBlockTransferService: Server created on 192.168.11.7:51643
+21/01/30 18:26:30 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/01/30 18:26:30 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(5, 192.168.11.7, 51643, None)
+21/01/30 18:26:30 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(5, 192.168.11.7, 51643, None)
+21/01/30 18:26:30 INFO BlockManager: Initialized BlockManager: BlockManagerId(5, 192.168.11.7, 51643, None)
+21/01/30 18:26:33 INFO CoarseGrainedExecutorBackend: Got assigned task 9
+21/01/30 18:26:33 INFO CoarseGrainedExecutorBackend: Got assigned task 19
+21/01/30 18:26:33 INFO Executor: Running task 18.0 in stage 1.0 (TID 19)
+21/01/30 18:26:33 INFO Executor: Running task 8.0 in stage 1.0 (TID 9)
+21/01/30 18:26:33 INFO Executor: Fetching spark://192.168.11.7:51577/jars/simple-project_2.12-1.0.jar with timestamp 1611998784627
+21/01/30 18:26:33 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:51577 after 2 ms (0 ms spent in bootstraps)
+21/01/30 18:26:33 INFO Utils: Fetching spark://192.168.11.7:51577/jars/simple-project_2.12-1.0.jar to /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-b22e2ad3-deb4-457b-874f-8b2b4492df5b/executor-116ff476-0b19-447f-b3c9-b5f81c188919/spark-c549dfaf-1567-4b53-b776-d6b36e358923/fetchFileTemp3642209524663947340.tmp
+21/01/30 18:26:33 INFO Utils: Copying /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-b22e2ad3-deb4-457b-874f-8b2b4492df5b/executor-116ff476-0b19-447f-b3c9-b5f81c188919/spark-c549dfaf-1567-4b53-b776-d6b36e358923/-2540119951611998784627_cache to /Users/kinsho/workspace/spark-3.0.1/work/app-20210130182624-0019/5/./simple-project_2.12-1.0.jar
+21/01/30 18:26:33 INFO Executor: Adding file:/Users/kinsho/workspace/spark-3.0.1/work/app-20210130182624-0019/5/./simple-project_2.12-1.0.jar to class loader
+21/01/30 18:26:33 INFO TorrentBroadcast: Started reading broadcast variable 3 with 1 pieces (estimated total size 4.0 MiB)
+21/01/30 18:26:34 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:51632 after 8 ms (0 ms spent in bootstraps)
+21/01/30 18:26:34 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 8.0 KiB, free 366.3 MiB)
+21/01/30 18:26:34 INFO TorrentBroadcast: Reading broadcast variable 3 took 359 ms
+21/01/30 18:26:34 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 16.0 KiB, free 366.3 MiB)
+21/01/30 18:26:40 INFO CodeGenerator: Code generated in 588.266809 ms
+21/01/30 18:26:41 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 2415919104-2550136832, partition values: [empty row]
+21/01/30 18:26:41 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 1073741824-1207959552, partition values: [empty row]
+21/01/30 18:26:41 INFO CodeGenerator: Code generated in 19.008144 ms
+21/01/30 18:26:41 INFO TorrentBroadcast: Started reading broadcast variable 2 with 1 pieces (estimated total size 4.0 MiB)
+21/01/30 18:26:41 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 24.0 KiB, free 366.3 MiB)
+21/01/30 18:26:41 INFO TorrentBroadcast: Reading broadcast variable 2 took 12 ms
+21/01/30 18:26:41 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 336.8 KiB, free 365.9 MiB)
+21/01/30 18:26:48 INFO Executor: Finished task 8.0 in stage 1.0 (TID 9). 1904 bytes result sent to driver
+21/01/30 18:26:48 INFO CoarseGrainedExecutorBackend: Got assigned task 38
+21/01/30 18:26:48 INFO Executor: Running task 37.0 in stage 1.0 (TID 38)
+21/01/30 18:26:48 INFO Executor: Finished task 18.0 in stage 1.0 (TID 19). 1811 bytes result sent to driver
+21/01/30 18:26:48 INFO CoarseGrainedExecutorBackend: Got assigned task 39
+21/01/30 18:26:48 INFO Executor: Running task 38.0 in stage 1.0 (TID 39)
+21/01/30 18:26:48 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 4966055936-5100273664, partition values: [empty row]
+21/01/30 18:26:48 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 5100273664-5234491392, partition values: [empty row]
+21/01/30 18:26:53 INFO Executor: Finished task 38.0 in stage 1.0 (TID 39). 1811 bytes result sent to driver
+21/01/30 18:26:53 INFO CoarseGrainedExecutorBackend: Got assigned task 58
+21/01/30 18:26:53 INFO Executor: Running task 57.0 in stage 1.0 (TID 58)
+21/01/30 18:26:53 INFO Executor: Finished task 37.0 in stage 1.0 (TID 38). 1811 bytes result sent to driver
+21/01/30 18:26:53 INFO CoarseGrainedExecutorBackend: Got assigned task 59
+21/01/30 18:26:53 INFO Executor: Running task 58.0 in stage 1.0 (TID 59)
+21/01/30 18:26:53 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 7650410496-7784628224, partition values: [empty row]
+21/01/30 18:26:53 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 7784628224-7918845952, partition values: [empty row]
+21/01/30 18:26:57 INFO Executor: Finished task 57.0 in stage 1.0 (TID 58). 1811 bytes result sent to driver
+21/01/30 18:26:57 INFO CoarseGrainedExecutorBackend: Got assigned task 78
+21/01/30 18:26:57 INFO Executor: Running task 77.0 in stage 1.0 (TID 78)
+21/01/30 18:26:57 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 10334765056-10468982784, partition values: [empty row]
+21/01/30 18:26:57 INFO Executor: Finished task 58.0 in stage 1.0 (TID 59). 1811 bytes result sent to driver
+21/01/30 18:26:57 INFO CoarseGrainedExecutorBackend: Got assigned task 79
+21/01/30 18:26:57 INFO Executor: Running task 78.0 in stage 1.0 (TID 79)
+21/01/30 18:26:57 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 10468982784-10603200512, partition values: [empty row]
+21/01/30 18:27:02 INFO Executor: Finished task 78.0 in stage 1.0 (TID 79). 1811 bytes result sent to driver
+21/01/30 18:27:02 INFO CoarseGrainedExecutorBackend: Got assigned task 98
+21/01/30 18:27:02 INFO Executor: Running task 97.0 in stage 1.0 (TID 98)
+21/01/30 18:27:02 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 13019119616-13153337344, partition values: [empty row]
+21/01/30 18:27:02 INFO Executor: Finished task 77.0 in stage 1.0 (TID 78). 1861 bytes result sent to driver
+21/01/30 18:27:02 INFO CoarseGrainedExecutorBackend: Got assigned task 99
+21/01/30 18:27:02 INFO Executor: Running task 98.0 in stage 1.0 (TID 99)
+21/01/30 18:27:02 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 13153337344-13287555072, partition values: [empty row]
+21/01/30 18:27:07 INFO Executor: Finished task 97.0 in stage 1.0 (TID 98). 1861 bytes result sent to driver
+21/01/30 18:27:07 INFO CoarseGrainedExecutorBackend: Got assigned task 118
+21/01/30 18:27:07 INFO Executor: Running task 117.0 in stage 1.0 (TID 118)
+21/01/30 18:27:07 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 15703474176-15837691904, partition values: [empty row]
+21/01/30 18:27:07 INFO Executor: Finished task 98.0 in stage 1.0 (TID 99). 1811 bytes result sent to driver
+21/01/30 18:27:07 INFO CoarseGrainedExecutorBackend: Got assigned task 119
+21/01/30 18:27:07 INFO Executor: Running task 118.0 in stage 1.0 (TID 119)
+21/01/30 18:27:07 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 15837691904-15971909632, partition values: [empty row]
+21/01/30 18:27:11 INFO Executor: Finished task 117.0 in stage 1.0 (TID 118). 1811 bytes result sent to driver
+21/01/30 18:27:11 INFO CoarseGrainedExecutorBackend: Got assigned task 137
+21/01/30 18:27:11 INFO Executor: Running task 136.0 in stage 1.0 (TID 137)
+21/01/30 18:27:11 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 18253611008-18387828736, partition values: [empty row]
+21/01/30 18:27:11 INFO Executor: Finished task 118.0 in stage 1.0 (TID 119). 1811 bytes result sent to driver
+21/01/30 18:27:11 INFO CoarseGrainedExecutorBackend: Got assigned task 138
+21/01/30 18:27:11 INFO Executor: Running task 137.0 in stage 1.0 (TID 138)
+21/01/30 18:27:11 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 18387828736-18522046464, partition values: [empty row]
+21/01/30 18:27:15 INFO Executor: Finished task 136.0 in stage 1.0 (TID 137). 1861 bytes result sent to driver
+21/01/30 18:27:15 INFO CoarseGrainedExecutorBackend: Got assigned task 157
+21/01/30 18:27:15 INFO Executor: Running task 156.0 in stage 1.0 (TID 157)
+21/01/30 18:27:15 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 20937965568-21072183296, partition values: [empty row]
+21/01/30 18:27:16 INFO Executor: Finished task 137.0 in stage 1.0 (TID 138). 1811 bytes result sent to driver
+21/01/30 18:27:16 INFO CoarseGrainedExecutorBackend: Got assigned task 158
+21/01/30 18:27:16 INFO Executor: Running task 157.0 in stage 1.0 (TID 158)
+21/01/30 18:27:16 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 21072183296-21206401024, partition values: [empty row]
+21/01/30 18:27:20 INFO Executor: Finished task 157.0 in stage 1.0 (TID 158). 1811 bytes result sent to driver
+21/01/30 18:27:20 INFO Executor: Finished task 156.0 in stage 1.0 (TID 157). 1811 bytes result sent to driver
+21/01/30 18:27:23 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown

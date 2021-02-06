@@ -1,0 +1,81 @@
+Spark Command: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java -cp /Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host ST000000035 --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/29 01:47:44 INFO Master: Started daemon with process name: 82052@ST000000035
+21/01/29 01:47:44 INFO SignalUtils: Registered signal handler for TERM
+21/01/29 01:47:44 INFO SignalUtils: Registered signal handler for HUP
+21/01/29 01:47:44 INFO SignalUtils: Registered signal handler for INT
+21/01/29 01:47:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/29 01:47:44 INFO SecurityManager: Changing view acls to: kinsho
+21/01/29 01:47:44 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/29 01:47:44 INFO SecurityManager: Changing view acls groups to: 
+21/01/29 01:47:44 INFO SecurityManager: Changing modify acls groups to: 
+21/01/29 01:47:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/29 01:47:45 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+21/01/29 01:47:45 INFO Master: Starting Spark master at spark://ST000000035:7077
+21/01/29 01:47:45 INFO Master: Running Spark version 3.0.1
+21/01/29 01:47:45 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+21/01/29 01:47:45 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://192.168.11.7:8080
+21/01/29 01:47:45 INFO Master: I have been elected leader! New state: ALIVE
+21/01/29 01:48:17 INFO Master: Registering worker 192.168.11.7:61573 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:48:19 INFO Master: Registering worker 192.168.11.7:61575 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:48:22 INFO Master: Registering worker 192.168.11.7:61577 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:48:24 INFO Master: Registering worker 192.168.11.7:61579 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:48:27 INFO Master: Registering worker 192.168.11.7:61582 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:48:30 INFO Master: Registering worker 192.168.11.7:61584 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:48:34 INFO Master: Registering worker 192.168.11.7:61586 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:48:35 INFO Master: Registering worker 192.168.11.7:61588 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:48:39 INFO Master: Registering worker 192.168.11.7:61591 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:48:41 INFO Master: Registering worker 192.168.11.7:61593 with 2 cores, 1024.0 MiB RAM
+21/01/29 01:51:55 INFO Master: Registering app SimpleApp
+21/01/29 01:51:55 INFO Master: Registered app SimpleApp with ID app-20210129015155-0000
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/0 on worker worker-20210129014821-192.168.11.7-61577
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/1 on worker worker-20210129014833-192.168.11.7-61586
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/2 on worker worker-20210129014835-192.168.11.7-61588
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/3 on worker worker-20210129014830-192.168.11.7-61584
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/4 on worker worker-20210129014824-192.168.11.7-61579
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/5 on worker worker-20210129014838-192.168.11.7-61591
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/6 on worker worker-20210129014827-192.168.11.7-61582
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/7 on worker worker-20210129014816-192.168.11.7-61573
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/8 on worker worker-20210129014841-192.168.11.7-61593
+21/01/29 01:51:55 INFO Master: Launching executor app-20210129015155-0000/9 on worker worker-20210129014819-192.168.11.7-61575
+21/01/29 01:52:07 INFO Master: Received unregister request from application app-20210129015155-0000
+21/01/29 01:52:07 INFO Master: Removing app app-20210129015155-0000
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/1
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/4
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/2
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/5
+21/01/29 01:52:07 INFO Master: 192.168.11.7:61653 got disassociated, removing it.
+21/01/29 01:52:07 INFO Master: 192.168.11.7:61652 got disassociated, removing it.
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/8
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/6
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/7
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/3
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/9
+21/01/29 01:52:07 WARN Master: Got status update for unknown executor app-20210129015155-0000/0
+21/01/29 09:28:18 WARN Master: Removing worker-20210129014819-192.168.11.7-61575 because we got no heartbeat in 60 seconds
+21/01/29 09:28:18 INFO Master: Removing worker worker-20210129014819-192.168.11.7-61575 on 192.168.11.7:61575
+21/01/29 09:28:18 INFO Master: Telling app of lost worker: worker-20210129014819-192.168.11.7-61575
+21/01/29 09:28:18 WARN Master: Removing worker-20210129014816-192.168.11.7-61573 because we got no heartbeat in 60 seconds
+21/01/29 09:28:18 INFO Master: Removing worker worker-20210129014816-192.168.11.7-61573 on 192.168.11.7:61573
+21/01/29 09:28:18 INFO Master: Telling app of lost worker: worker-20210129014816-192.168.11.7-61573
+21/01/29 09:28:18 WARN Master: Removing worker-20210129014830-192.168.11.7-61584 because we got no heartbeat in 60 seconds
+21/01/29 09:28:18 INFO Master: Removing worker worker-20210129014830-192.168.11.7-61584 on 192.168.11.7:61584
+21/01/29 09:28:18 INFO Master: Telling app of lost worker: worker-20210129014830-192.168.11.7-61584
+21/01/29 09:28:18 WARN Master: Removing worker-20210129014835-192.168.11.7-61588 because we got no heartbeat in 60 seconds
+21/01/29 09:28:18 INFO Master: Removing worker worker-20210129014835-192.168.11.7-61588 on 192.168.11.7:61588
+21/01/29 09:28:18 INFO Master: Telling app of lost worker: worker-20210129014835-192.168.11.7-61588
+21/01/29 09:28:18 WARN Master: Removing worker-20210129014833-192.168.11.7-61586 because we got no heartbeat in 60 seconds
+21/01/29 09:28:18 INFO Master: Removing worker worker-20210129014833-192.168.11.7-61586 on 192.168.11.7:61586
+21/01/29 09:28:18 INFO Master: Telling app of lost worker: worker-20210129014833-192.168.11.7-61586
+21/01/29 09:28:18 WARN Master: Got heartbeat from unregistered worker worker-20210129014830-192.168.11.7-61584. Asking it to re-register.
+21/01/29 09:28:18 INFO Master: Registering worker 192.168.11.7:61584 with 2 cores, 1024.0 MiB RAM
+21/01/29 09:28:20 WARN Master: Got heartbeat from unregistered worker worker-20210129014816-192.168.11.7-61573. Asking it to re-register.
+21/01/29 09:28:20 INFO Master: Registering worker 192.168.11.7:61573 with 2 cores, 1024.0 MiB RAM
+21/01/29 09:28:22 WARN Master: Got heartbeat from unregistered worker worker-20210129014833-192.168.11.7-61586. Asking it to re-register.
+21/01/29 09:28:22 INFO Master: Registering worker 192.168.11.7:61586 with 2 cores, 1024.0 MiB RAM
+21/01/29 09:28:22 WARN Master: Got heartbeat from unregistered worker worker-20210129014819-192.168.11.7-61575. Asking it to re-register.
+21/01/29 09:28:22 INFO Master: Registering worker 192.168.11.7:61575 with 2 cores, 1024.0 MiB RAM
+21/01/29 09:28:23 WARN Master: Got heartbeat from unregistered worker worker-20210129014835-192.168.11.7-61588. Asking it to re-register.
+21/01/29 09:28:23 INFO Master: Registering worker 192.168.11.7:61588 with 2 cores, 1024.0 MiB RAM
+21/01/29 11:30:59 ERROR Master: RECEIVED SIGNAL TERM

@@ -1,0 +1,37 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/simple-project_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SimpleApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/SimpleApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImpressionRawLog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/ImpressionRawLog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImpressionDroppedLog$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/ImpressionDroppedLog$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImpressionStructLog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/ImpressionStructLog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogTransform$$typecreator4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/LogTransform$$typecreator4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogTransform$$typecreator5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/LogTransform$$typecreator5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogCalculation$$typecreator4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/LogCalculation$$typecreator4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogCalculation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/LogCalculation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogTransform$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/LogTransform$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SimpleApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/SimpleApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImpressionDroppedLog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/ImpressionDroppedLog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImpressionRawLog$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/ImpressionRawLog$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogCalculation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/LogCalculation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImpressionStructLog$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/ImpressionStructLog$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogTransform.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/LogTransform.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogCalculation$$typecreator8$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/LogCalculation$$typecreator8$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogTransform$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/kinsho/workspace/spark-3.0.1/workspace/sample-spark-scala/target/scala-2.12/classes/LogTransform$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

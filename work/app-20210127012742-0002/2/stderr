@@ -1,0 +1,40 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=59018" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:59018" "--executor-id" "2" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210127012742-0002" "--worker-url" "spark://Worker@192.168.11.7:58440"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/27 01:27:44 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 52784@ST000000035
+21/01/27 01:27:44 INFO SignalUtils: Registered signal handler for TERM
+21/01/27 01:27:44 INFO SignalUtils: Registered signal handler for HUP
+21/01/27 01:27:44 INFO SignalUtils: Registered signal handler for INT
+21/01/27 01:27:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/27 01:27:45 INFO SecurityManager: Changing view acls to: kinsho
+21/01/27 01:27:45 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/27 01:27:45 INFO SecurityManager: Changing view acls groups to: 
+21/01/27 01:27:45 INFO SecurityManager: Changing modify acls groups to: 
+21/01/27 01:27:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/27 01:27:46 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59018 after 123 ms (0 ms spent in bootstraps)
+21/01/27 01:27:46 INFO SecurityManager: Changing view acls to: kinsho
+21/01/27 01:27:46 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/27 01:27:46 INFO SecurityManager: Changing view acls groups to: 
+21/01/27 01:27:46 INFO SecurityManager: Changing modify acls groups to: 
+21/01/27 01:27:46 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/27 01:27:46 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59018 after 2 ms (0 ms spent in bootstraps)
+21/01/27 01:27:46 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-83173554-817f-41d8-8001-c5059830a766/executor-66aba376-9a70-497f-afbf-826d8ba1e64c/blockmgr-eb04b78a-56f8-4186-a180-adeb48565aa0
+21/01/27 01:27:46 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/01/27 01:27:47 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:59018
+21/01/27 01:27:47 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:58440
+21/01/27 01:27:47 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:58440 after 3 ms (0 ms spent in bootstraps)
+21/01/27 01:27:47 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.11.7:58440
+21/01/27 01:27:47 INFO ResourceUtils: ==============================================================
+21/01/27 01:27:47 INFO ResourceUtils: Resources for spark.executor:
+
+21/01/27 01:27:47 INFO ResourceUtils: ==============================================================
+21/01/27 01:27:47 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/01/27 01:27:47 INFO Executor: Starting executor ID 2 on host 192.168.11.7
+21/01/27 01:27:47 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59055.
+21/01/27 01:27:47 INFO NettyBlockTransferService: Server created on 192.168.11.7:59055
+21/01/27 01:27:47 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/01/27 01:27:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(2, 192.168.11.7, 59055, None)
+21/01/27 01:27:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(2, 192.168.11.7, 59055, None)
+21/01/27 01:27:47 INFO BlockManager: Initialized BlockManager: BlockManagerId(2, 192.168.11.7, 59055, None)
+21/01/27 01:27:54 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown

@@ -1,0 +1,1537 @@
+Spark Command: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java -cp /Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host ST000000035 --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/30 11:23:03 INFO Master: Started daemon with process name: 1906@ST000000035
+21/01/30 11:23:03 INFO SignalUtils: Registered signal handler for TERM
+21/01/30 11:23:03 INFO SignalUtils: Registered signal handler for HUP
+21/01/30 11:23:03 INFO SignalUtils: Registered signal handler for INT
+21/01/30 11:23:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/30 11:23:03 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 11:23:03 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 11:23:03 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 11:23:03 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 11:23:03 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 11:23:04 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+21/01/30 11:23:04 INFO Master: Starting Spark master at spark://ST000000035:7077
+21/01/30 11:23:04 INFO Master: Running Spark version 3.0.1
+21/01/30 11:23:04 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+21/01/30 11:23:04 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://192.168.11.7:8080
+21/01/30 11:23:04 INFO Master: I have been elected leader! New state: ALIVE
+21/01/30 11:23:36 INFO Master: Registering worker 192.168.11.7:63861 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:38 INFO Master: Registering worker 192.168.11.7:63876 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:41 INFO Master: Registering worker 192.168.11.7:63887 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:43 INFO Master: Registering worker 192.168.11.7:63901 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:46 INFO Master: Registering worker 192.168.11.7:63916 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:49 INFO Master: Registering worker 192.168.11.7:63926 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:53 INFO Master: Registering worker 192.168.11.7:63944 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:55 INFO Master: Registering worker 192.168.11.7:63954 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:57 INFO Master: Registering worker 192.168.11.7:63968 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:59 INFO Master: Registering worker 192.168.11.7:63978 with 2 cores, 1024.0 MiB RAM
+21/01/30 12:22:49 INFO Master: Registering app SimpleApp
+21/01/30 12:22:49 INFO Master: Registered app SimpleApp with ID app-20210130122249-0000
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 12:22:49 INFO Master: Launching executor app-20210130122249-0000/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 12:23:02 INFO Master: Received unregister request from application app-20210130122249-0000
+21/01/30 12:23:02 INFO Master: Removing app app-20210130122249-0000
+21/01/30 12:23:02 WARN Master: Got status update for unknown executor app-20210130122249-0000/8
+21/01/30 12:23:02 INFO Master: 192.168.11.7:62275 got disassociated, removing it.
+21/01/30 12:23:02 INFO Master: 192.168.11.7:62270 got disassociated, removing it.
+21/01/30 12:23:02 WARN Master: Got status update for unknown executor app-20210130122249-0000/2
+21/01/30 12:23:02 WARN Master: Got status update for unknown executor app-20210130122249-0000/1
+21/01/30 12:23:02 WARN Master: Got status update for unknown executor app-20210130122249-0000/6
+21/01/30 12:23:02 WARN Master: Got status update for unknown executor app-20210130122249-0000/4
+21/01/30 12:23:03 WARN Master: Got status update for unknown executor app-20210130122249-0000/9
+21/01/30 12:23:03 WARN Master: Got status update for unknown executor app-20210130122249-0000/3
+21/01/30 12:23:03 WARN Master: Got status update for unknown executor app-20210130122249-0000/0
+21/01/30 12:23:03 WARN Master: Got status update for unknown executor app-20210130122249-0000/5
+21/01/30 12:23:03 WARN Master: Got status update for unknown executor app-20210130122249-0000/7
+21/01/30 15:01:01 INFO Master: Registering app SimpleApp
+21/01/30 15:01:01 INFO Master: Registered app SimpleApp with ID app-20210130150101-0001
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 15:01:01 INFO Master: Launching executor app-20210130150101-0001/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 15:01:22 INFO Master: Received unregister request from application app-20210130150101-0001
+21/01/30 15:01:22 INFO Master: Removing app app-20210130150101-0001
+21/01/30 15:01:22 INFO Master: 192.168.11.7:63548 got disassociated, removing it.
+21/01/30 15:01:22 INFO Master: 192.168.11.7:63543 got disassociated, removing it.
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/1
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/0
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/7
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/6
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/3
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/2
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/9
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/5
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/4
+21/01/30 15:01:23 WARN Master: Got status update for unknown executor app-20210130150101-0001/8
+21/01/30 15:28:07 INFO Master: Registering app SimpleApp
+21/01/30 15:28:07 INFO Master: Registered app SimpleApp with ID app-20210130152807-0002
+21/01/30 15:28:07 INFO Master: Launching executor app-20210130152807-0002/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 15:28:07 INFO Master: Launching executor app-20210130152807-0002/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 15:28:07 INFO Master: Launching executor app-20210130152807-0002/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 15:28:07 INFO Master: Launching executor app-20210130152807-0002/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 15:28:07 INFO Master: Launching executor app-20210130152807-0002/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 15:28:07 INFO Master: Launching executor app-20210130152807-0002/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 15:28:08 INFO Master: Launching executor app-20210130152807-0002/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 15:28:08 INFO Master: Launching executor app-20210130152807-0002/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 15:28:08 INFO Master: Launching executor app-20210130152807-0002/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 15:28:08 INFO Master: Launching executor app-20210130152807-0002/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 15:28:24 INFO Master: Received unregister request from application app-20210130152807-0002
+21/01/30 15:28:24 INFO Master: Removing app app-20210130152807-0002
+21/01/30 15:28:24 INFO Master: 192.168.11.7:54148 got disassociated, removing it.
+21/01/30 15:28:24 INFO Master: 192.168.11.7:54147 got disassociated, removing it.
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/5
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/4
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/7
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/3
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/9
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/0
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/2
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/8
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/1
+21/01/30 15:28:24 WARN Master: Got status update for unknown executor app-20210130152807-0002/6
+21/01/30 15:34:45 INFO Master: Registering app SimpleApp
+21/01/30 15:34:45 INFO Master: Registered app SimpleApp with ID app-20210130153445-0003
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 15:34:45 INFO Master: Launching executor app-20210130153445-0003/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 15:34:58 INFO Master: Received unregister request from application app-20210130153445-0003
+21/01/30 15:34:58 INFO Master: Removing app app-20210130153445-0003
+21/01/30 15:34:58 INFO Master: 192.168.11.7:56258 got disassociated, removing it.
+21/01/30 15:34:58 INFO Master: 192.168.11.7:56257 got disassociated, removing it.
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/7
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/9
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/5
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/3
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/8
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/0
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/4
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/1
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/6
+21/01/30 15:34:58 WARN Master: Got status update for unknown executor app-20210130153445-0003/2
+21/01/30 15:37:17 INFO Master: Registering app SimpleApp
+21/01/30 15:37:17 INFO Master: Registered app SimpleApp with ID app-20210130153717-0004
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 15:37:17 INFO Master: Launching executor app-20210130153717-0004/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 15:37:27 INFO Master: Received unregister request from application app-20210130153717-0004
+21/01/30 15:37:27 INFO Master: Removing app app-20210130153717-0004
+21/01/30 15:37:27 INFO Master: 192.168.11.7:56961 got disassociated, removing it.
+21/01/30 15:37:27 INFO Master: 192.168.11.7:56960 got disassociated, removing it.
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/4
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/9
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/2
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/8
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/6
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/1
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/7
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/3
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/5
+21/01/30 15:37:27 WARN Master: Got status update for unknown executor app-20210130153717-0004/0
+21/01/30 15:38:45 INFO Master: Registering app SimpleApp
+21/01/30 15:38:45 INFO Master: Registered app SimpleApp with ID app-20210130153845-0005
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 15:38:45 INFO Master: Launching executor app-20210130153845-0005/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 15:39:01 INFO Master: Received unregister request from application app-20210130153845-0005
+21/01/30 15:39:01 INFO Master: Removing app app-20210130153845-0005
+21/01/30 15:39:01 INFO Master: 192.168.11.7:57375 got disassociated, removing it.
+21/01/30 15:39:01 INFO Master: 192.168.11.7:57374 got disassociated, removing it.
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/9
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/0
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/4
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/2
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/8
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/1
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/6
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/3
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/5
+21/01/30 15:39:01 WARN Master: Got status update for unknown executor app-20210130153845-0005/7
+21/01/30 15:46:04 INFO Master: Registering app SimpleApp
+21/01/30 15:46:04 INFO Master: Registered app SimpleApp with ID app-20210130154604-0006
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 15:46:04 INFO Master: Launching executor app-20210130154604-0006/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 15:46:18 INFO Master: Received unregister request from application app-20210130154604-0006
+21/01/30 15:46:18 INFO Master: Removing app app-20210130154604-0006
+21/01/30 15:46:18 INFO Master: 192.168.11.7:59355 got disassociated, removing it.
+21/01/30 15:46:18 INFO Master: 192.168.11.7:59350 got disassociated, removing it.
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/7
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/9
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/3
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/5
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/0
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/8
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/6
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/2
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/1
+21/01/30 15:46:19 WARN Master: Got status update for unknown executor app-20210130154604-0006/4
+21/01/30 15:47:56 INFO Master: Registering app logTransform
+21/01/30 15:47:56 INFO Master: Registered app logTransform with ID app-20210130154756-0007
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 15:47:56 INFO Master: Launching executor app-20210130154756-0007/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 15:48:05 INFO Master: Received unregister request from application app-20210130154756-0007
+21/01/30 15:48:05 INFO Master: Removing app app-20210130154756-0007
+21/01/30 15:48:05 INFO Master: 192.168.11.7:59867 got disassociated, removing it.
+21/01/30 15:48:05 INFO Master: 192.168.11.7:59862 got disassociated, removing it.
+21/01/30 15:48:05 WARN Master: Got status update for unknown executor app-20210130154756-0007/9
+21/01/30 15:48:05 WARN Master: Got status update for unknown executor app-20210130154756-0007/4
+21/01/30 15:48:05 WARN Master: Got status update for unknown executor app-20210130154756-0007/5
+21/01/30 15:48:05 WARN Master: Got status update for unknown executor app-20210130154756-0007/2
+21/01/30 15:48:05 WARN Master: Got status update for unknown executor app-20210130154756-0007/3
+21/01/30 15:48:05 WARN Master: Got status update for unknown executor app-20210130154756-0007/6
+21/01/30 15:48:05 WARN Master: Got status update for unknown executor app-20210130154756-0007/1
+21/01/30 15:48:06 WARN Master: Got status update for unknown executor app-20210130154756-0007/7
+21/01/30 15:48:06 WARN Master: Got status update for unknown executor app-20210130154756-0007/0
+21/01/30 15:48:06 WARN Master: Got status update for unknown executor app-20210130154756-0007/8
+21/01/30 16:09:30 INFO Master: Registering app logTransform
+21/01/30 16:09:30 INFO Master: Registered app logTransform with ID app-20210130160930-0008
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 16:09:30 INFO Master: Launching executor app-20210130160930-0008/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 16:09:38 INFO Master: Received unregister request from application app-20210130160930-0008
+21/01/30 16:09:38 INFO Master: Removing app app-20210130160930-0008
+21/01/30 16:09:38 INFO Master: 192.168.11.7:65252 got disassociated, removing it.
+21/01/30 16:09:38 INFO Master: 192.168.11.7:65247 got disassociated, removing it.
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/1
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/9
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/2
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/5
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/8
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/7
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/0
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/4
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/3
+21/01/30 16:09:39 WARN Master: Got status update for unknown executor app-20210130160930-0008/6
+21/01/30 16:14:56 INFO Master: Registering app logTransform
+21/01/30 16:14:56 INFO Master: Registered app logTransform with ID app-20210130161456-0009
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 16:14:56 INFO Master: Launching executor app-20210130161456-0009/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 16:15:05 INFO Master: Received unregister request from application app-20210130161456-0009
+21/01/30 16:15:05 INFO Master: Removing app app-20210130161456-0009
+21/01/30 16:15:05 INFO Master: 192.168.11.7:50374 got disassociated, removing it.
+21/01/30 16:15:05 INFO Master: 192.168.11.7:50369 got disassociated, removing it.
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/2
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/3
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/9
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/1
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/0
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/6
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/8
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/4
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/5
+21/01/30 16:15:05 WARN Master: Got status update for unknown executor app-20210130161456-0009/7
+21/01/30 16:16:27 INFO Master: Registering app logTransform
+21/01/30 16:16:27 INFO Master: Registered app logTransform with ID app-20210130161627-0010
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 16:16:27 INFO Master: Launching executor app-20210130161627-0010/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 16:16:35 INFO Master: Received unregister request from application app-20210130161627-0010
+21/01/30 16:16:35 INFO Master: Removing app app-20210130161627-0010
+21/01/30 16:16:35 INFO Master: 192.168.11.7:50803 got disassociated, removing it.
+21/01/30 16:16:35 INFO Master: 192.168.11.7:50802 got disassociated, removing it.
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/2
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/5
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/3
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/0
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/6
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/8
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/1
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/9
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/7
+21/01/30 16:16:35 WARN Master: Got status update for unknown executor app-20210130161627-0010/4
+21/01/30 16:24:12 INFO Master: Registering app logTransform
+21/01/30 16:24:12 INFO Master: Registered app logTransform with ID app-20210130162412-0011
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 16:24:12 INFO Master: Launching executor app-20210130162412-0011/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 16:24:22 INFO Master: Received unregister request from application app-20210130162412-0011
+21/01/30 16:24:22 INFO Master: Removing app app-20210130162412-0011
+21/01/30 16:24:22 INFO Master: 192.168.11.7:52825 got disassociated, removing it.
+21/01/30 16:24:22 INFO Master: 192.168.11.7:52820 got disassociated, removing it.
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/5
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/9
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/2
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/1
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/8
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/0
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/4
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/7
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/6
+21/01/30 16:24:22 WARN Master: Got status update for unknown executor app-20210130162412-0011/3
+21/01/30 16:26:56 INFO Master: Registering app logTransform
+21/01/30 16:26:56 INFO Master: Registered app logTransform with ID app-20210130162656-0012
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 16:26:56 INFO Master: Launching executor app-20210130162656-0012/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 16:27:04 INFO Master: Received unregister request from application app-20210130162656-0012
+21/01/30 16:27:04 INFO Master: Removing app app-20210130162656-0012
+21/01/30 16:27:04 INFO Master: 192.168.11.7:53544 got disassociated, removing it.
+21/01/30 16:27:04 INFO Master: 192.168.11.7:53542 got disassociated, removing it.
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/7
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/1
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/0
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/9
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/8
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/2
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/4
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/5
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/6
+21/01/30 16:27:04 WARN Master: Got status update for unknown executor app-20210130162656-0012/3
+21/01/30 16:29:46 INFO Master: Registering app logTransform
+21/01/30 16:29:46 INFO Master: Registered app logTransform with ID app-20210130162946-0013
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 16:29:46 INFO Master: Launching executor app-20210130162946-0013/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 16:29:55 INFO Master: Received unregister request from application app-20210130162946-0013
+21/01/30 16:29:55 INFO Master: Removing app app-20210130162946-0013
+21/01/30 16:29:55 INFO Master: 192.168.11.7:54318 got disassociated, removing it.
+21/01/30 16:29:55 INFO Master: 192.168.11.7:54317 got disassociated, removing it.
+21/01/30 16:29:55 WARN Master: Got status update for unknown executor app-20210130162946-0013/8
+21/01/30 16:29:56 WARN Master: Got status update for unknown executor app-20210130162946-0013/7
+21/01/30 16:29:56 WARN Master: Got status update for unknown executor app-20210130162946-0013/6
+21/01/30 16:29:56 WARN Master: Got status update for unknown executor app-20210130162946-0013/4
+21/01/30 16:29:56 WARN Master: Got status update for unknown executor app-20210130162946-0013/3
+21/01/30 16:29:56 WARN Master: Got status update for unknown executor app-20210130162946-0013/9
+21/01/30 16:29:56 WARN Master: Got status update for unknown executor app-20210130162946-0013/0
+21/01/30 16:29:56 WARN Master: Got status update for unknown executor app-20210130162946-0013/2
+21/01/30 16:29:56 WARN Master: Got status update for unknown executor app-20210130162946-0013/5
+21/01/30 16:29:56 WARN Master: Got status update for unknown executor app-20210130162946-0013/1
+21/01/30 16:32:35 INFO Master: Registering app logTransform
+21/01/30 16:32:35 INFO Master: Registered app logTransform with ID app-20210130163235-0014
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 16:32:35 INFO Master: Launching executor app-20210130163235-0014/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 16:32:47 INFO Master: Received unregister request from application app-20210130163235-0014
+21/01/30 16:32:47 INFO Master: Removing app app-20210130163235-0014
+21/01/30 16:32:47 INFO Master: 192.168.11.7:55057 got disassociated, removing it.
+21/01/30 16:32:47 INFO Master: 192.168.11.7:55052 got disassociated, removing it.
+21/01/30 16:32:47 WARN Master: Got status update for unknown executor app-20210130163235-0014/5
+21/01/30 16:32:48 WARN Master: Got status update for unknown executor app-20210130163235-0014/6
+21/01/30 16:32:48 WARN Master: Got status update for unknown executor app-20210130163235-0014/1
+21/01/30 16:32:48 WARN Master: Got status update for unknown executor app-20210130163235-0014/4
+21/01/30 16:32:48 WARN Master: Got status update for unknown executor app-20210130163235-0014/3
+21/01/30 16:32:48 WARN Master: Got status update for unknown executor app-20210130163235-0014/9
+21/01/30 16:32:48 WARN Master: Got status update for unknown executor app-20210130163235-0014/0
+21/01/30 16:32:48 WARN Master: Got status update for unknown executor app-20210130163235-0014/2
+21/01/30 16:32:48 WARN Master: Got status update for unknown executor app-20210130163235-0014/8
+21/01/30 16:32:48 WARN Master: Got status update for unknown executor app-20210130163235-0014/7
+21/01/30 16:52:24 INFO Master: Registering app logTransform
+21/01/30 16:52:24 INFO Master: Registered app logTransform with ID app-20210130165224-0015
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 16:52:24 INFO Master: Launching executor app-20210130165224-0015/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 16:52:37 INFO Master: Received unregister request from application app-20210130165224-0015
+21/01/30 16:52:37 INFO Master: Removing app app-20210130165224-0015
+21/01/30 16:52:37 INFO Master: 192.168.11.7:59991 got disassociated, removing it.
+21/01/30 16:52:37 INFO Master: 192.168.11.7:59986 got disassociated, removing it.
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/0
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/6
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/5
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/3
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/8
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/1
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/4
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/9
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/2
+21/01/30 16:52:37 WARN Master: Got status update for unknown executor app-20210130165224-0015/7
+21/01/30 17:05:56 INFO Master: Registering app logTransform
+21/01/30 17:05:56 INFO Master: Registered app logTransform with ID app-20210130170556-0016
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 17:05:56 INFO Master: Launching executor app-20210130170556-0016/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 17:09:26 INFO Master: Received unregister request from application app-20210130170556-0016
+21/01/30 17:09:26 INFO Master: Removing app app-20210130170556-0016
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/8
+21/01/30 17:09:27 INFO Master: 192.168.11.7:63561 got disassociated, removing it.
+21/01/30 17:09:27 INFO Master: 192.168.11.7:63556 got disassociated, removing it.
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/0
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/5
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/3
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/9
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/7
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/4
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/2
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/6
+21/01/30 17:09:27 WARN Master: Got status update for unknown executor app-20210130170556-0016/1
+21/01/30 18:08:00 INFO Master: Registering app logTransform
+21/01/30 18:08:00 INFO Master: Registered app logTransform with ID app-20210130180800-0017
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:08:00 INFO Master: Launching executor app-20210130180800-0017/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:08:12 INFO Master: Received unregister request from application app-20210130180800-0017
+21/01/30 18:08:12 INFO Master: Removing app app-20210130180800-0017
+21/01/30 18:08:12 INFO Master: 192.168.11.7:63121 got disassociated, removing it.
+21/01/30 18:08:12 INFO Master: 192.168.11.7:63119 got disassociated, removing it.
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/2
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/1
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/6
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/8
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/0
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/3
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/5
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/9
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/7
+21/01/30 18:08:12 WARN Master: Got status update for unknown executor app-20210130180800-0017/4
+21/01/30 18:18:05 INFO Master: Registering app logTransform
+21/01/30 18:18:05 INFO Master: Registered app logTransform with ID app-20210130181805-0018
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:18:05 INFO Master: Launching executor app-20210130181805-0018/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:20:23 INFO Master: Received unregister request from application app-20210130181805-0018
+21/01/30 18:20:23 INFO Master: Removing app app-20210130181805-0018
+21/01/30 18:20:23 INFO Master: 192.168.11.7:49381 got disassociated, removing it.
+21/01/30 18:20:23 INFO Master: 192.168.11.7:49376 got disassociated, removing it.
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/9
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/2
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/0
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/4
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/5
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/7
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/1
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/3
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/6
+21/01/30 18:20:24 WARN Master: Got status update for unknown executor app-20210130181805-0018/8
+21/01/30 18:26:24 INFO Master: Registering app logTransform
+21/01/30 18:26:24 INFO Master: Registered app logTransform with ID app-20210130182624-0019
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:26:24 INFO Master: Launching executor app-20210130182624-0019/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:27:23 INFO Master: Received unregister request from application app-20210130182624-0019
+21/01/30 18:27:23 INFO Master: Removing app app-20210130182624-0019
+21/01/30 18:27:23 INFO Master: 192.168.11.7:51578 got disassociated, removing it.
+21/01/30 18:27:23 INFO Master: 192.168.11.7:51577 got disassociated, removing it.
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/0
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/6
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/5
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/8
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/9
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/2
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/4
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/3
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/1
+21/01/30 18:27:24 WARN Master: Got status update for unknown executor app-20210130182624-0019/7
+21/01/30 18:28:17 INFO Master: Registering app logTransform
+21/01/30 18:28:17 INFO Master: Registered app logTransform with ID app-20210130182817-0020
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:28:17 INFO Master: Launching executor app-20210130182817-0020/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:31:09 INFO Master: Received unregister request from application app-20210130182817-0020
+21/01/30 18:31:09 INFO Master: Removing app app-20210130182817-0020
+21/01/30 18:31:09 INFO Master: 192.168.11.7:52116 got disassociated, removing it.
+21/01/30 18:31:09 INFO Master: 192.168.11.7:52115 got disassociated, removing it.
+21/01/30 18:31:09 WARN Master: Got status update for unknown executor app-20210130182817-0020/9
+21/01/30 18:31:09 WARN Master: Got status update for unknown executor app-20210130182817-0020/3
+21/01/30 18:31:09 WARN Master: Got status update for unknown executor app-20210130182817-0020/8
+21/01/30 18:31:09 WARN Master: Got status update for unknown executor app-20210130182817-0020/2
+21/01/30 18:31:10 WARN Master: Got status update for unknown executor app-20210130182817-0020/5
+21/01/30 18:31:10 WARN Master: Got status update for unknown executor app-20210130182817-0020/1
+21/01/30 18:31:10 WARN Master: Got status update for unknown executor app-20210130182817-0020/0
+21/01/30 18:31:10 WARN Master: Got status update for unknown executor app-20210130182817-0020/4
+21/01/30 18:31:10 WARN Master: Got status update for unknown executor app-20210130182817-0020/6
+21/01/30 18:31:10 WARN Master: Got status update for unknown executor app-20210130182817-0020/7
+21/01/30 18:33:47 INFO Master: Registering app logTransform
+21/01/30 18:33:47 INFO Master: Registered app logTransform with ID app-20210130183347-0021
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:33:47 INFO Master: Launching executor app-20210130183347-0021/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:36:25 INFO Master: Received unregister request from application app-20210130183347-0021
+21/01/30 18:36:25 INFO Master: Removing app app-20210130183347-0021
+21/01/30 18:36:25 INFO Master: 192.168.11.7:53588 got disassociated, removing it.
+21/01/30 18:36:25 INFO Master: 192.168.11.7:53587 got disassociated, removing it.
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/2
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/4
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/3
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/7
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/0
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/9
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/8
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/1
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/5
+21/01/30 18:36:25 WARN Master: Got status update for unknown executor app-20210130183347-0021/6
+21/01/30 18:39:47 INFO Master: Registering app logTransform
+21/01/30 18:39:47 INFO Master: Registered app logTransform with ID app-20210130183947-0022
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:39:47 INFO Master: Launching executor app-20210130183947-0022/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:42:08 INFO Master: Received unregister request from application app-20210130183947-0022
+21/01/30 18:42:08 INFO Master: Removing app app-20210130183947-0022
+21/01/30 18:42:08 INFO Master: 192.168.11.7:55168 got disassociated, removing it.
+21/01/30 18:42:08 INFO Master: 192.168.11.7:55163 got disassociated, removing it.
+21/01/30 18:42:08 WARN Master: Got status update for unknown executor app-20210130183947-0022/5
+21/01/30 18:42:08 WARN Master: Got status update for unknown executor app-20210130183947-0022/9
+21/01/30 18:42:08 WARN Master: Got status update for unknown executor app-20210130183947-0022/4
+21/01/30 18:42:08 WARN Master: Got status update for unknown executor app-20210130183947-0022/1
+21/01/30 18:42:09 WARN Master: Got status update for unknown executor app-20210130183947-0022/6
+21/01/30 18:42:09 WARN Master: Got status update for unknown executor app-20210130183947-0022/3
+21/01/30 18:42:09 WARN Master: Got status update for unknown executor app-20210130183947-0022/8
+21/01/30 18:42:09 WARN Master: Got status update for unknown executor app-20210130183947-0022/7
+21/01/30 18:42:09 WARN Master: Got status update for unknown executor app-20210130183947-0022/2
+21/01/30 18:42:09 WARN Master: Got status update for unknown executor app-20210130183947-0022/0
+21/01/30 18:45:04 INFO Master: Registering app logTransform
+21/01/30 18:45:04 INFO Master: Registered app logTransform with ID app-20210130184504-0023
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:45:04 INFO Master: Launching executor app-20210130184504-0023/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:47:53 INFO Master: Received unregister request from application app-20210130184504-0023
+21/01/30 18:47:53 INFO Master: Removing app app-20210130184504-0023
+21/01/30 18:47:53 INFO Master: 192.168.11.7:56815 got disassociated, removing it.
+21/01/30 18:47:53 INFO Master: 192.168.11.7:56813 got disassociated, removing it.
+21/01/30 18:47:53 WARN Master: Got status update for unknown executor app-20210130184504-0023/4
+21/01/30 18:47:53 WARN Master: Got status update for unknown executor app-20210130184504-0023/9
+21/01/30 18:47:53 WARN Master: Got status update for unknown executor app-20210130184504-0023/3
+21/01/30 18:47:53 WARN Master: Got status update for unknown executor app-20210130184504-0023/0
+21/01/30 18:47:53 WARN Master: Got status update for unknown executor app-20210130184504-0023/6
+21/01/30 18:47:53 WARN Master: Got status update for unknown executor app-20210130184504-0023/8
+21/01/30 18:47:53 WARN Master: Got status update for unknown executor app-20210130184504-0023/5
+21/01/30 18:47:53 WARN Master: Got status update for unknown executor app-20210130184504-0023/1
+21/01/30 18:47:53 WARN Master: Got status update for unknown executor app-20210130184504-0023/2
+21/01/30 18:47:54 WARN Master: Got status update for unknown executor app-20210130184504-0023/7
+21/01/30 18:54:09 INFO Master: Registering app logTransform
+21/01/30 18:54:09 INFO Master: Registered app logTransform with ID app-20210130185409-0024
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:54:09 INFO Master: Launching executor app-20210130185409-0024/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:54:10 INFO Master: 192.168.11.7:59140 got disassociated, removing it.
+21/01/30 18:54:10 INFO Master: 192.168.11.7:59135 got disassociated, removing it.
+21/01/30 18:54:10 INFO Master: Removing app app-20210130185409-0024
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/9
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/6
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/2
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/7
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/0
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/4
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/1
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/5
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/3
+21/01/30 18:54:10 WARN Master: Got status update for unknown executor app-20210130185409-0024/8
+21/01/30 18:54:22 INFO Master: Registering app logTransform
+21/01/30 18:54:22 INFO Master: Registered app logTransform with ID app-20210130185422-0025
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:54:22 INFO Master: Launching executor app-20210130185422-0025/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:56:50 INFO Master: Received unregister request from application app-20210130185422-0025
+21/01/30 18:56:50 INFO Master: Removing app app-20210130185422-0025
+21/01/30 18:56:51 INFO Master: 192.168.11.7:59199 got disassociated, removing it.
+21/01/30 18:56:51 INFO Master: 192.168.11.7:59194 got disassociated, removing it.
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/6
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/8
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/1
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/3
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/2
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/4
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/0
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/9
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/7
+21/01/30 18:56:51 WARN Master: Got status update for unknown executor app-20210130185422-0025/5
+21/01/30 18:58:30 INFO Master: Registering app logTransform
+21/01/30 18:58:30 INFO Master: Registered app logTransform with ID app-20210130185830-0026
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:58:30 INFO Master: Launching executor app-20210130185830-0026/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 18:58:43 INFO Master: Received unregister request from application app-20210130185830-0026
+21/01/30 18:58:43 INFO Master: Removing app app-20210130185830-0026
+21/01/30 18:58:43 INFO Master: 192.168.11.7:60291 got disassociated, removing it.
+21/01/30 18:58:43 INFO Master: 192.168.11.7:60282 got disassociated, removing it.
+21/01/30 18:58:43 WARN Master: Got status update for unknown executor app-20210130185830-0026/3
+21/01/30 18:58:44 WARN Master: Got status update for unknown executor app-20210130185830-0026/1
+21/01/30 18:58:44 WARN Master: Got status update for unknown executor app-20210130185830-0026/6
+21/01/30 18:58:44 WARN Master: Got status update for unknown executor app-20210130185830-0026/8
+21/01/30 18:58:44 WARN Master: Got status update for unknown executor app-20210130185830-0026/0
+21/01/30 18:58:44 WARN Master: Got status update for unknown executor app-20210130185830-0026/5
+21/01/30 18:58:44 WARN Master: Got status update for unknown executor app-20210130185830-0026/2
+21/01/30 18:58:44 WARN Master: Got status update for unknown executor app-20210130185830-0026/9
+21/01/30 18:58:44 WARN Master: Got status update for unknown executor app-20210130185830-0026/4
+21/01/30 18:58:44 WARN Master: Got status update for unknown executor app-20210130185830-0026/7
+21/01/30 18:59:22 INFO Master: Registering app logTransform
+21/01/30 18:59:22 INFO Master: Registered app logTransform with ID app-20210130185922-0027
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/0 on worker worker-20210130112359-192.168.11.7-63978
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/1 on worker worker-20210130112357-192.168.11.7-63968
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/2 on worker worker-20210130112340-192.168.11.7-63887
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/4 on worker worker-20210130112343-192.168.11.7-63901
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/5 on worker worker-20210130112352-192.168.11.7-63944
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/6 on worker worker-20210130112346-192.168.11.7-63916
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/8 on worker worker-20210130112338-192.168.11.7-63876
+21/01/30 18:59:22 INFO Master: Launching executor app-20210130185922-0027/9 on worker worker-20210130112348-192.168.11.7-63926
+21/01/30 19:01:40 INFO Master: Received unregister request from application app-20210130185922-0027
+21/01/30 19:01:40 INFO Master: Removing app app-20210130185922-0027
+21/01/30 19:01:40 INFO Master: 192.168.11.7:60555 got disassociated, removing it.
+21/01/30 19:01:40 INFO Master: 192.168.11.7:60550 got disassociated, removing it.
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/7
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/9
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/1
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/4
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/8
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/2
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/6
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/0
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/5
+21/01/30 19:01:41 WARN Master: Got status update for unknown executor app-20210130185922-0027/3
+21/01/30 20:01:49 WARN Master: Removing worker-20210130112338-192.168.11.7-63876 because we got no heartbeat in 60 seconds
+21/01/30 20:01:49 INFO Master: Removing worker worker-20210130112338-192.168.11.7-63876 on 192.168.11.7:63876
+21/01/30 20:01:49 INFO Master: Telling app of lost worker: worker-20210130112338-192.168.11.7-63876
+21/01/30 20:01:49 WARN Master: Removing worker-20210130112335-192.168.11.7-63861 because we got no heartbeat in 60 seconds
+21/01/30 20:01:49 INFO Master: Removing worker worker-20210130112335-192.168.11.7-63861 on 192.168.11.7:63861
+21/01/30 20:01:49 INFO Master: Telling app of lost worker: worker-20210130112335-192.168.11.7-63861
+21/01/30 20:01:49 WARN Master: Removing worker-20210130112352-192.168.11.7-63944 because we got no heartbeat in 60 seconds
+21/01/30 20:01:49 INFO Master: Removing worker worker-20210130112352-192.168.11.7-63944 on 192.168.11.7:63944
+21/01/30 20:01:49 INFO Master: Telling app of lost worker: worker-20210130112352-192.168.11.7-63944
+21/01/30 20:01:49 WARN Master: Removing worker-20210130112354-192.168.11.7-63954 because we got no heartbeat in 60 seconds
+21/01/30 20:01:49 INFO Master: Removing worker worker-20210130112354-192.168.11.7-63954 on 192.168.11.7:63954
+21/01/30 20:01:49 INFO Master: Telling app of lost worker: worker-20210130112354-192.168.11.7-63954
+21/01/30 20:01:51 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/30 20:01:51 INFO Master: Registering worker 192.168.11.7:63861 with 2 cores, 1024.0 MiB RAM
+21/01/30 20:01:53 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/30 20:01:53 INFO Master: Registering worker 192.168.11.7:63944 with 2 cores, 1024.0 MiB RAM
+21/01/30 20:01:53 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/30 20:01:53 INFO Master: Registering worker 192.168.11.7:63876 with 2 cores, 1024.0 MiB RAM
+21/01/30 20:01:55 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/30 20:01:55 INFO Master: Registering worker 192.168.11.7:63954 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112348-192.168.11.7-63926 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112348-192.168.11.7-63926 on 192.168.11.7:63926
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112348-192.168.11.7-63926
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112335-192.168.11.7-63861 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112335-192.168.11.7-63861 on 192.168.11.7:63861
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112335-192.168.11.7-63861
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112354-192.168.11.7-63954 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112354-192.168.11.7-63954 on 192.168.11.7:63954
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112354-192.168.11.7-63954
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112346-192.168.11.7-63916 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112346-192.168.11.7-63916 on 192.168.11.7:63916
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112346-192.168.11.7-63916
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112343-192.168.11.7-63901 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112343-192.168.11.7-63901 on 192.168.11.7:63901
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112343-192.168.11.7-63901
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112338-192.168.11.7-63876 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112338-192.168.11.7-63876 on 192.168.11.7:63876
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112338-192.168.11.7-63876
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112340-192.168.11.7-63887 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112340-192.168.11.7-63887 on 192.168.11.7:63887
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112340-192.168.11.7-63887
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112357-192.168.11.7-63968 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112357-192.168.11.7-63968 on 192.168.11.7:63968
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112357-192.168.11.7-63968
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112359-192.168.11.7-63978 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112359-192.168.11.7-63978 on 192.168.11.7:63978
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112359-192.168.11.7-63978
+21/01/31 04:05:22 WARN Master: Removing worker-20210130112352-192.168.11.7-63944 because we got no heartbeat in 60 seconds
+21/01/31 04:05:22 INFO Master: Removing worker worker-20210130112352-192.168.11.7-63944 on 192.168.11.7:63944
+21/01/31 04:05:22 INFO Master: Telling app of lost worker: worker-20210130112352-192.168.11.7-63944
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 04:05:23 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 04:05:23 INFO Master: Registering worker 192.168.11.7:63944 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:23 INFO Master: Registering worker 192.168.11.7:63876 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:23 INFO Master: Registering worker 192.168.11.7:63861 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:23 INFO Master: Registering worker 192.168.11.7:63954 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:23 INFO Master: Registering worker 192.168.11.7:63926 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:24 INFO Master: Registering worker 192.168.11.7:63901 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:24 INFO Master: Registering worker 192.168.11.7:63978 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:24 INFO Master: Registering worker 192.168.11.7:63916 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:24 INFO Master: Registering worker 192.168.11.7:63887 with 2 cores, 1024.0 MiB RAM
+21/01/31 04:05:24 INFO Master: Registering worker 192.168.11.7:63968 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:10:48 WARN Master: Removing worker-20210130112354-192.168.11.7-63954 because we got no heartbeat in 60 seconds
+21/01/31 12:10:48 INFO Master: Removing worker worker-20210130112354-192.168.11.7-63954 on 192.168.11.7:63954
+21/01/31 12:10:48 INFO Master: Telling app of lost worker: worker-20210130112354-192.168.11.7-63954
+21/01/31 12:10:48 WARN Master: Removing worker-20210130112359-192.168.11.7-63978 because we got no heartbeat in 60 seconds
+21/01/31 12:10:48 INFO Master: Removing worker worker-20210130112359-192.168.11.7-63978 on 192.168.11.7:63978
+21/01/31 12:10:48 INFO Master: Telling app of lost worker: worker-20210130112359-192.168.11.7-63978
+21/01/31 12:10:48 WARN Master: Removing worker-20210130112340-192.168.11.7-63887 because we got no heartbeat in 60 seconds
+21/01/31 12:10:48 INFO Master: Removing worker worker-20210130112340-192.168.11.7-63887 on 192.168.11.7:63887
+21/01/31 12:10:48 INFO Master: Telling app of lost worker: worker-20210130112340-192.168.11.7-63887
+21/01/31 12:10:48 WARN Master: Removing worker-20210130112335-192.168.11.7-63861 because we got no heartbeat in 60 seconds
+21/01/31 12:10:48 INFO Master: Removing worker worker-20210130112335-192.168.11.7-63861 on 192.168.11.7:63861
+21/01/31 12:10:48 INFO Master: Telling app of lost worker: worker-20210130112335-192.168.11.7-63861
+21/01/31 12:10:48 WARN Master: Removing worker-20210130112346-192.168.11.7-63916 because we got no heartbeat in 60 seconds
+21/01/31 12:10:48 INFO Master: Removing worker worker-20210130112346-192.168.11.7-63916 on 192.168.11.7:63916
+21/01/31 12:10:48 INFO Master: Telling app of lost worker: worker-20210130112346-192.168.11.7-63916
+21/01/31 12:10:48 WARN Master: Removing worker-20210130112357-192.168.11.7-63968 because we got no heartbeat in 60 seconds
+21/01/31 12:10:48 INFO Master: Removing worker worker-20210130112357-192.168.11.7-63968 on 192.168.11.7:63968
+21/01/31 12:10:48 INFO Master: Telling app of lost worker: worker-20210130112357-192.168.11.7-63968
+21/01/31 12:10:48 WARN Master: Removing worker-20210130112338-192.168.11.7-63876 because we got no heartbeat in 60 seconds
+21/01/31 12:10:48 INFO Master: Removing worker worker-20210130112338-192.168.11.7-63876 on 192.168.11.7:63876
+21/01/31 12:10:48 INFO Master: Telling app of lost worker: worker-20210130112338-192.168.11.7-63876
+21/01/31 12:10:48 WARN Master: Removing worker-20210130112343-192.168.11.7-63901 because we got no heartbeat in 60 seconds
+21/01/31 12:10:48 INFO Master: Removing worker worker-20210130112343-192.168.11.7-63901 on 192.168.11.7:63901
+21/01/31 12:10:48 INFO Master: Telling app of lost worker: worker-20210130112343-192.168.11.7-63901
+21/01/31 12:10:48 WARN Master: Removing worker-20210130112352-192.168.11.7-63944 because we got no heartbeat in 60 seconds
+21/01/31 12:10:48 INFO Master: Removing worker worker-20210130112352-192.168.11.7-63944 on 192.168.11.7:63944
+21/01/31 12:10:48 INFO Master: Telling app of lost worker: worker-20210130112352-192.168.11.7-63944
+21/01/31 12:10:49 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 12:10:49 INFO Master: Registering worker 192.168.11.7:63861 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:10:51 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 12:10:51 INFO Master: Registering worker 192.168.11.7:63944 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:10:52 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 12:10:52 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 12:10:52 INFO Master: Registering worker 192.168.11.7:63876 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:10:53 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 12:10:53 INFO Master: Registering worker 192.168.11.7:63954 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:10:53 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 12:10:53 INFO Master: Registering worker 192.168.11.7:63978 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:10:53 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 12:10:53 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 12:10:53 INFO Master: Registering worker 192.168.11.7:63901 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:10:53 INFO Master: Registering worker 192.168.11.7:63916 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:10:53 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 12:10:53 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 12:10:53 INFO Master: Registering worker 192.168.11.7:63887 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:10:53 INFO Master: Registering worker 192.168.11.7:63968 with 2 cores, 1024.0 MiB RAM
+21/01/31 12:33:45 INFO Master: Registering app logTransform
+21/01/31 12:33:45 INFO Master: Registered app logTransform with ID app-20210131123345-0028
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/0 on worker worker-20210130112357-192.168.11.7-63968
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/1 on worker worker-20210130112346-192.168.11.7-63916
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/2 on worker worker-20210130112338-192.168.11.7-63876
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/3 on worker worker-20210130112343-192.168.11.7-63901
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/4 on worker worker-20210130112352-192.168.11.7-63944
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/5 on worker worker-20210130112348-192.168.11.7-63926
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/6 on worker worker-20210130112340-192.168.11.7-63887
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/8 on worker worker-20210130112359-192.168.11.7-63978
+21/01/31 12:33:45 INFO Master: Launching executor app-20210131123345-0028/9 on worker worker-20210130112354-192.168.11.7-63954
+21/01/31 12:38:57 INFO Master: Received unregister request from application app-20210131123345-0028
+21/01/31 12:38:57 INFO Master: Removing app app-20210131123345-0028
+21/01/31 12:38:57 INFO Master: 192.168.11.7:59396 got disassociated, removing it.
+21/01/31 12:38:57 INFO Master: 192.168.11.7:59391 got disassociated, removing it.
+21/01/31 12:38:58 WARN Master: Got status update for unknown executor app-20210131123345-0028/8
+21/01/31 12:38:58 WARN Master: Got status update for unknown executor app-20210131123345-0028/4
+21/01/31 12:38:58 WARN Master: Got status update for unknown executor app-20210131123345-0028/2
+21/01/31 12:38:58 WARN Master: Got status update for unknown executor app-20210131123345-0028/7
+21/01/31 12:38:58 WARN Master: Got status update for unknown executor app-20210131123345-0028/0
+21/01/31 12:38:58 WARN Master: Got status update for unknown executor app-20210131123345-0028/5
+21/01/31 12:38:58 WARN Master: Got status update for unknown executor app-20210131123345-0028/1
+21/01/31 12:38:58 WARN Master: Got status update for unknown executor app-20210131123345-0028/3
+21/01/31 12:38:58 WARN Master: Got status update for unknown executor app-20210131123345-0028/9
+21/01/31 12:39:00 WARN Master: Got status update for unknown executor app-20210131123345-0028/6
+21/01/31 12:40:43 INFO Master: Registering app logTransform
+21/01/31 12:40:43 INFO Master: Registered app logTransform with ID app-20210131124043-0029
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/0 on worker worker-20210130112357-192.168.11.7-63968
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/1 on worker worker-20210130112346-192.168.11.7-63916
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/2 on worker worker-20210130112338-192.168.11.7-63876
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/3 on worker worker-20210130112343-192.168.11.7-63901
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/4 on worker worker-20210130112352-192.168.11.7-63944
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/5 on worker worker-20210130112348-192.168.11.7-63926
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/6 on worker worker-20210130112340-192.168.11.7-63887
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/8 on worker worker-20210130112359-192.168.11.7-63978
+21/01/31 12:40:43 INFO Master: Launching executor app-20210131124043-0029/9 on worker worker-20210130112354-192.168.11.7-63954
+21/01/31 12:49:26 INFO Master: Removing executor app-20210131124043-0029/5 because it is EXITED
+21/01/31 12:49:26 INFO Master: Launching executor app-20210131124043-0029/10 on worker worker-20210130112348-192.168.11.7-63926
+21/01/31 12:49:40 INFO Master: Received unregister request from application app-20210131124043-0029
+21/01/31 12:49:40 INFO Master: Removing app app-20210131124043-0029
+21/01/31 12:49:40 WARN Master: Got status update for unknown executor app-20210131124043-0029/10
+21/01/31 12:49:40 INFO Master: 192.168.11.7:61201 got disassociated, removing it.
+21/01/31 12:49:40 INFO Master: 192.168.11.7:61200 got disassociated, removing it.
+21/01/31 12:49:40 WARN Master: Got status update for unknown executor app-20210131124043-0029/1
+21/01/31 12:49:40 WARN Master: Got status update for unknown executor app-20210131124043-0029/0
+21/01/31 12:49:40 WARN Master: Got status update for unknown executor app-20210131124043-0029/4
+21/01/31 12:49:40 WARN Master: Got status update for unknown executor app-20210131124043-0029/2
+21/01/31 12:49:40 WARN Master: Got status update for unknown executor app-20210131124043-0029/8
+21/01/31 12:49:41 WARN Master: Got status update for unknown executor app-20210131124043-0029/9
+21/01/31 12:49:41 WARN Master: Got status update for unknown executor app-20210131124043-0029/7
+21/01/31 12:49:41 WARN Master: Got status update for unknown executor app-20210131124043-0029/6
+21/01/31 12:49:43 WARN Master: Got status update for unknown executor app-20210131124043-0029/3
+21/01/31 13:41:07 INFO Master: Registering app logTransform
+21/01/31 13:41:07 INFO Master: Registered app logTransform with ID app-20210131134107-0030
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/0 on worker worker-20210130112357-192.168.11.7-63968
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/1 on worker worker-20210130112346-192.168.11.7-63916
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/2 on worker worker-20210130112338-192.168.11.7-63876
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/3 on worker worker-20210130112343-192.168.11.7-63901
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/4 on worker worker-20210130112352-192.168.11.7-63944
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/5 on worker worker-20210130112348-192.168.11.7-63926
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/6 on worker worker-20210130112340-192.168.11.7-63887
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/8 on worker worker-20210130112359-192.168.11.7-63978
+21/01/31 13:41:07 INFO Master: Launching executor app-20210131134107-0030/9 on worker worker-20210130112354-192.168.11.7-63954
+21/01/31 13:49:07 INFO Master: Application app-20210131134107-0030 requests to kill executors: 9
+21/01/31 13:49:07 INFO Master: Launching executor app-20210131134107-0030/10 on worker worker-20210130112354-192.168.11.7-63954
+21/01/31 13:49:07 INFO Master: Application app-20210131134107-0030 requests to kill executors: 3
+21/01/31 13:49:07 INFO Master: Launching executor app-20210131134107-0030/11 on worker worker-20210130112343-192.168.11.7-63901
+21/01/31 13:49:08 WARN Master: Got status update for unknown executor app-20210131134107-0030/9
+21/01/31 13:49:16 WARN Master: Got status update for unknown executor app-20210131134107-0030/3
+21/01/31 13:51:55 INFO Master: Received unregister request from application app-20210131134107-0030
+21/01/31 13:51:55 INFO Master: Removing app app-20210131134107-0030
+21/01/31 13:51:55 INFO Master: 192.168.11.7:51035 got disassociated, removing it.
+21/01/31 13:51:55 INFO Master: 192.168.11.7:51030 got disassociated, removing it.
+21/01/31 13:51:55 WARN Master: Got status update for unknown executor app-20210131134107-0030/10
+21/01/31 13:51:55 WARN Master: Got status update for unknown executor app-20210131134107-0030/11
+21/01/31 13:51:55 WARN Master: Got status update for unknown executor app-20210131134107-0030/5
+21/01/31 13:51:57 WARN Master: Got status update for unknown executor app-20210131134107-0030/2
+21/01/31 13:51:58 WARN Master: Got status update for unknown executor app-20210131134107-0030/6
+21/01/31 13:51:58 WARN Master: Got status update for unknown executor app-20210131134107-0030/0
+21/01/31 13:51:58 WARN Master: Got status update for unknown executor app-20210131134107-0030/4
+21/01/31 13:51:58 WARN Master: Got status update for unknown executor app-20210131134107-0030/8
+21/01/31 13:51:58 WARN Master: Got status update for unknown executor app-20210131134107-0030/7
+21/01/31 13:51:58 WARN Master: Got status update for unknown executor app-20210131134107-0030/1
+21/01/31 14:36:06 INFO Master: Registering app logTransform
+21/01/31 14:36:06 INFO Master: Registered app logTransform with ID app-20210131143606-0031
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/0 on worker worker-20210130112357-192.168.11.7-63968
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/1 on worker worker-20210130112346-192.168.11.7-63916
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/2 on worker worker-20210130112338-192.168.11.7-63876
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/3 on worker worker-20210130112343-192.168.11.7-63901
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/4 on worker worker-20210130112352-192.168.11.7-63944
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/5 on worker worker-20210130112348-192.168.11.7-63926
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/6 on worker worker-20210130112340-192.168.11.7-63887
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/8 on worker worker-20210130112359-192.168.11.7-63978
+21/01/31 14:36:06 INFO Master: Launching executor app-20210131143606-0031/9 on worker worker-20210130112354-192.168.11.7-63954
+21/01/31 14:36:19 INFO Master: Received unregister request from application app-20210131143606-0031
+21/01/31 14:36:19 INFO Master: Removing app app-20210131143606-0031
+21/01/31 14:36:19 INFO Master: 192.168.11.7:57111 got disassociated, removing it.
+21/01/31 14:36:19 INFO Master: 192.168.11.7:57106 got disassociated, removing it.
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/9
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/2
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/3
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/1
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/8
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/7
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/4
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/5
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/0
+21/01/31 14:36:19 WARN Master: Got status update for unknown executor app-20210131143606-0031/6
+21/01/31 14:38:45 INFO Master: Registering app logTransform
+21/01/31 14:38:45 INFO Master: Registered app logTransform with ID app-20210131143845-0032
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/0 on worker worker-20210130112357-192.168.11.7-63968
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/1 on worker worker-20210130112346-192.168.11.7-63916
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/2 on worker worker-20210130112338-192.168.11.7-63876
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/3 on worker worker-20210130112343-192.168.11.7-63901
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/4 on worker worker-20210130112352-192.168.11.7-63944
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/5 on worker worker-20210130112348-192.168.11.7-63926
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/6 on worker worker-20210130112340-192.168.11.7-63887
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/7 on worker worker-20210130112335-192.168.11.7-63861
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/8 on worker worker-20210130112359-192.168.11.7-63978
+21/01/31 14:38:45 INFO Master: Launching executor app-20210131143845-0032/9 on worker worker-20210130112354-192.168.11.7-63954
+21/01/31 14:45:17 WARN Master: Removing worker-20210130112354-192.168.11.7-63954 because we got no heartbeat in 60 seconds
+21/01/31 14:45:18 INFO Master: Removing worker worker-20210130112354-192.168.11.7-63954 on 192.168.11.7:63954
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 9
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112354-192.168.11.7-63954
+21/01/31 14:45:20 WARN Master: Removing worker-20210130112359-192.168.11.7-63978 because we got no heartbeat in 60 seconds
+21/01/31 14:45:20 INFO Master: Removing worker worker-20210130112359-192.168.11.7-63978 on 192.168.11.7:63978
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 8
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112359-192.168.11.7-63978
+21/01/31 14:45:20 WARN Master: Removing worker-20210130112335-192.168.11.7-63861 because we got no heartbeat in 60 seconds
+21/01/31 14:45:20 INFO Master: Removing worker worker-20210130112335-192.168.11.7-63861 on 192.168.11.7:63861
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 7
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112335-192.168.11.7-63861
+21/01/31 14:45:20 WARN Master: Removing worker-20210130112340-192.168.11.7-63887 because we got no heartbeat in 60 seconds
+21/01/31 14:45:20 INFO Master: Removing worker worker-20210130112340-192.168.11.7-63887 on 192.168.11.7:63887
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 6
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112340-192.168.11.7-63887
+21/01/31 14:45:20 WARN Master: Removing worker-20210130112348-192.168.11.7-63926 because we got no heartbeat in 60 seconds
+21/01/31 14:45:20 INFO Master: Removing worker worker-20210130112348-192.168.11.7-63926 on 192.168.11.7:63926
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 5
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112348-192.168.11.7-63926
+21/01/31 14:45:20 WARN Master: Removing worker-20210130112352-192.168.11.7-63944 because we got no heartbeat in 60 seconds
+21/01/31 14:45:20 INFO Master: Removing worker worker-20210130112352-192.168.11.7-63944 on 192.168.11.7:63944
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 4
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112352-192.168.11.7-63944
+21/01/31 14:45:20 WARN Master: Removing worker-20210130112343-192.168.11.7-63901 because we got no heartbeat in 60 seconds
+21/01/31 14:45:20 INFO Master: Removing worker worker-20210130112343-192.168.11.7-63901 on 192.168.11.7:63901
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 3
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112343-192.168.11.7-63901
+21/01/31 14:45:20 WARN Master: Removing worker-20210130112338-192.168.11.7-63876 because we got no heartbeat in 60 seconds
+21/01/31 14:45:20 INFO Master: Removing worker worker-20210130112338-192.168.11.7-63876 on 192.168.11.7:63876
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 2
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112338-192.168.11.7-63876
+21/01/31 14:45:20 WARN Master: Removing worker-20210130112346-192.168.11.7-63916 because we got no heartbeat in 60 seconds
+21/01/31 14:45:20 INFO Master: Removing worker worker-20210130112346-192.168.11.7-63916 on 192.168.11.7:63916
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 1
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112346-192.168.11.7-63916
+21/01/31 14:45:20 WARN Master: Removing worker-20210130112357-192.168.11.7-63968 because we got no heartbeat in 60 seconds
+21/01/31 14:45:20 INFO Master: Removing worker worker-20210130112357-192.168.11.7-63968 on 192.168.11.7:63968
+21/01/31 14:45:20 INFO Master: Telling app of lost executor: 0
+21/01/31 14:45:20 INFO Master: Telling app of lost worker: worker-20210130112357-192.168.11.7-63968
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:20 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/01/31 14:45:38 INFO Master: Registering worker 192.168.11.7:63968 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:38 INFO Master: Launching executor app-20210131143845-0032/10 on worker worker-20210130112357-192.168.11.7-63968
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:38 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/01/31 14:45:38 INFO Master: Registering worker 192.168.11.7:63901 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:38 INFO Master: Launching executor app-20210131143845-0032/11 on worker worker-20210130112343-192.168.11.7-63901
+21/01/31 14:45:39 WARN Master: Got status update for unknown executor app-20210131143845-0032/3
+21/01/31 14:45:39 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:39 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:39 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:39 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:39 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:39 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:39 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:39 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/01/31 14:45:39 INFO Master: Registering worker 192.168.11.7:63944 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:39 INFO Master: Launching executor app-20210131143845-0032/12 on worker worker-20210130112352-192.168.11.7-63944
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:40 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/01/31 14:45:40 INFO Master: Registering worker 192.168.11.7:63978 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:40 INFO Master: Launching executor app-20210131143845-0032/13 on worker worker-20210130112359-192.168.11.7-63978
+21/01/31 14:45:40 INFO Master: Registering worker 192.168.11.7:63876 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:40 INFO Master: Launching executor app-20210131143845-0032/14 on worker worker-20210130112338-192.168.11.7-63876
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:41 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/01/31 14:45:41 INFO Master: Registering worker 192.168.11.7:63916 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:41 INFO Master: Launching executor app-20210131143845-0032/15 on worker worker-20210130112346-192.168.11.7-63916
+21/01/31 14:45:41 INFO Master: Registering worker 192.168.11.7:63954 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:41 INFO Master: Launching executor app-20210131143845-0032/16 on worker worker-20210130112354-192.168.11.7-63954
+21/01/31 14:45:41 INFO Master: Registering worker 192.168.11.7:63861 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:41 INFO Master: Launching executor app-20210131143845-0032/17 on worker worker-20210130112335-192.168.11.7-63861
+21/01/31 14:45:41 INFO Master: Registering worker 192.168.11.7:63887 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:41 INFO Master: Launching executor app-20210131143845-0032/18 on worker worker-20210130112340-192.168.11.7-63887
+21/01/31 14:45:41 INFO Master: Registering worker 192.168.11.7:63926 with 2 cores, 1024.0 MiB RAM
+21/01/31 14:45:41 INFO Master: Launching executor app-20210131143845-0032/19 on worker worker-20210130112348-192.168.11.7-63926
+21/01/31 14:45:42 WARN Master: Got status update for unknown executor app-20210131143845-0032/8
+21/01/31 14:45:43 WARN Master: Got status update for unknown executor app-20210131143845-0032/9
+21/01/31 14:45:43 WARN Master: Got status update for unknown executor app-20210131143845-0032/2
+21/01/31 14:45:43 WARN Master: Got status update for unknown executor app-20210131143845-0032/1
+21/01/31 14:45:43 WARN Master: Got status update for unknown executor app-20210131143845-0032/4
+21/01/31 14:45:43 WARN Master: Got status update for unknown executor app-20210131143845-0032/6
+21/01/31 14:45:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/7
+21/01/31 14:45:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/5
+21/01/31 14:45:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/0
+21/01/31 14:48:43 INFO Master: Received unregister request from application app-20210131143845-0032
+21/01/31 14:48:43 INFO Master: Removing app app-20210131143845-0032
+21/01/31 14:48:44 INFO Master: 192.168.11.7:57822 got disassociated, removing it.
+21/01/31 14:48:44 INFO Master: 192.168.11.7:57817 got disassociated, removing it.
+21/01/31 14:48:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/10
+21/01/31 14:48:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/11
+21/01/31 14:48:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/16
+21/01/31 14:48:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/19
+21/01/31 14:48:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/17
+21/01/31 14:48:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/15
+21/01/31 14:48:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/18
+21/01/31 14:48:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/13
+21/01/31 14:48:44 WARN Master: Got status update for unknown executor app-20210131143845-0032/14
+21/01/31 14:48:45 WARN Master: Got status update for unknown executor app-20210131143845-0032/12
+21/01/31 15:02:52 INFO Master: Registering app logTransform
+21/01/31 15:02:52 INFO Master: Registered app logTransform with ID app-20210131150252-0033
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/0 on worker worker-20210130112335-192.168.11.7-63861
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/1 on worker worker-20210130112338-192.168.11.7-63876
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/2 on worker worker-20210130112346-192.168.11.7-63916
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/4 on worker worker-20210130112359-192.168.11.7-63978
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/5 on worker worker-20210130112343-192.168.11.7-63901
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/6 on worker worker-20210130112357-192.168.11.7-63968
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/7 on worker worker-20210130112340-192.168.11.7-63887
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/8 on worker worker-20210130112348-192.168.11.7-63926
+21/01/31 15:02:52 INFO Master: Launching executor app-20210131150252-0033/9 on worker worker-20210130112352-192.168.11.7-63944
+21/01/31 15:05:47 INFO Master: Received unregister request from application app-20210131150252-0033
+21/01/31 15:05:47 INFO Master: Removing app app-20210131150252-0033
+21/01/31 15:05:47 INFO Master: 192.168.11.7:63772 got disassociated, removing it.
+21/01/31 15:05:47 INFO Master: 192.168.11.7:63771 got disassociated, removing it.
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/3
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/1
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/8
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/2
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/9
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/7
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/5
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/4
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/0
+21/01/31 15:05:47 WARN Master: Got status update for unknown executor app-20210131150252-0033/6
+21/01/31 15:07:25 INFO Master: Registering app logTransform
+21/01/31 15:07:25 INFO Master: Registered app logTransform with ID app-20210131150725-0034
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/0 on worker worker-20210130112335-192.168.11.7-63861
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/1 on worker worker-20210130112338-192.168.11.7-63876
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/2 on worker worker-20210130112346-192.168.11.7-63916
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/3 on worker worker-20210130112354-192.168.11.7-63954
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/4 on worker worker-20210130112359-192.168.11.7-63978
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/5 on worker worker-20210130112343-192.168.11.7-63901
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/6 on worker worker-20210130112357-192.168.11.7-63968
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/7 on worker worker-20210130112340-192.168.11.7-63887
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/8 on worker worker-20210130112348-192.168.11.7-63926
+21/01/31 15:07:25 INFO Master: Launching executor app-20210131150725-0034/9 on worker worker-20210130112352-192.168.11.7-63944
+21/01/31 15:12:33 INFO Master: Received unregister request from application app-20210131150725-0034
+21/01/31 15:12:33 INFO Master: Removing app app-20210131150725-0034
+21/01/31 15:12:33 INFO Master: 192.168.11.7:64986 got disassociated, removing it.
+21/01/31 15:12:33 INFO Master: 192.168.11.7:64981 got disassociated, removing it.
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/2
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/0
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/9
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/5
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/1
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/8
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/3
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/7
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/6
+21/01/31 15:12:33 WARN Master: Got status update for unknown executor app-20210131150725-0034/4
+21/02/01 05:26:34 WARN Master: Removing worker-20210130112352-192.168.11.7-63944 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112352-192.168.11.7-63944 on 192.168.11.7:63944
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112352-192.168.11.7-63944
+21/02/01 05:26:35 WARN Master: Removing worker-20210130112348-192.168.11.7-63926 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112348-192.168.11.7-63926 on 192.168.11.7:63926
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112348-192.168.11.7-63926
+21/02/01 05:26:35 WARN Master: Removing worker-20210130112340-192.168.11.7-63887 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112340-192.168.11.7-63887 on 192.168.11.7:63887
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112340-192.168.11.7-63887
+21/02/01 05:26:35 WARN Master: Removing worker-20210130112357-192.168.11.7-63968 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112357-192.168.11.7-63968 on 192.168.11.7:63968
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112357-192.168.11.7-63968
+21/02/01 05:26:35 WARN Master: Removing worker-20210130112343-192.168.11.7-63901 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112343-192.168.11.7-63901 on 192.168.11.7:63901
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112343-192.168.11.7-63901
+21/02/01 05:26:35 WARN Master: Removing worker-20210130112359-192.168.11.7-63978 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112359-192.168.11.7-63978 on 192.168.11.7:63978
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112359-192.168.11.7-63978
+21/02/01 05:26:35 WARN Master: Removing worker-20210130112354-192.168.11.7-63954 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112354-192.168.11.7-63954 on 192.168.11.7:63954
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112354-192.168.11.7-63954
+21/02/01 05:26:35 WARN Master: Removing worker-20210130112346-192.168.11.7-63916 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112346-192.168.11.7-63916 on 192.168.11.7:63916
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112346-192.168.11.7-63916
+21/02/01 05:26:35 WARN Master: Removing worker-20210130112338-192.168.11.7-63876 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112338-192.168.11.7-63876 on 192.168.11.7:63876
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112338-192.168.11.7-63876
+21/02/01 05:26:35 WARN Master: Removing worker-20210130112335-192.168.11.7-63861 because we got no heartbeat in 60 seconds
+21/02/01 05:26:35 INFO Master: Removing worker worker-20210130112335-192.168.11.7-63861 on 192.168.11.7:63861
+21/02/01 05:26:35 INFO Master: Telling app of lost worker: worker-20210130112335-192.168.11.7-63861
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112343-192.168.11.7-63901. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112357-192.168.11.7-63968. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112348-192.168.11.7-63926. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112346-192.168.11.7-63916. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112340-192.168.11.7-63887. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112359-192.168.11.7-63978. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112354-192.168.11.7-63954. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112338-192.168.11.7-63876. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63887 with 2 cores, 1024.0 MiB RAM
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112352-192.168.11.7-63944. Asking it to re-register.
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63944 with 2 cores, 1024.0 MiB RAM
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63926 with 2 cores, 1024.0 MiB RAM
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63876 with 2 cores, 1024.0 MiB RAM
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63916 with 2 cores, 1024.0 MiB RAM
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 WARN Master: Got heartbeat from unregistered worker worker-20210130112335-192.168.11.7-63861. Asking it to re-register.
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63978 with 2 cores, 1024.0 MiB RAM
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63954 with 2 cores, 1024.0 MiB RAM
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63968 with 2 cores, 1024.0 MiB RAM
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63861 with 2 cores, 1024.0 MiB RAM
+21/02/01 05:26:35 INFO Master: Registering worker 192.168.11.7:63901 with 2 cores, 1024.0 MiB RAM
+21/02/01 11:13:06 ERROR Master: RECEIVED SIGNAL TERM

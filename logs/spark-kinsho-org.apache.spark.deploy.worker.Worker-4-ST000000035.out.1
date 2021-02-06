@@ -1,0 +1,690 @@
+Spark Command: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java -cp /Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8084 spark://ST000000035:7077
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/30 11:23:42 INFO Worker: Started daemon with process name: 2069@ST000000035
+21/01/30 11:23:42 INFO SignalUtils: Registered signal handler for TERM
+21/01/30 11:23:42 INFO SignalUtils: Registered signal handler for HUP
+21/01/30 11:23:42 INFO SignalUtils: Registered signal handler for INT
+21/01/30 11:23:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/30 11:23:43 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 11:23:43 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 11:23:43 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 11:23:43 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 11:23:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 11:23:43 INFO Utils: Successfully started service 'sparkWorker' on port 63901.
+21/01/30 11:23:43 INFO Worker: Starting Spark worker 192.168.11.7:63901 with 2 cores, 1024.0 MiB RAM
+21/01/30 11:23:43 INFO Worker: Running Spark version 3.0.1
+21/01/30 11:23:43 INFO Worker: Spark home: /Users/kinsho/workspace/spark-3.0.1
+21/01/30 11:23:43 INFO ResourceUtils: ==============================================================
+21/01/30 11:23:43 INFO ResourceUtils: Resources for spark.worker:
+
+21/01/30 11:23:43 INFO ResourceUtils: ==============================================================
+21/01/30 11:23:43 INFO Utils: Successfully started service 'WorkerUI' on port 8084.
+21/01/30 11:23:43 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://192.168.11.7:8084
+21/01/30 11:23:43 INFO Worker: Connecting to master ST000000035:7077...
+21/01/30 11:23:43 INFO TransportClientFactory: Successfully created connection to ST000000035/192.168.11.7:7077 after 24 ms (0 ms spent in bootstraps)
+21/01/30 11:23:43 INFO Worker: Successfully registered with master spark://ST000000035:7077
+21/01/30 12:22:49 INFO Worker: Asked to launch executor app-20210130122249-0000/4 for SimpleApp
+21/01/30 12:22:49 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 12:22:49 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 12:22:49 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 12:22:49 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 12:22:49 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 12:22:49 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=62270" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:62270" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130122249-0000" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 12:23:02 INFO Worker: Asked to kill executor app-20210130122249-0000/4
+21/01/30 12:23:02 INFO ExecutorRunner: Runner thread for executor app-20210130122249-0000/4 interrupted
+21/01/30 12:23:02 INFO ExecutorRunner: Killing process!
+21/01/30 12:23:02 INFO Worker: Executor app-20210130122249-0000/4 finished with state KILLED exitStatus 143
+21/01/30 12:23:02 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 12:23:02 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130122249-0000, execId=4)
+21/01/30 12:23:02 INFO Worker: Cleaning up local directories for application app-20210130122249-0000
+21/01/30 12:23:02 INFO ExternalShuffleBlockResolver: Application app-20210130122249-0000 removed, cleanupLocalDirs = true
+21/01/30 15:01:01 INFO Worker: Asked to launch executor app-20210130150101-0001/4 for SimpleApp
+21/01/30 15:01:01 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 15:01:01 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 15:01:01 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 15:01:01 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 15:01:01 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 15:01:02 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=63543" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:63543" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130150101-0001" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 15:01:22 INFO Worker: Asked to kill executor app-20210130150101-0001/4
+21/01/30 15:01:22 INFO ExecutorRunner: Runner thread for executor app-20210130150101-0001/4 interrupted
+21/01/30 15:01:22 INFO ExecutorRunner: Killing process!
+21/01/30 15:01:23 INFO Worker: Executor app-20210130150101-0001/4 finished with state KILLED exitStatus 143
+21/01/30 15:01:23 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 15:01:23 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130150101-0001, execId=4)
+21/01/30 15:01:23 INFO ExternalShuffleBlockResolver: Application app-20210130150101-0001 removed, cleanupLocalDirs = true
+21/01/30 15:01:23 INFO Worker: Cleaning up local directories for application app-20210130150101-0001
+21/01/30 15:28:08 INFO Worker: Asked to launch executor app-20210130152807-0002/4 for SimpleApp
+21/01/30 15:28:08 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 15:28:08 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 15:28:08 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 15:28:08 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 15:28:08 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 15:28:08 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=54147" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:54147" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130152807-0002" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 15:28:24 INFO Worker: Asked to kill executor app-20210130152807-0002/4
+21/01/30 15:28:24 INFO ExecutorRunner: Runner thread for executor app-20210130152807-0002/4 interrupted
+21/01/30 15:28:24 INFO ExecutorRunner: Killing process!
+21/01/30 15:28:24 INFO Worker: Executor app-20210130152807-0002/4 finished with state KILLED exitStatus 143
+21/01/30 15:28:24 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 15:28:24 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130152807-0002, execId=4)
+21/01/30 15:28:24 INFO ExternalShuffleBlockResolver: Application app-20210130152807-0002 removed, cleanupLocalDirs = true
+21/01/30 15:28:24 INFO Worker: Cleaning up local directories for application app-20210130152807-0002
+21/01/30 15:34:45 INFO Worker: Asked to launch executor app-20210130153445-0003/4 for SimpleApp
+21/01/30 15:34:45 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 15:34:45 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 15:34:45 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 15:34:45 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 15:34:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 15:34:45 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=56257" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:56257" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130153445-0003" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 15:34:58 INFO Worker: Asked to kill executor app-20210130153445-0003/4
+21/01/30 15:34:58 INFO ExecutorRunner: Runner thread for executor app-20210130153445-0003/4 interrupted
+21/01/30 15:34:58 INFO ExecutorRunner: Killing process!
+21/01/30 15:34:58 INFO Worker: Executor app-20210130153445-0003/4 finished with state KILLED exitStatus 143
+21/01/30 15:34:58 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 15:34:58 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130153445-0003, execId=4)
+21/01/30 15:34:58 INFO ExternalShuffleBlockResolver: Application app-20210130153445-0003 removed, cleanupLocalDirs = true
+21/01/30 15:34:58 INFO Worker: Cleaning up local directories for application app-20210130153445-0003
+21/01/30 15:37:17 INFO Worker: Asked to launch executor app-20210130153717-0004/4 for SimpleApp
+21/01/30 15:37:17 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 15:37:17 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 15:37:17 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 15:37:17 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 15:37:17 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 15:37:17 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=56960" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:56960" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130153717-0004" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 15:37:27 INFO Worker: Asked to kill executor app-20210130153717-0004/4
+21/01/30 15:37:27 INFO ExecutorRunner: Runner thread for executor app-20210130153717-0004/4 interrupted
+21/01/30 15:37:27 INFO ExecutorRunner: Killing process!
+21/01/30 15:37:27 INFO Worker: Executor app-20210130153717-0004/4 finished with state KILLED exitStatus 143
+21/01/30 15:37:27 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 15:37:27 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130153717-0004, execId=4)
+21/01/30 15:37:27 INFO Worker: Cleaning up local directories for application app-20210130153717-0004
+21/01/30 15:37:27 INFO ExternalShuffleBlockResolver: Application app-20210130153717-0004 removed, cleanupLocalDirs = true
+21/01/30 15:38:45 INFO Worker: Asked to launch executor app-20210130153845-0005/4 for SimpleApp
+21/01/30 15:38:45 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 15:38:45 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 15:38:45 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 15:38:45 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 15:38:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 15:38:45 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=57374" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:57374" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130153845-0005" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 15:39:01 INFO Worker: Asked to kill executor app-20210130153845-0005/4
+21/01/30 15:39:01 INFO ExecutorRunner: Runner thread for executor app-20210130153845-0005/4 interrupted
+21/01/30 15:39:01 INFO ExecutorRunner: Killing process!
+21/01/30 15:39:01 INFO Worker: Executor app-20210130153845-0005/4 finished with state KILLED exitStatus 143
+21/01/30 15:39:01 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 15:39:01 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130153845-0005, execId=4)
+21/01/30 15:39:01 INFO ExternalShuffleBlockResolver: Application app-20210130153845-0005 removed, cleanupLocalDirs = true
+21/01/30 15:39:01 INFO Worker: Cleaning up local directories for application app-20210130153845-0005
+21/01/30 15:46:04 INFO Worker: Asked to launch executor app-20210130154604-0006/4 for SimpleApp
+21/01/30 15:46:04 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 15:46:04 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 15:46:04 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 15:46:04 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 15:46:04 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 15:46:04 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=59350" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:59350" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130154604-0006" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 15:46:18 INFO Worker: Asked to kill executor app-20210130154604-0006/4
+21/01/30 15:46:18 INFO ExecutorRunner: Runner thread for executor app-20210130154604-0006/4 interrupted
+21/01/30 15:46:18 INFO ExecutorRunner: Killing process!
+21/01/30 15:46:19 INFO Worker: Executor app-20210130154604-0006/4 finished with state KILLED exitStatus 143
+21/01/30 15:46:19 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 15:46:19 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130154604-0006, execId=4)
+21/01/30 15:46:19 INFO ExternalShuffleBlockResolver: Application app-20210130154604-0006 removed, cleanupLocalDirs = true
+21/01/30 15:46:19 INFO Worker: Cleaning up local directories for application app-20210130154604-0006
+21/01/30 15:47:56 INFO Worker: Asked to launch executor app-20210130154756-0007/4 for logTransform
+21/01/30 15:47:56 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 15:47:56 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 15:47:56 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 15:47:56 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 15:47:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 15:47:56 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=59862" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:59862" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130154756-0007" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 15:48:05 INFO Worker: Asked to kill executor app-20210130154756-0007/4
+21/01/30 15:48:05 INFO ExecutorRunner: Runner thread for executor app-20210130154756-0007/4 interrupted
+21/01/30 15:48:05 INFO ExecutorRunner: Killing process!
+21/01/30 15:48:05 INFO Worker: Executor app-20210130154756-0007/4 finished with state KILLED exitStatus 143
+21/01/30 15:48:05 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 15:48:05 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130154756-0007, execId=4)
+21/01/30 15:48:05 INFO Worker: Cleaning up local directories for application app-20210130154756-0007
+21/01/30 15:48:05 INFO ExternalShuffleBlockResolver: Application app-20210130154756-0007 removed, cleanupLocalDirs = true
+21/01/30 16:09:30 INFO Worker: Asked to launch executor app-20210130160930-0008/4 for logTransform
+21/01/30 16:09:30 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 16:09:30 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 16:09:30 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 16:09:30 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 16:09:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 16:09:30 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=65247" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:65247" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130160930-0008" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 16:09:38 INFO Worker: Asked to kill executor app-20210130160930-0008/4
+21/01/30 16:09:38 INFO ExecutorRunner: Runner thread for executor app-20210130160930-0008/4 interrupted
+21/01/30 16:09:38 INFO ExecutorRunner: Killing process!
+21/01/30 16:09:39 INFO Worker: Executor app-20210130160930-0008/4 finished with state KILLED exitStatus 143
+21/01/30 16:09:39 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 16:09:39 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130160930-0008, execId=4)
+21/01/30 16:09:39 INFO Worker: Cleaning up local directories for application app-20210130160930-0008
+21/01/30 16:09:39 INFO ExternalShuffleBlockResolver: Application app-20210130160930-0008 removed, cleanupLocalDirs = true
+21/01/30 16:14:56 INFO Worker: Asked to launch executor app-20210130161456-0009/4 for logTransform
+21/01/30 16:14:56 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 16:14:56 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 16:14:56 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 16:14:56 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 16:14:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 16:14:56 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=50369" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:50369" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130161456-0009" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 16:15:05 INFO Worker: Asked to kill executor app-20210130161456-0009/4
+21/01/30 16:15:05 INFO ExecutorRunner: Runner thread for executor app-20210130161456-0009/4 interrupted
+21/01/30 16:15:05 INFO ExecutorRunner: Killing process!
+21/01/30 16:15:05 INFO Worker: Executor app-20210130161456-0009/4 finished with state KILLED exitStatus 143
+21/01/30 16:15:05 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 16:15:05 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130161456-0009, execId=4)
+21/01/30 16:15:05 INFO Worker: Cleaning up local directories for application app-20210130161456-0009
+21/01/30 16:15:05 INFO ExternalShuffleBlockResolver: Application app-20210130161456-0009 removed, cleanupLocalDirs = true
+21/01/30 16:16:27 INFO Worker: Asked to launch executor app-20210130161627-0010/4 for logTransform
+21/01/30 16:16:27 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 16:16:27 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 16:16:27 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 16:16:27 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 16:16:27 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 16:16:27 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=50802" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:50802" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130161627-0010" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 16:16:35 INFO Worker: Asked to kill executor app-20210130161627-0010/4
+21/01/30 16:16:35 INFO ExecutorRunner: Runner thread for executor app-20210130161627-0010/4 interrupted
+21/01/30 16:16:35 INFO ExecutorRunner: Killing process!
+21/01/30 16:16:35 INFO Worker: Executor app-20210130161627-0010/4 finished with state KILLED exitStatus 143
+21/01/30 16:16:35 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 16:16:35 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130161627-0010, execId=4)
+21/01/30 16:16:35 INFO ExternalShuffleBlockResolver: Application app-20210130161627-0010 removed, cleanupLocalDirs = true
+21/01/30 16:16:35 INFO Worker: Cleaning up local directories for application app-20210130161627-0010
+21/01/30 16:24:12 INFO Worker: Asked to launch executor app-20210130162412-0011/4 for logTransform
+21/01/30 16:24:12 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 16:24:12 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 16:24:12 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 16:24:12 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 16:24:12 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 16:24:13 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=52820" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:52820" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130162412-0011" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 16:24:22 INFO Worker: Asked to kill executor app-20210130162412-0011/4
+21/01/30 16:24:22 INFO ExecutorRunner: Runner thread for executor app-20210130162412-0011/4 interrupted
+21/01/30 16:24:22 INFO ExecutorRunner: Killing process!
+21/01/30 16:24:22 INFO Worker: Executor app-20210130162412-0011/4 finished with state KILLED exitStatus 143
+21/01/30 16:24:22 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 16:24:22 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130162412-0011, execId=4)
+21/01/30 16:24:22 INFO ExternalShuffleBlockResolver: Application app-20210130162412-0011 removed, cleanupLocalDirs = true
+21/01/30 16:24:22 INFO Worker: Cleaning up local directories for application app-20210130162412-0011
+21/01/30 16:26:56 INFO Worker: Asked to launch executor app-20210130162656-0012/4 for logTransform
+21/01/30 16:26:56 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 16:26:56 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 16:26:56 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 16:26:56 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 16:26:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 16:26:56 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=53542" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:53542" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130162656-0012" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 16:27:04 INFO Worker: Asked to kill executor app-20210130162656-0012/4
+21/01/30 16:27:04 INFO ExecutorRunner: Runner thread for executor app-20210130162656-0012/4 interrupted
+21/01/30 16:27:04 INFO ExecutorRunner: Killing process!
+21/01/30 16:27:04 INFO Worker: Executor app-20210130162656-0012/4 finished with state KILLED exitStatus 143
+21/01/30 16:27:04 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 16:27:04 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130162656-0012, execId=4)
+21/01/30 16:27:04 INFO Worker: Cleaning up local directories for application app-20210130162656-0012
+21/01/30 16:27:04 INFO ExternalShuffleBlockResolver: Application app-20210130162656-0012 removed, cleanupLocalDirs = true
+21/01/30 16:29:46 INFO Worker: Asked to launch executor app-20210130162946-0013/4 for logTransform
+21/01/30 16:29:46 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 16:29:46 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 16:29:46 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 16:29:46 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 16:29:46 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 16:29:46 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=54317" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:54317" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130162946-0013" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 16:29:55 INFO Worker: Asked to kill executor app-20210130162946-0013/4
+21/01/30 16:29:55 INFO ExecutorRunner: Runner thread for executor app-20210130162946-0013/4 interrupted
+21/01/30 16:29:55 INFO ExecutorRunner: Killing process!
+21/01/30 16:29:56 INFO Worker: Executor app-20210130162946-0013/4 finished with state KILLED exitStatus 143
+21/01/30 16:29:56 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 16:29:56 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130162946-0013, execId=4)
+21/01/30 16:29:56 INFO Worker: Cleaning up local directories for application app-20210130162946-0013
+21/01/30 16:29:56 INFO ExternalShuffleBlockResolver: Application app-20210130162946-0013 removed, cleanupLocalDirs = true
+21/01/30 16:32:35 INFO Worker: Asked to launch executor app-20210130163235-0014/4 for logTransform
+21/01/30 16:32:35 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 16:32:35 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 16:32:35 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 16:32:35 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 16:32:35 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 16:32:35 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=55052" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:55052" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130163235-0014" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 16:32:47 INFO Worker: Asked to kill executor app-20210130163235-0014/4
+21/01/30 16:32:47 INFO ExecutorRunner: Runner thread for executor app-20210130163235-0014/4 interrupted
+21/01/30 16:32:47 INFO ExecutorRunner: Killing process!
+21/01/30 16:32:48 INFO Worker: Executor app-20210130163235-0014/4 finished with state KILLED exitStatus 143
+21/01/30 16:32:48 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 16:32:48 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130163235-0014, execId=4)
+21/01/30 16:32:48 INFO Worker: Cleaning up local directories for application app-20210130163235-0014
+21/01/30 16:32:48 INFO ExternalShuffleBlockResolver: Application app-20210130163235-0014 removed, cleanupLocalDirs = true
+21/01/30 16:52:24 INFO Worker: Asked to launch executor app-20210130165224-0015/4 for logTransform
+21/01/30 16:52:24 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 16:52:24 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 16:52:24 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 16:52:24 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 16:52:24 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 16:52:24 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=59986" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:59986" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130165224-0015" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 16:52:37 INFO Worker: Asked to kill executor app-20210130165224-0015/4
+21/01/30 16:52:37 INFO ExecutorRunner: Runner thread for executor app-20210130165224-0015/4 interrupted
+21/01/30 16:52:37 INFO ExecutorRunner: Killing process!
+21/01/30 16:52:37 INFO Worker: Executor app-20210130165224-0015/4 finished with state KILLED exitStatus 143
+21/01/30 16:52:37 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 16:52:37 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130165224-0015, execId=4)
+21/01/30 16:52:37 INFO ExternalShuffleBlockResolver: Application app-20210130165224-0015 removed, cleanupLocalDirs = true
+21/01/30 16:52:37 INFO Worker: Cleaning up local directories for application app-20210130165224-0015
+21/01/30 17:05:56 INFO Worker: Asked to launch executor app-20210130170556-0016/4 for logTransform
+21/01/30 17:05:56 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 17:05:56 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 17:05:56 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 17:05:56 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 17:05:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 17:05:57 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=63556" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:63556" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130170556-0016" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 17:09:26 INFO Worker: Asked to kill executor app-20210130170556-0016/4
+21/01/30 17:09:26 INFO ExecutorRunner: Runner thread for executor app-20210130170556-0016/4 interrupted
+21/01/30 17:09:26 INFO ExecutorRunner: Killing process!
+21/01/30 17:09:27 INFO Worker: Executor app-20210130170556-0016/4 finished with state KILLED exitStatus 143
+21/01/30 17:09:27 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 17:09:27 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130170556-0016, execId=4)
+21/01/30 17:09:27 INFO Worker: Cleaning up local directories for application app-20210130170556-0016
+21/01/30 17:09:27 INFO ExternalShuffleBlockResolver: Application app-20210130170556-0016 removed, cleanupLocalDirs = true
+21/01/30 18:08:00 INFO Worker: Asked to launch executor app-20210130180800-0017/4 for logTransform
+21/01/30 18:08:00 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:08:00 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:08:00 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:08:00 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:08:00 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:08:00 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=63119" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:63119" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130180800-0017" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:08:12 INFO Worker: Asked to kill executor app-20210130180800-0017/4
+21/01/30 18:08:12 INFO ExecutorRunner: Runner thread for executor app-20210130180800-0017/4 interrupted
+21/01/30 18:08:12 INFO ExecutorRunner: Killing process!
+21/01/30 18:08:12 INFO Worker: Executor app-20210130180800-0017/4 finished with state KILLED exitStatus 143
+21/01/30 18:08:12 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:08:12 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130180800-0017, execId=4)
+21/01/30 18:08:12 INFO ExternalShuffleBlockResolver: Application app-20210130180800-0017 removed, cleanupLocalDirs = true
+21/01/30 18:08:12 INFO Worker: Cleaning up local directories for application app-20210130180800-0017
+21/01/30 18:18:05 INFO Worker: Asked to launch executor app-20210130181805-0018/4 for logTransform
+21/01/30 18:18:05 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:18:05 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:18:05 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:18:05 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:18:05 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:18:05 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=49376" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:49376" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130181805-0018" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:20:23 INFO Worker: Asked to kill executor app-20210130181805-0018/4
+21/01/30 18:20:23 INFO ExecutorRunner: Runner thread for executor app-20210130181805-0018/4 interrupted
+21/01/30 18:20:23 INFO ExecutorRunner: Killing process!
+21/01/30 18:20:24 INFO Worker: Executor app-20210130181805-0018/4 finished with state KILLED exitStatus 143
+21/01/30 18:20:24 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:20:24 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130181805-0018, execId=4)
+21/01/30 18:20:24 INFO ExternalShuffleBlockResolver: Application app-20210130181805-0018 removed, cleanupLocalDirs = true
+21/01/30 18:20:24 INFO Worker: Cleaning up local directories for application app-20210130181805-0018
+21/01/30 18:26:24 INFO Worker: Asked to launch executor app-20210130182624-0019/4 for logTransform
+21/01/30 18:26:24 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:26:24 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:26:24 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:26:24 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:26:24 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:26:24 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=51577" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:51577" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130182624-0019" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:27:23 INFO Worker: Asked to kill executor app-20210130182624-0019/4
+21/01/30 18:27:23 INFO ExecutorRunner: Runner thread for executor app-20210130182624-0019/4 interrupted
+21/01/30 18:27:23 INFO ExecutorRunner: Killing process!
+21/01/30 18:27:24 INFO Worker: Executor app-20210130182624-0019/4 finished with state KILLED exitStatus 143
+21/01/30 18:27:24 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:27:24 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130182624-0019, execId=4)
+21/01/30 18:27:24 INFO Worker: Cleaning up local directories for application app-20210130182624-0019
+21/01/30 18:27:24 INFO ExternalShuffleBlockResolver: Application app-20210130182624-0019 removed, cleanupLocalDirs = true
+21/01/30 18:28:17 INFO Worker: Asked to launch executor app-20210130182817-0020/4 for logTransform
+21/01/30 18:28:17 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:28:17 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:28:17 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:28:17 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:28:17 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:28:17 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=52115" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:52115" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130182817-0020" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:31:09 INFO Worker: Asked to kill executor app-20210130182817-0020/4
+21/01/30 18:31:09 INFO ExecutorRunner: Runner thread for executor app-20210130182817-0020/4 interrupted
+21/01/30 18:31:09 INFO ExecutorRunner: Killing process!
+21/01/30 18:31:10 INFO Worker: Executor app-20210130182817-0020/4 finished with state KILLED exitStatus 143
+21/01/30 18:31:10 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:31:10 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130182817-0020, execId=4)
+21/01/30 18:31:10 INFO ExternalShuffleBlockResolver: Application app-20210130182817-0020 removed, cleanupLocalDirs = true
+21/01/30 18:31:10 INFO Worker: Cleaning up local directories for application app-20210130182817-0020
+21/01/30 18:33:47 INFO Worker: Asked to launch executor app-20210130183347-0021/4 for logTransform
+21/01/30 18:33:47 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:33:47 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:33:47 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:33:47 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:33:47 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:33:47 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=53587" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:53587" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130183347-0021" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:36:25 INFO Worker: Asked to kill executor app-20210130183347-0021/4
+21/01/30 18:36:25 INFO ExecutorRunner: Runner thread for executor app-20210130183347-0021/4 interrupted
+21/01/30 18:36:25 INFO ExecutorRunner: Killing process!
+21/01/30 18:36:25 INFO Worker: Executor app-20210130183347-0021/4 finished with state KILLED exitStatus 143
+21/01/30 18:36:25 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:36:25 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130183347-0021, execId=4)
+21/01/30 18:36:25 INFO Worker: Cleaning up local directories for application app-20210130183347-0021
+21/01/30 18:36:25 INFO ExternalShuffleBlockResolver: Application app-20210130183347-0021 removed, cleanupLocalDirs = true
+21/01/30 18:39:47 INFO Worker: Asked to launch executor app-20210130183947-0022/4 for logTransform
+21/01/30 18:39:47 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:39:47 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:39:47 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:39:47 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:39:47 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:39:47 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=55163" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:55163" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130183947-0022" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:42:08 INFO Worker: Asked to kill executor app-20210130183947-0022/4
+21/01/30 18:42:08 INFO ExecutorRunner: Runner thread for executor app-20210130183947-0022/4 interrupted
+21/01/30 18:42:08 INFO ExecutorRunner: Killing process!
+21/01/30 18:42:08 INFO Worker: Executor app-20210130183947-0022/4 finished with state KILLED exitStatus 143
+21/01/30 18:42:08 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:42:08 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130183947-0022, execId=4)
+21/01/30 18:42:08 INFO Worker: Cleaning up local directories for application app-20210130183947-0022
+21/01/30 18:42:08 INFO ExternalShuffleBlockResolver: Application app-20210130183947-0022 removed, cleanupLocalDirs = true
+21/01/30 18:45:04 INFO Worker: Asked to launch executor app-20210130184504-0023/4 for logTransform
+21/01/30 18:45:04 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:45:04 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:45:04 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:45:04 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:45:04 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:45:04 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=56813" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:56813" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130184504-0023" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:47:53 INFO Worker: Asked to kill executor app-20210130184504-0023/4
+21/01/30 18:47:53 INFO ExecutorRunner: Runner thread for executor app-20210130184504-0023/4 interrupted
+21/01/30 18:47:53 INFO ExecutorRunner: Killing process!
+21/01/30 18:47:53 INFO Worker: Executor app-20210130184504-0023/4 finished with state KILLED exitStatus 143
+21/01/30 18:47:53 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:47:53 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130184504-0023, execId=4)
+21/01/30 18:47:53 INFO Worker: Cleaning up local directories for application app-20210130184504-0023
+21/01/30 18:47:53 INFO ExternalShuffleBlockResolver: Application app-20210130184504-0023 removed, cleanupLocalDirs = true
+21/01/30 18:54:09 INFO Worker: Asked to launch executor app-20210130185409-0024/4 for logTransform
+21/01/30 18:54:09 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:54:09 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:54:09 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:54:09 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:54:09 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:54:09 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=59135" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:59135" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130185409-0024" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:54:10 INFO Worker: Asked to kill executor app-20210130185409-0024/4
+21/01/30 18:54:10 INFO ExecutorRunner: Runner thread for executor app-20210130185409-0024/4 interrupted
+21/01/30 18:54:10 INFO ExecutorRunner: Killing process!
+21/01/30 18:54:10 INFO Worker: Executor app-20210130185409-0024/4 finished with state KILLED exitStatus 143
+21/01/30 18:54:10 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:54:10 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130185409-0024, execId=4)
+21/01/30 18:54:10 INFO Worker: Cleaning up local directories for application app-20210130185409-0024
+21/01/30 18:54:10 INFO ExternalShuffleBlockResolver: Application app-20210130185409-0024 removed, cleanupLocalDirs = true
+21/01/30 18:54:22 INFO Worker: Asked to launch executor app-20210130185422-0025/4 for logTransform
+21/01/30 18:54:22 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:54:22 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:54:22 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:54:22 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:54:22 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:54:23 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=59194" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:59194" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130185422-0025" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:56:50 INFO Worker: Asked to kill executor app-20210130185422-0025/4
+21/01/30 18:56:50 INFO ExecutorRunner: Runner thread for executor app-20210130185422-0025/4 interrupted
+21/01/30 18:56:50 INFO ExecutorRunner: Killing process!
+21/01/30 18:56:51 INFO Worker: Executor app-20210130185422-0025/4 finished with state KILLED exitStatus 143
+21/01/30 18:56:51 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:56:51 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130185422-0025, execId=4)
+21/01/30 18:56:51 INFO Worker: Cleaning up local directories for application app-20210130185422-0025
+21/01/30 18:56:51 INFO ExternalShuffleBlockResolver: Application app-20210130185422-0025 removed, cleanupLocalDirs = true
+21/01/30 18:58:30 INFO Worker: Asked to launch executor app-20210130185830-0026/4 for logTransform
+21/01/30 18:58:30 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:58:30 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:58:30 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:58:30 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:58:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:58:30 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=60282" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:60282" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130185830-0026" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 18:58:43 INFO Worker: Asked to kill executor app-20210130185830-0026/4
+21/01/30 18:58:43 INFO ExecutorRunner: Runner thread for executor app-20210130185830-0026/4 interrupted
+21/01/30 18:58:43 INFO ExecutorRunner: Killing process!
+21/01/30 18:58:44 INFO Worker: Executor app-20210130185830-0026/4 finished with state KILLED exitStatus 143
+21/01/30 18:58:44 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 18:58:44 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130185830-0026, execId=4)
+21/01/30 18:58:44 INFO Worker: Cleaning up local directories for application app-20210130185830-0026
+21/01/30 18:58:44 INFO ExternalShuffleBlockResolver: Application app-20210130185830-0026 removed, cleanupLocalDirs = true
+21/01/30 18:59:22 INFO Worker: Asked to launch executor app-20210130185922-0027/4 for logTransform
+21/01/30 18:59:22 INFO SecurityManager: Changing view acls to: kinsho
+21/01/30 18:59:22 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/30 18:59:22 INFO SecurityManager: Changing view acls groups to: 
+21/01/30 18:59:22 INFO SecurityManager: Changing modify acls groups to: 
+21/01/30 18:59:22 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/30 18:59:23 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=60550" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:60550" "--executor-id" "4" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210130185922-0027" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/30 19:01:40 INFO Worker: Asked to kill executor app-20210130185922-0027/4
+21/01/30 19:01:40 INFO ExecutorRunner: Runner thread for executor app-20210130185922-0027/4 interrupted
+21/01/30 19:01:40 INFO ExecutorRunner: Killing process!
+21/01/30 19:01:41 INFO Worker: Executor app-20210130185922-0027/4 finished with state KILLED exitStatus 143
+21/01/30 19:01:41 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 4
+21/01/30 19:01:41 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210130185922-0027, execId=4)
+21/01/30 19:01:41 INFO Worker: Cleaning up local directories for application app-20210130185922-0027
+21/01/30 19:01:41 INFO ExternalShuffleBlockResolver: Application app-20210130185922-0027 removed, cleanupLocalDirs = true
+21/01/31 04:05:23 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 04:05:24 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 04:05:24 INFO Worker: Connecting to master ST000000035:7077...
+21/01/31 04:05:24 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 04:05:24 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 04:05:24 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 04:05:24 INFO Worker: Successfully registered with master spark://ST000000035:7077
+21/01/31 12:10:53 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 12:10:53 INFO Worker: Connecting to master ST000000035:7077...
+21/01/31 12:10:53 INFO Worker: Successfully registered with master spark://ST000000035:7077
+21/01/31 12:33:45 INFO Worker: Asked to launch executor app-20210131123345-0028/3 for logTransform
+21/01/31 12:33:45 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 12:33:45 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 12:33:45 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 12:33:45 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 12:33:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 12:33:45 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=59391" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:59391" "--executor-id" "3" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131123345-0028" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/31 12:38:57 INFO Worker: Asked to kill executor app-20210131123345-0028/3
+21/01/31 12:38:57 INFO ExecutorRunner: Runner thread for executor app-20210131123345-0028/3 interrupted
+21/01/31 12:38:57 INFO ExecutorRunner: Killing process!
+21/01/31 12:38:58 INFO Worker: Executor app-20210131123345-0028/3 finished with state KILLED exitStatus 143
+21/01/31 12:38:58 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 3
+21/01/31 12:38:58 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210131123345-0028, execId=3)
+21/01/31 12:38:58 INFO ExternalShuffleBlockResolver: Application app-20210131123345-0028 removed, cleanupLocalDirs = true
+21/01/31 12:38:58 INFO Worker: Cleaning up local directories for application app-20210131123345-0028
+21/01/31 12:40:43 INFO Worker: Asked to launch executor app-20210131124043-0029/3 for logTransform
+21/01/31 12:40:43 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 12:40:43 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 12:40:43 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 12:40:43 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 12:40:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 12:40:43 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=61200" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:61200" "--executor-id" "3" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131124043-0029" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/31 12:49:40 INFO Worker: Asked to kill executor app-20210131124043-0029/3
+21/01/31 12:49:40 INFO ExecutorRunner: Runner thread for executor app-20210131124043-0029/3 interrupted
+21/01/31 12:49:40 INFO ExecutorRunner: Killing process!
+21/01/31 12:49:43 INFO Worker: Executor app-20210131124043-0029/3 finished with state KILLED exitStatus 143
+21/01/31 12:49:43 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 3
+21/01/31 12:49:43 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210131124043-0029, execId=3)
+21/01/31 12:49:43 INFO Worker: Cleaning up local directories for application app-20210131124043-0029
+21/01/31 12:49:43 INFO ExternalShuffleBlockResolver: Application app-20210131124043-0029 removed, cleanupLocalDirs = true
+21/01/31 13:41:07 INFO Worker: Asked to launch executor app-20210131134107-0030/3 for logTransform
+21/01/31 13:41:07 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 13:41:07 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 13:41:07 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 13:41:07 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 13:41:07 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 13:41:07 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=51030" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:51030" "--executor-id" "3" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131134107-0030" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/31 13:49:07 INFO Worker: Asked to kill executor app-20210131134107-0030/3
+21/01/31 13:49:07 INFO ExecutorRunner: Runner thread for executor app-20210131134107-0030/3 interrupted
+21/01/31 13:49:07 INFO ExecutorRunner: Killing process!
+21/01/31 13:49:07 INFO Worker: Asked to launch executor app-20210131134107-0030/11 for logTransform
+21/01/31 13:49:07 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 13:49:07 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 13:49:07 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 13:49:07 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 13:49:07 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 13:49:07 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=51030" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:51030" "--executor-id" "11" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131134107-0030" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/31 13:49:16 INFO Worker: Executor app-20210131134107-0030/3 finished with state KILLED exitStatus 50
+21/01/31 13:49:16 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 3
+21/01/31 13:49:16 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210131134107-0030, execId=3)
+21/01/31 13:51:55 INFO Worker: Asked to kill executor app-20210131134107-0030/11
+21/01/31 13:51:55 INFO ExecutorRunner: Runner thread for executor app-20210131134107-0030/11 interrupted
+21/01/31 13:51:55 INFO ExecutorRunner: Killing process!
+21/01/31 13:51:55 INFO Worker: Executor app-20210131134107-0030/11 finished with state KILLED exitStatus 143
+21/01/31 13:51:55 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 11
+21/01/31 13:51:55 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210131134107-0030, execId=11)
+21/01/31 13:51:55 INFO Worker: Cleaning up local directories for application app-20210131134107-0030
+21/01/31 13:51:55 INFO ExternalShuffleBlockResolver: Application app-20210131134107-0030 removed, cleanupLocalDirs = true
+21/01/31 14:36:06 INFO Worker: Asked to launch executor app-20210131143606-0031/3 for logTransform
+21/01/31 14:36:06 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 14:36:06 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 14:36:06 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 14:36:06 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 14:36:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 14:36:06 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=57106" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:57106" "--executor-id" "3" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131143606-0031" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/31 14:36:19 INFO Worker: Asked to kill executor app-20210131143606-0031/3
+21/01/31 14:36:19 INFO ExecutorRunner: Runner thread for executor app-20210131143606-0031/3 interrupted
+21/01/31 14:36:19 INFO ExecutorRunner: Killing process!
+21/01/31 14:36:19 INFO Worker: Executor app-20210131143606-0031/3 finished with state KILLED exitStatus 143
+21/01/31 14:36:19 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 3
+21/01/31 14:36:19 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210131143606-0031, execId=3)
+21/01/31 14:36:19 INFO Worker: Cleaning up local directories for application app-20210131143606-0031
+21/01/31 14:36:19 INFO ExternalShuffleBlockResolver: Application app-20210131143606-0031 removed, cleanupLocalDirs = true
+21/01/31 14:38:45 INFO Worker: Asked to launch executor app-20210131143845-0032/3 for logTransform
+21/01/31 14:38:45 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 14:38:45 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 14:38:45 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 14:38:45 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 14:38:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 14:38:45 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=57817" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:57817" "--executor-id" "3" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131143845-0032" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Connecting to master ST000000035:7077...
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/01/31 14:45:38 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/01/31 14:45:38 INFO Worker: Successfully registered with master spark://ST000000035:7077
+21/01/31 14:45:38 INFO Worker: Asked to launch executor app-20210131143845-0032/11 for logTransform
+21/01/31 14:45:38 INFO Worker: Asked to kill executor app-20210131143845-0032/3
+21/01/31 14:45:38 INFO ExecutorRunner: Runner thread for executor app-20210131143845-0032/3 interrupted
+21/01/31 14:45:38 INFO ExecutorRunner: Killing process!
+21/01/31 14:45:38 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 14:45:38 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 14:45:38 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 14:45:38 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 14:45:38 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 14:45:38 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=57817" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:57817" "--executor-id" "11" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131143845-0032" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/31 14:45:39 INFO Worker: Executor app-20210131143845-0032/3 finished with state KILLED exitStatus 143
+21/01/31 14:45:39 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 3
+21/01/31 14:45:39 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210131143845-0032, execId=3)
+21/01/31 14:48:44 INFO Worker: Asked to kill executor app-20210131143845-0032/11
+21/01/31 14:48:44 INFO ExecutorRunner: Runner thread for executor app-20210131143845-0032/11 interrupted
+21/01/31 14:48:44 INFO ExecutorRunner: Killing process!
+21/01/31 14:48:44 INFO Worker: Executor app-20210131143845-0032/11 finished with state KILLED exitStatus 143
+21/01/31 14:48:44 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 11
+21/01/31 14:48:44 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210131143845-0032, execId=11)
+21/01/31 14:48:44 INFO ExternalShuffleBlockResolver: Application app-20210131143845-0032 removed, cleanupLocalDirs = true
+21/01/31 14:48:44 INFO Worker: Cleaning up local directories for application app-20210131143845-0032
+21/01/31 15:02:53 INFO Worker: Asked to launch executor app-20210131150252-0033/5 for logTransform
+21/01/31 15:02:53 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 15:02:53 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 15:02:53 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 15:02:53 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 15:02:53 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 15:02:53 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=63771" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:63771" "--executor-id" "5" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131150252-0033" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/31 15:05:47 INFO Worker: Asked to kill executor app-20210131150252-0033/5
+21/01/31 15:05:47 INFO ExecutorRunner: Runner thread for executor app-20210131150252-0033/5 interrupted
+21/01/31 15:05:47 INFO ExecutorRunner: Killing process!
+21/01/31 15:05:47 INFO Worker: Executor app-20210131150252-0033/5 finished with state KILLED exitStatus 143
+21/01/31 15:05:47 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 5
+21/01/31 15:05:47 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210131150252-0033, execId=5)
+21/01/31 15:05:47 INFO ExternalShuffleBlockResolver: Application app-20210131150252-0033 removed, cleanupLocalDirs = true
+21/01/31 15:05:47 INFO Worker: Cleaning up local directories for application app-20210131150252-0033
+21/01/31 15:07:25 INFO Worker: Asked to launch executor app-20210131150725-0034/5 for logTransform
+21/01/31 15:07:25 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 15:07:25 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 15:07:25 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 15:07:25 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 15:07:25 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 15:07:25 INFO ExecutorRunner: Launch command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=64981" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:64981" "--executor-id" "5" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131150725-0034" "--worker-url" "spark://Worker@192.168.11.7:63901"
+21/01/31 15:12:33 INFO Worker: Asked to kill executor app-20210131150725-0034/5
+21/01/31 15:12:33 INFO ExecutorRunner: Runner thread for executor app-20210131150725-0034/5 interrupted
+21/01/31 15:12:33 INFO ExecutorRunner: Killing process!
+21/01/31 15:12:33 INFO Worker: Executor app-20210131150725-0034/5 finished with state KILLED exitStatus 143
+21/01/31 15:12:33 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 5
+21/01/31 15:12:33 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20210131150725-0034, execId=5)
+21/01/31 15:12:33 INFO ExternalShuffleBlockResolver: Application app-20210131150725-0034 removed, cleanupLocalDirs = true
+21/01/31 15:12:33 INFO Worker: Cleaning up local directories for application app-20210131150725-0034
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Connecting to master ST000000035:7077...
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Master with url spark://ST000000035:7077 requested this worker to reconnect.
+21/02/01 05:26:35 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 05:26:35 INFO Worker: Successfully registered with master spark://ST000000035:7077
+21/02/01 11:13:07 INFO Worker: ST000000035:7077 Disassociated !
+21/02/01 11:13:07 ERROR Worker: Connection to master failed! Waiting for master to reconnect...
+21/02/01 11:13:07 INFO Worker: ST000000035:7077 Disassociated !
+21/02/01 11:13:07 INFO Worker: Connecting to master ST000000035:7077...
+21/02/01 11:13:07 ERROR Worker: Connection to master failed! Waiting for master to reconnect...
+21/02/01 11:13:07 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+21/02/01 11:13:07 INFO TransportClientFactory: Found inactive connection to ST000000035/192.168.11.7:7077, creating a new one.
+21/02/01 11:13:07 WARN Worker: Failed to connect to master ST000000035:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:302)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:101)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:109)
+	at org.apache.spark.deploy.worker.Worker$$anon$1.run(Worker.scala:277)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Failed to connect to ST000000035/192.168.11.7:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:253)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:195)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: ST000000035/192.168.11.7:7077
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+21/02/01 11:13:11 ERROR Worker: RECEIVED SIGNAL TERM
+21/02/01 11:13:11 INFO ShutdownHookManager: Shutdown hook called
+21/02/01 11:13:11 INFO ShutdownHookManager: Deleting directory /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-102929ca-e5d8-4f9d-8f5f-261f7d02820c

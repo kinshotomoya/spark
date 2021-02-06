@@ -1,0 +1,85 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=61057" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:61057" "--executor-id" "0" "--hostname" "192.168.11.7" "--cores" "16" "--app-id" "app-20210126024457-0001" "--worker-url" "spark://Worker@192.168.11.7:61098"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/26 02:48:37 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 24190@ST000000035
+21/01/26 02:48:37 INFO SignalUtils: Registered signal handler for TERM
+21/01/26 02:48:37 INFO SignalUtils: Registered signal handler for HUP
+21/01/26 02:48:37 INFO SignalUtils: Registered signal handler for INT
+21/01/26 02:48:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/26 02:48:37 INFO SecurityManager: Changing view acls to: kinsho
+21/01/26 02:48:37 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/26 02:48:37 INFO SecurityManager: Changing view acls groups to: 
+21/01/26 02:48:37 INFO SecurityManager: Changing modify acls groups to: 
+21/01/26 02:48:37 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/26 02:48:38 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:61057 after 54 ms (0 ms spent in bootstraps)
+21/01/26 02:48:38 INFO SecurityManager: Changing view acls to: kinsho
+21/01/26 02:48:38 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/26 02:48:38 INFO SecurityManager: Changing view acls groups to: 
+21/01/26 02:48:38 INFO SecurityManager: Changing modify acls groups to: 
+21/01/26 02:48:38 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/26 02:48:38 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:61057 after 1 ms (0 ms spent in bootstraps)
+21/01/26 02:48:38 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-809ed860-fa0f-4936-8e2e-fed3da28dca5/executor-e6955ea2-20b3-467c-bb84-c307e23d10b0/blockmgr-14f15517-4940-4b52-852a-84c15ab22faa
+21/01/26 02:48:38 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:61057
+21/01/26 02:48:38 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:61098
+21/01/26 02:48:38 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:61098 after 2 ms (0 ms spent in bootstraps)
+21/01/26 02:48:38 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.11.7:61098
+21/01/26 02:48:38 INFO ResourceUtils: ==============================================================
+21/01/26 02:48:38 INFO ResourceUtils: Resources for spark.executor:
+
+21/01/26 02:48:38 INFO ResourceUtils: ==============================================================
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/01/26 02:48:38 INFO Executor: Starting executor ID 0 on host 192.168.11.7
+21/01/26 02:48:38 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 61104.
+21/01/26 02:48:38 INFO NettyBlockTransferService: Server created on 192.168.11.7:61104
+21/01/26 02:48:38 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/01/26 02:48:38 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 192.168.11.7, 61104, None)
+21/01/26 02:48:38 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 192.168.11.7, 61104, None)
+21/01/26 02:48:38 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 192.168.11.7, 61104, None)
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 4
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 5
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 6
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 7
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 8
+21/01/26 02:48:38 INFO CoarseGrainedExecutorBackend: Got assigned task 9
+21/01/26 02:48:38 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+21/01/26 02:48:38 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+21/01/26 02:48:38 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+21/01/26 02:48:38 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+21/01/26 02:48:38 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+21/01/26 02:48:38 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+21/01/26 02:48:38 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+21/01/26 02:48:38 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+21/01/26 02:48:38 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+21/01/26 02:48:38 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+21/01/26 02:48:38 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+21/01/26 02:48:38 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:61060 after 1 ms (0 ms spent in bootstraps)
+21/01/26 02:48:39 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 4.0 KiB, free 366.3 MiB)
+21/01/26 02:48:39 INFO TorrentBroadcast: Reading broadcast variable 0 took 79 ms
+21/01/26 02:48:39 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 6.4 KiB, free 366.3 MiB)
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 495, boot = 415, init = 3, finish = 77
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 495, boot = 406, init = 8, finish = 81
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 497, boot = 411, init = 3, finish = 83
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 502, boot = 419, init = 2, finish = 81
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 504, boot = 403, init = 11, finish = 90
+21/01/26 02:48:40 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO Executor: Finished task 9.0 in stage 0.0 (TID 9). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 521, boot = 426, init = 2, finish = 93
+21/01/26 02:48:40 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 523, boot = 432, init = 3, finish = 88
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 525, boot = 429, init = 3, finish = 93
+21/01/26 02:48:40 INFO Executor: Finished task 8.0 in stage 0.0 (TID 8). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 528, boot = 422, init = 3, finish = 103
+21/01/26 02:48:40 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO PythonRunner: Times: total = 544, boot = 436, init = 2, finish = 106
+21/01/26 02:48:40 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 1552 bytes result sent to driver
+21/01/26 02:48:40 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown

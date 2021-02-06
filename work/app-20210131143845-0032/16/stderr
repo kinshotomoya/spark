@@ -1,0 +1,1125 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=57817" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:57817" "--executor-id" "16" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210131143845-0032" "--worker-url" "spark://Worker@192.168.11.7:63954"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/31 14:45:44 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 29261@ST000000035
+21/01/31 14:45:44 INFO SignalUtils: Registered signal handler for TERM
+21/01/31 14:45:44 INFO SignalUtils: Registered signal handler for HUP
+21/01/31 14:45:44 INFO SignalUtils: Registered signal handler for INT
+21/01/31 14:45:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/01/31 14:45:45 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 14:45:45 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 14:45:45 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 14:45:45 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 14:45:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 14:45:46 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:57817 after 113 ms (0 ms spent in bootstraps)
+21/01/31 14:45:46 INFO SecurityManager: Changing view acls to: kinsho
+21/01/31 14:45:46 INFO SecurityManager: Changing modify acls to: kinsho
+21/01/31 14:45:46 INFO SecurityManager: Changing view acls groups to: 
+21/01/31 14:45:46 INFO SecurityManager: Changing modify acls groups to: 
+21/01/31 14:45:46 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/01/31 14:45:46 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:57817 after 3 ms (0 ms spent in bootstraps)
+21/01/31 14:45:46 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-3ab0568a-ea0f-4ede-9044-9b9b119a7a74/executor-603161fe-91ea-4c97-adac-b866cb58f430/blockmgr-7bf16dc1-fb57-4c09-8d20-ba33d4de88be
+21/01/31 14:45:46 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/01/31 14:45:47 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:57817
+21/01/31 14:45:47 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:63954
+21/01/31 14:45:47 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:63954 after 5 ms (0 ms spent in bootstraps)
+21/01/31 14:45:47 INFO ResourceUtils: ==============================================================
+21/01/31 14:45:47 INFO ResourceUtils: Resources for spark.executor:
+
+21/01/31 14:45:47 INFO ResourceUtils: ==============================================================
+21/01/31 14:45:47 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/01/31 14:45:47 INFO Executor: Starting executor ID 16 on host 192.168.11.7
+21/01/31 14:45:47 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59441.
+21/01/31 14:45:47 INFO NettyBlockTransferService: Server created on 192.168.11.7:59441
+21/01/31 14:45:47 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/01/31 14:45:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(16, 192.168.11.7, 59441, None)
+21/01/31 14:45:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(16, 192.168.11.7, 59441, None)
+21/01/31 14:45:47 INFO BlockManager: Initialized BlockManager: BlockManagerId(16, 192.168.11.7, 59441, None)
+21/01/31 14:45:47 INFO CoarseGrainedExecutorBackend: Got assigned task 146
+21/01/31 14:45:47 INFO Executor: Running task 139.1 in stage 1.0 (TID 146)
+21/01/31 14:45:47 INFO CoarseGrainedExecutorBackend: Got assigned task 147
+21/01/31 14:45:47 INFO Executor: Running task 136.1 in stage 1.0 (TID 147)
+21/01/31 14:45:47 INFO Executor: Fetching spark://192.168.11.7:57817/jars/simple-project_2.12-1.0.jar with timestamp 1612071524858
+21/01/31 14:45:47 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:57817 after 4 ms (0 ms spent in bootstraps)
+21/01/31 14:45:47 INFO Utils: Fetching spark://192.168.11.7:57817/jars/simple-project_2.12-1.0.jar to /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-3ab0568a-ea0f-4ede-9044-9b9b119a7a74/executor-603161fe-91ea-4c97-adac-b866cb58f430/spark-b7e6ba97-d40f-4028-8b8f-0376eefde7ba/fetchFileTemp46395846424451365.tmp
+21/01/31 14:45:47 INFO Utils: Copying /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-3ab0568a-ea0f-4ede-9044-9b9b119a7a74/executor-603161fe-91ea-4c97-adac-b866cb58f430/spark-b7e6ba97-d40f-4028-8b8f-0376eefde7ba/15175652501612071524858_cache to /Users/kinsho/workspace/spark-3.0.1/work/app-20210131143845-0032/16/./simple-project_2.12-1.0.jar
+21/01/31 14:45:48 INFO Executor: Adding file:/Users/kinsho/workspace/spark-3.0.1/work/app-20210131143845-0032/16/./simple-project_2.12-1.0.jar to class loader
+21/01/31 14:45:48 INFO TorrentBroadcast: Started reading broadcast variable 4 with 1 pieces (estimated total size 4.0 MiB)
+21/01/31 14:45:49 INFO BlockManager: Read broadcast_4_piece0 from the disk of a same host executor is failed.
+21/01/31 14:45:49 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59398 after 13 ms (0 ms spent in bootstraps)
+21/01/31 14:45:49 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 68.7 KiB, free 366.2 MiB)
+21/01/31 14:45:49 INFO TorrentBroadcast: Reading broadcast variable 4 took 536 ms
+21/01/31 14:45:49 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 193.8 KiB, free 366.0 MiB)
+21/01/31 14:45:51 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 18253611008-18387828736, partition values: [empty row]
+21/01/31 14:45:51 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 18656264192-18790481920, partition values: [empty row]
+21/01/31 14:45:52 INFO CodeGenerator: Code generated in 667.7382 ms
+21/01/31 14:45:52 INFO TorrentBroadcast: Started reading broadcast variable 3 with 1 pieces (estimated total size 4.0 MiB)
+21/01/31 14:45:52 INFO BlockManager: Read broadcast_3_piece0 from the disk of a same host executor is failed.
+21/01/31 14:45:52 ERROR RetryingBlockFetcher: Exception while beginning fetch of 1 outstanding blocks 
+java.io.IOException: Failed to connect to /192.168.11.7:57880
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:253)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:195)
+	at org.apache.spark.network.netty.NettyBlockTransferService$$anon$2.createAndStart(NettyBlockTransferService.scala:122)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.fetchAllOutstanding(RetryingBlockFetcher.java:141)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.start(RetryingBlockFetcher.java:121)
+	at org.apache.spark.network.netty.NettyBlockTransferService.fetchBlocks(NettyBlockTransferService.scala:143)
+	at org.apache.spark.network.BlockTransferService.fetchBlockSync(BlockTransferService.scala:103)
+	at org.apache.spark.storage.BlockManager.fetchRemoteManagedBuffer(BlockManager.scala:1010)
+	at org.apache.spark.storage.BlockManager.$anonfun$getRemoteBlock$8(BlockManager.scala:954)
+	at scala.Option.orElse(Option.scala:447)
+	at org.apache.spark.storage.BlockManager.getRemoteBlock(BlockManager.scala:954)
+	at org.apache.spark.storage.BlockManager.getRemoteBytes(BlockManager.scala:1092)
+	at org.apache.spark.broadcast.TorrentBroadcast.$anonfun$readBlocks$1(TorrentBroadcast.scala:172)
+	at scala.runtime.java8.JFunction1$mcVI$sp.apply(JFunction1$mcVI$sp.java:23)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.apache.spark.broadcast.TorrentBroadcast.readBlocks(TorrentBroadcast.scala:161)
+	at org.apache.spark.broadcast.TorrentBroadcast.$anonfun$readBroadcastBlock$4(TorrentBroadcast.scala:245)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.broadcast.TorrentBroadcast.$anonfun$readBroadcastBlock$2(TorrentBroadcast.scala:223)
+	at org.apache.spark.util.KeyLock.withLock(KeyLock.scala:64)
+	at org.apache.spark.broadcast.TorrentBroadcast.$anonfun$readBroadcastBlock$1(TorrentBroadcast.scala:218)
+	at org.apache.spark.util.Utils$.tryOrIOException(Utils.scala:1343)
+	at org.apache.spark.broadcast.TorrentBroadcast.readBroadcastBlock(TorrentBroadcast.scala:218)
+	at org.apache.spark.broadcast.TorrentBroadcast.getValue(TorrentBroadcast.scala:103)
+	at org.apache.spark.broadcast.Broadcast.value(Broadcast.scala:70)
+	at org.apache.spark.sql.execution.datasources.csv.CSVFileFormat.$anonfun$buildReader$1(CSVFileFormat.scala:129)
+	at org.apache.spark.sql.execution.datasources.FileFormat$$anon$1.apply(FileFormat.scala:147)
+	at org.apache.spark.sql.execution.datasources.FileFormat$$anon$1.apply(FileFormat.scala:132)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:116)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:169)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:93)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.execution.columnar.CachedRDDBuilder$$anon$1.hasNext(InMemoryRelation.scala:132)
+	at org.apache.spark.storage.memory.MemoryStore.putIterator(MemoryStore.scala:221)
+	at org.apache.spark.storage.memory.MemoryStore.putIteratorAsValues(MemoryStore.scala:299)
+	at org.apache.spark.storage.BlockManager.$anonfun$doPutIterator$1(BlockManager.scala:1371)
+	at org.apache.spark.storage.BlockManager.org$apache$spark$storage$BlockManager$$doPut(BlockManager.scala:1298)
+	at org.apache.spark.storage.BlockManager.doPutIterator(BlockManager.scala:1362)
+	at org.apache.spark.storage.BlockManager.getOrElseUpdate(BlockManager.scala:1186)
+	at org.apache.spark.rdd.RDD.getOrCompute(RDD.scala:360)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:311)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /192.168.11.7:57880
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+21/01/31 14:45:52 INFO RetryingBlockFetcher: Retrying fetch (1/3) for 1 outstanding blocks after 5000 ms
+21/01/31 14:45:57 ERROR RetryingBlockFetcher: Exception while beginning fetch of 1 outstanding blocks (after 1 retries)
+java.io.IOException: Failed to connect to /192.168.11.7:57880
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:253)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:195)
+	at org.apache.spark.network.netty.NettyBlockTransferService$$anon$2.createAndStart(NettyBlockTransferService.scala:122)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.fetchAllOutstanding(RetryingBlockFetcher.java:141)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.lambda$initiateRetry$0(RetryingBlockFetcher.java:169)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /192.168.11.7:57880
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+21/01/31 14:45:57 INFO RetryingBlockFetcher: Retrying fetch (2/3) for 1 outstanding blocks after 5000 ms
+21/01/31 14:46:02 ERROR RetryingBlockFetcher: Exception while beginning fetch of 1 outstanding blocks (after 2 retries)
+java.io.IOException: Failed to connect to /192.168.11.7:57880
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:253)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:195)
+	at org.apache.spark.network.netty.NettyBlockTransferService$$anon$2.createAndStart(NettyBlockTransferService.scala:122)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.fetchAllOutstanding(RetryingBlockFetcher.java:141)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.lambda$initiateRetry$0(RetryingBlockFetcher.java:169)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /192.168.11.7:57880
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+21/01/31 14:46:02 INFO RetryingBlockFetcher: Retrying fetch (3/3) for 1 outstanding blocks after 5000 ms
+21/01/31 14:46:07 ERROR RetryingBlockFetcher: Exception while beginning fetch of 1 outstanding blocks (after 3 retries)
+java.io.IOException: Failed to connect to /192.168.11.7:57880
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:253)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:195)
+	at org.apache.spark.network.netty.NettyBlockTransferService$$anon$2.createAndStart(NettyBlockTransferService.scala:122)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.fetchAllOutstanding(RetryingBlockFetcher.java:141)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.lambda$initiateRetry$0(RetryingBlockFetcher.java:169)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /192.168.11.7:57880
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+21/01/31 14:46:07 WARN BlockManager: Failed to fetch remote block broadcast_3_piece0 from BlockManagerId(8, 192.168.11.7, 57880, None) (failed attempt 1)
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:302)
+	at org.apache.spark.network.BlockTransferService.fetchBlockSync(BlockTransferService.scala:104)
+	at org.apache.spark.storage.BlockManager.fetchRemoteManagedBuffer(BlockManager.scala:1010)
+	at org.apache.spark.storage.BlockManager.$anonfun$getRemoteBlock$8(BlockManager.scala:954)
+	at scala.Option.orElse(Option.scala:447)
+	at org.apache.spark.storage.BlockManager.getRemoteBlock(BlockManager.scala:954)
+	at org.apache.spark.storage.BlockManager.getRemoteBytes(BlockManager.scala:1092)
+	at org.apache.spark.broadcast.TorrentBroadcast.$anonfun$readBlocks$1(TorrentBroadcast.scala:172)
+	at scala.runtime.java8.JFunction1$mcVI$sp.apply(JFunction1$mcVI$sp.java:23)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.apache.spark.broadcast.TorrentBroadcast.readBlocks(TorrentBroadcast.scala:161)
+	at org.apache.spark.broadcast.TorrentBroadcast.$anonfun$readBroadcastBlock$4(TorrentBroadcast.scala:245)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.broadcast.TorrentBroadcast.$anonfun$readBroadcastBlock$2(TorrentBroadcast.scala:223)
+	at org.apache.spark.util.KeyLock.withLock(KeyLock.scala:64)
+	at org.apache.spark.broadcast.TorrentBroadcast.$anonfun$readBroadcastBlock$1(TorrentBroadcast.scala:218)
+	at org.apache.spark.util.Utils$.tryOrIOException(Utils.scala:1343)
+	at org.apache.spark.broadcast.TorrentBroadcast.readBroadcastBlock(TorrentBroadcast.scala:218)
+	at org.apache.spark.broadcast.TorrentBroadcast.getValue(TorrentBroadcast.scala:103)
+	at org.apache.spark.broadcast.Broadcast.value(Broadcast.scala:70)
+	at org.apache.spark.sql.execution.datasources.csv.CSVFileFormat.$anonfun$buildReader$1(CSVFileFormat.scala:129)
+	at org.apache.spark.sql.execution.datasources.FileFormat$$anon$1.apply(FileFormat.scala:147)
+	at org.apache.spark.sql.execution.datasources.FileFormat$$anon$1.apply(FileFormat.scala:132)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:116)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:169)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:93)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.execution.columnar.CachedRDDBuilder$$anon$1.hasNext(InMemoryRelation.scala:132)
+	at org.apache.spark.storage.memory.MemoryStore.putIterator(MemoryStore.scala:221)
+	at org.apache.spark.storage.memory.MemoryStore.putIteratorAsValues(MemoryStore.scala:299)
+	at org.apache.spark.storage.BlockManager.$anonfun$doPutIterator$1(BlockManager.scala:1371)
+	at org.apache.spark.storage.BlockManager.org$apache$spark$storage$BlockManager$$doPut(BlockManager.scala:1298)
+	at org.apache.spark.storage.BlockManager.doPutIterator(BlockManager.scala:1362)
+	at org.apache.spark.storage.BlockManager.getOrElseUpdate(BlockManager.scala:1186)
+	at org.apache.spark.rdd.RDD.getOrCompute(RDD.scala:360)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:311)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Failed to connect to /192.168.11.7:57880
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:253)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:195)
+	at org.apache.spark.network.netty.NettyBlockTransferService$$anon$2.createAndStart(NettyBlockTransferService.scala:122)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.fetchAllOutstanding(RetryingBlockFetcher.java:141)
+	at org.apache.spark.network.shuffle.RetryingBlockFetcher.lambda$initiateRetry$0(RetryingBlockFetcher.java:169)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /192.168.11.7:57880
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+21/01/31 14:46:07 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:57823 after 1 ms (0 ms spent in bootstraps)
+21/01/31 14:46:07 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 24.0 KiB, free 366.0 MiB)
+21/01/31 14:46:07 INFO TorrentBroadcast: Reading broadcast variable 3 took 15045 ms
+21/01/31 14:46:07 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 336.8 KiB, free 365.7 MiB)
+21/01/31 14:46:54 INFO MemoryStore: Will not store rdd_12_136
+21/01/31 14:46:54 WARN MemoryStore: Not enough space to cache rdd_12_136 in memory! (computed 136.8 MiB so far)
+21/01/31 14:46:54 INFO MemoryStore: Memory use = 623.3 KiB (blocks) + 311.1 MiB (scratch space shared across 2 tasks(s)) = 311.7 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:46:54 WARN BlockManager: Persisting block rdd_12_136 to disk instead.
+21/01/31 14:46:59 INFO MemoryStore: Block rdd_12_139 stored as values in memory (estimated size 151.9 MiB, free 213.8 MiB)
+21/01/31 14:46:59 INFO CodeGenerator: Code generated in 8.630477 ms
+21/01/31 14:46:59 INFO CodeGenerator: Code generated in 225.715955 ms
+21/01/31 14:46:59 INFO CodeGenerator: Code generated in 53.22589 ms
+21/01/31 14:46:59 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:46:59 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:46:59 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:46:59 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:47:00 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:47:00 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:47:00 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:47:00 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:47:00 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:47:00 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:47:00 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:47:00 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:47:00 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:47:00 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:47:00 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:47:00 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:47:00 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:47:00 INFO CodecPool: Got brand-new compressor [.snappy]
+21/01/31 14:47:02 INFO MemoryStore: Block rdd_12_136 stored as values in memory (estimated size 152.4 MiB, free 61.4 MiB)
+21/01/31 14:47:02 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:47:02 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:47:02 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:47:02 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:47:02 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:47:02 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:47:02 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:47:02 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:47:02 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:47:02 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:47:02 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:47:02 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:47:02 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:47:02 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:47:02 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:47:02 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:47:02 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:47:02 INFO CodecPool: Got brand-new compressor [.snappy]
+21/01/31 14:47:14 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 35134266
+21/01/31 14:47:15 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000139_146' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000139
+21/01/31 14:47:15 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000139_146: Committed
+21/01/31 14:47:15 INFO Executor: Finished task 139.1 in stage 1.0 (TID 146). 2504 bytes result sent to driver
+21/01/31 14:47:15 INFO CoarseGrainedExecutorBackend: Got assigned task 180
+21/01/31 14:47:15 INFO Executor: Running task 159.0 in stage 1.0 (TID 180)
+21/01/31 14:47:15 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 21340618752-21474836480, partition values: [empty row]
+21/01/31 14:47:15 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 35229856
+21/01/31 14:47:15 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000136_147' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000136
+21/01/31 14:47:15 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000136_147: Committed
+21/01/31 14:47:15 INFO Executor: Finished task 136.1 in stage 1.0 (TID 147). 2461 bytes result sent to driver
+21/01/31 14:47:15 INFO CoarseGrainedExecutorBackend: Got assigned task 181
+21/01/31 14:47:15 INFO Executor: Running task 160.0 in stage 1.0 (TID 181)
+21/01/31 14:47:15 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 21474836480-21609054208, partition values: [empty row]
+21/01/31 14:47:27 INFO MemoryStore: Will not store rdd_12_160
+21/01/31 14:47:27 WARN MemoryStore: Not enough space to cache rdd_12_160 in memory! (computed 37.7 MiB so far)
+21/01/31 14:47:27 INFO MemoryStore: Memory use = 304.9 MiB (blocks) + 59.5 MiB (scratch space shared across 2 tasks(s)) = 364.4 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:47:27 WARN BlockManager: Persisting block rdd_12_160 to disk instead.
+21/01/31 14:47:38 INFO MemoryStore: Will not store rdd_12_159
+21/01/31 14:47:38 WARN MemoryStore: Not enough space to cache rdd_12_159 in memory! (computed 72.8 MiB so far)
+21/01/31 14:47:38 INFO MemoryStore: Memory use = 304.9 MiB (blocks) + 56.2 MiB (scratch space shared across 1 tasks(s)) = 361.1 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:47:38 WARN BlockManager: Persisting block rdd_12_159 to disk instead.
+21/01/31 14:47:59 INFO MemoryStore: Will not store rdd_12_159
+21/01/31 14:47:59 WARN MemoryStore: Not enough space to cache rdd_12_159 in memory! (computed 72.8 MiB so far)
+21/01/31 14:47:59 INFO MemoryStore: Memory use = 304.9 MiB (blocks) + 56.2 MiB (scratch space shared across 1 tasks(s)) = 361.1 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:47:59 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:47:59 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:47:59 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:47:59 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:47:59 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:47:59 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:47:59 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:47:59 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:47:59 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:47:59 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:47:59 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:47:59 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:47:59 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:47:59 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:47:59 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:47:59 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:47:59 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:48:00 INFO MemoryStore: Will not store rdd_12_160
+21/01/31 14:48:00 WARN MemoryStore: Not enough space to cache rdd_12_160 in memory! (computed 37.7 MiB so far)
+21/01/31 14:48:00 INFO MemoryStore: Memory use = 304.9 MiB (blocks) + 59.5 MiB (scratch space shared across 2 tasks(s)) = 364.4 MiB. Storage limit = 366.3 MiB.
+21/01/31 14:48:00 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:48:00 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:48:00 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+21/01/31 14:48:00 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+21/01/31 14:48:00 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:48:00 INFO CodecConfig: Compression: SNAPPY
+21/01/31 14:48:00 INFO ParquetOutputFormat: Parquet block size to 134217728
+21/01/31 14:48:00 INFO ParquetOutputFormat: Parquet page size to 1048576
+21/01/31 14:48:00 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+21/01/31 14:48:00 INFO ParquetOutputFormat: Dictionary is on
+21/01/31 14:48:00 INFO ParquetOutputFormat: Validation is off
+21/01/31 14:48:00 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+21/01/31 14:48:00 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+21/01/31 14:48:00 INFO ParquetOutputFormat: Page size checking is: estimated
+21/01/31 14:48:00 INFO ParquetOutputFormat: Min row count for page size check is: 100
+21/01/31 14:48:00 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+21/01/31 14:48:00 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "distributionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "advertiserid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionhourjst",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributiondatetime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "requestid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uavalue",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "uacategory",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documentid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenturl",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sitecode",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "documenttitle",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaignid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "campaigntype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "publisherchannelid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "maxcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "bidcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contractcpc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "finalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "originalscore",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "distributionorder",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "israndom",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "jobchanneltype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "buckettype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "predictctr",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "dt",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "isGsp",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary distributionid (UTF8);
+  optional binary advertiserid (UTF8);
+  optional binary distributionhourjst (UTF8);
+  optional binary distributiondatetime (UTF8);
+  optional binary requestid (UTF8);
+  optional binary uid (UTF8);
+  optional binary uavalue (UTF8);
+  optional binary uacategory (UTF8);
+  optional binary documentid (UTF8);
+  optional binary documenturl (UTF8);
+  optional binary sitecode (UTF8);
+  optional binary documenttitle (UTF8);
+  optional binary campaignid (UTF8);
+  optional binary campaigntype (UTF8);
+  optional binary publisherid (UTF8);
+  optional binary publisherchannelid (UTF8);
+  optional binary maxcpc (UTF8);
+  optional binary bidcpc (UTF8);
+  optional binary contractcpc (UTF8);
+  optional binary finalscore (UTF8);
+  optional binary originalscore (UTF8);
+  optional binary distributionorder (UTF8);
+  optional binary israndom (UTF8);
+  optional binary jobchanneltype (UTF8);
+  optional binary buckettype (UTF8);
+  optional binary predictctr (UTF8);
+  optional binary dt (UTF8);
+  required boolean isGsp;
+}
+
+       
+21/01/31 14:48:10 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 35872292
+21/01/31 14:48:11 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000159_180' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000159
+21/01/31 14:48:11 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000159_180: Committed
+21/01/31 14:48:11 INFO Executor: Finished task 159.0 in stage 1.0 (TID 180). 2461 bytes result sent to driver
+21/01/31 14:48:11 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 35859314
+21/01/31 14:48:11 INFO FileOutputCommitter: Saved output of task 'attempt_20210131143854_0001_m_000160_181' to file:/Users/kinsho/Desktop/log/_temporary/0/task_20210131143854_0001_m_000160
+21/01/31 14:48:11 INFO SparkHadoopMapRedUtil: attempt_20210131143854_0001_m_000160_181: Committed
+21/01/31 14:48:11 INFO Executor: Finished task 160.0 in stage 1.0 (TID 181). 2461 bytes result sent to driver
+21/01/31 14:48:43 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown

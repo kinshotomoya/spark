@@ -1,0 +1,299 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java" "-cp" "/Users/kinsho/workspace/spark-3.0.1/conf/:/Users/kinsho/workspace/spark-3.0.1/assembly/target/scala-2.12/jars/*" "-Xmx1024M" "-Dspark.driver.port=58963" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.11.7:58963" "--executor-id" "8" "--hostname" "192.168.11.7" "--cores" "2" "--app-id" "app-20210203010237-0000" "--worker-url" "spark://Worker@192.168.11.7:53770"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/02/03 01:02:40 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 72969@ST000000035
+21/02/03 01:02:40 INFO SignalUtils: Registered signal handler for TERM
+21/02/03 01:02:40 INFO SignalUtils: Registered signal handler for HUP
+21/02/03 01:02:40 INFO SignalUtils: Registered signal handler for INT
+21/02/03 01:02:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/02/03 01:02:42 INFO SecurityManager: Changing view acls to: kinsho
+21/02/03 01:02:42 INFO SecurityManager: Changing modify acls to: kinsho
+21/02/03 01:02:42 INFO SecurityManager: Changing view acls groups to: 
+21/02/03 01:02:42 INFO SecurityManager: Changing modify acls groups to: 
+21/02/03 01:02:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/02/03 01:02:43 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:58963 after 118 ms (0 ms spent in bootstraps)
+21/02/03 01:02:43 INFO SecurityManager: Changing view acls to: kinsho
+21/02/03 01:02:43 INFO SecurityManager: Changing modify acls to: kinsho
+21/02/03 01:02:43 INFO SecurityManager: Changing view acls groups to: 
+21/02/03 01:02:43 INFO SecurityManager: Changing modify acls groups to: 
+21/02/03 01:02:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kinsho); groups with view permissions: Set(); users  with modify permissions: Set(kinsho); groups with modify permissions: Set()
+21/02/03 01:02:43 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:58963 after 4 ms (0 ms spent in bootstraps)
+21/02/03 01:02:43 INFO DiskBlockManager: Created local directory at /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-ffac0cea-2a52-4d44-b8c1-8406ee18bb48/executor-c9903cbf-e2e2-43ed-b158-b073c0a7f740/blockmgr-6674b58e-5cda-438e-a96b-7f2609ca251a
+21/02/03 01:02:43 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/03 01:02:44 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.11.7:58963
+21/02/03 01:02:44 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.11.7:53770
+21/02/03 01:02:44 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:53770 after 5 ms (0 ms spent in bootstraps)
+21/02/03 01:02:44 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.11.7:53770
+21/02/03 01:02:44 INFO ResourceUtils: ==============================================================
+21/02/03 01:02:44 INFO ResourceUtils: Resources for spark.executor:
+
+21/02/03 01:02:44 INFO ResourceUtils: ==============================================================
+21/02/03 01:02:44 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/02/03 01:02:44 INFO Executor: Starting executor ID 8 on host 192.168.11.7
+21/02/03 01:02:44 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59035.
+21/02/03 01:02:44 INFO NettyBlockTransferService: Server created on 192.168.11.7:59035
+21/02/03 01:02:44 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/03 01:02:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(8, 192.168.11.7, 59035, None)
+21/02/03 01:02:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(8, 192.168.11.7, 59035, None)
+21/02/03 01:02:44 INFO BlockManager: Initialized BlockManager: BlockManagerId(8, 192.168.11.7, 59035, None)
+21/02/03 01:02:48 INFO CoarseGrainedExecutorBackend: Got assigned task 9
+21/02/03 01:02:48 INFO CoarseGrainedExecutorBackend: Got assigned task 19
+21/02/03 01:02:48 INFO Executor: Running task 8.0 in stage 1.0 (TID 9)
+21/02/03 01:02:48 INFO Executor: Running task 18.0 in stage 1.0 (TID 19)
+21/02/03 01:02:49 INFO Executor: Fetching spark://192.168.11.7:58963/jars/simple-project_2.12-1.0.jar with timestamp 1612281757446
+21/02/03 01:02:49 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:58963 after 3 ms (0 ms spent in bootstraps)
+21/02/03 01:02:49 INFO Utils: Fetching spark://192.168.11.7:58963/jars/simple-project_2.12-1.0.jar to /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-ffac0cea-2a52-4d44-b8c1-8406ee18bb48/executor-c9903cbf-e2e2-43ed-b158-b073c0a7f740/spark-d32e87a6-e3a4-497c-83ef-d30471c1692f/fetchFileTemp3985148005419482188.tmp
+21/02/03 01:02:49 INFO Utils: Copying /private/var/folders/tm/7v5m6cg144g467bsj7zgsxgc0000gn/T/spark-ffac0cea-2a52-4d44-b8c1-8406ee18bb48/executor-c9903cbf-e2e2-43ed-b158-b073c0a7f740/spark-d32e87a6-e3a4-497c-83ef-d30471c1692f/-2668668371612281757446_cache to /Users/kinsho/workspace/spark-3.0.1/work/app-20210203010237-0000/8/./simple-project_2.12-1.0.jar
+21/02/03 01:02:49 INFO Executor: Adding file:/Users/kinsho/workspace/spark-3.0.1/work/app-20210203010237-0000/8/./simple-project_2.12-1.0.jar to class loader
+21/02/03 01:02:49 INFO TorrentBroadcast: Started reading broadcast variable 4 with 1 pieces (estimated total size 4.0 MiB)
+21/02/03 01:02:49 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:58965 after 6 ms (0 ms spent in bootstraps)
+21/02/03 01:02:50 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 31.0 KiB, free 366.3 MiB)
+21/02/03 01:02:50 INFO TorrentBroadcast: Reading broadcast variable 4 took 403 ms
+21/02/03 01:02:51 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 81.9 KiB, free 366.2 MiB)
+21/02/03 01:02:55 INFO CodeGenerator: Code generated in 1733.128286 ms
+21/02/03 01:02:55 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 1073741824-1207959552, partition values: [empty row]
+21/02/03 01:02:55 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 2415919104-2550136832, partition values: [empty row]
+21/02/03 01:02:56 INFO CodeGenerator: Code generated in 174.319796 ms
+21/02/03 01:02:56 INFO TorrentBroadcast: Started reading broadcast variable 3 with 1 pieces (estimated total size 4.0 MiB)
+21/02/03 01:02:56 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59032 after 2 ms (0 ms spent in bootstraps)
+21/02/03 01:02:56 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 24.0 KiB, free 366.2 MiB)
+21/02/03 01:02:56 INFO TorrentBroadcast: Reading broadcast variable 3 took 61 ms
+21/02/03 01:02:56 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 336.9 KiB, free 365.8 MiB)
+21/02/03 01:02:56 INFO CodeGenerator: Code generated in 9.41242 ms
+21/02/03 01:03:13 INFO MemoryStore: Block rdd_13_8 stored as values in memory (estimated size 823.7 KiB, free 365.0 MiB)
+21/02/03 01:03:13 INFO MemoryStore: Block rdd_13_18 stored as values in memory (estimated size 561.5 KiB, free 364.5 MiB)
+21/02/03 01:03:13 INFO CodeGenerator: Code generated in 7.150136 ms
+21/02/03 01:03:14 INFO CodeGenerator: Code generated in 213.621318 ms
+21/02/03 01:03:14 INFO CodeGenerator: Code generated in 239.51241 ms
+21/02/03 01:03:14 INFO CodeGenerator: Code generated in 12.513552 ms
+21/02/03 01:03:14 INFO CodeGenerator: Code generated in 10.167218 ms
+21/02/03 01:03:14 INFO CodeGenerator: Code generated in 13.27112 ms
+21/02/03 01:03:14 INFO CodeGenerator: Code generated in 12.964367 ms
+21/02/03 01:03:15 INFO Executor: Finished task 8.0 in stage 1.0 (TID 9). 2777 bytes result sent to driver
+21/02/03 01:03:15 INFO Executor: Finished task 18.0 in stage 1.0 (TID 19). 2777 bytes result sent to driver
+21/02/03 01:03:15 INFO CoarseGrainedExecutorBackend: Got assigned task 39
+21/02/03 01:03:15 INFO Executor: Running task 38.0 in stage 1.0 (TID 39)
+21/02/03 01:03:15 INFO CoarseGrainedExecutorBackend: Got assigned task 40
+21/02/03 01:03:15 INFO Executor: Running task 39.0 in stage 1.0 (TID 40)
+21/02/03 01:03:15 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 5100273664-5234491392, partition values: [empty row]
+21/02/03 01:03:15 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 5234491392-5368709120, partition values: [empty row]
+21/02/03 01:03:25 INFO MemoryStore: Block rdd_13_38 stored as values in memory (estimated size 962.9 KiB, free 363.5 MiB)
+21/02/03 01:03:25 INFO Executor: Finished task 38.0 in stage 1.0 (TID 39). 2777 bytes result sent to driver
+21/02/03 01:03:25 INFO CoarseGrainedExecutorBackend: Got assigned task 57
+21/02/03 01:03:25 INFO Executor: Running task 56.0 in stage 1.0 (TID 57)
+21/02/03 01:03:25 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 7516192768-7650410496, partition values: [empty row]
+21/02/03 01:03:25 INFO MemoryStore: Block rdd_13_39 stored as values in memory (estimated size 1019.1 KiB, free 362.5 MiB)
+21/02/03 01:03:26 INFO Executor: Finished task 39.0 in stage 1.0 (TID 40). 2777 bytes result sent to driver
+21/02/03 01:03:26 INFO CoarseGrainedExecutorBackend: Got assigned task 60
+21/02/03 01:03:26 INFO Executor: Running task 59.0 in stage 1.0 (TID 60)
+21/02/03 01:03:26 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 7918845952-8053063680, partition values: [empty row]
+21/02/03 01:03:34 INFO MemoryStore: Block rdd_13_56 stored as values in memory (estimated size 1135.3 KiB, free 361.4 MiB)
+21/02/03 01:03:35 INFO Executor: Finished task 56.0 in stage 1.0 (TID 57). 2777 bytes result sent to driver
+21/02/03 01:03:35 INFO CoarseGrainedExecutorBackend: Got assigned task 77
+21/02/03 01:03:35 INFO Executor: Running task 76.0 in stage 1.0 (TID 77)
+21/02/03 01:03:35 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 10200547328-10334765056, partition values: [empty row]
+21/02/03 01:03:35 INFO MemoryStore: Block rdd_13_59 stored as values in memory (estimated size 1117.7 KiB, free 360.3 MiB)
+21/02/03 01:03:35 INFO Executor: Finished task 59.0 in stage 1.0 (TID 60). 2777 bytes result sent to driver
+21/02/03 01:03:35 INFO CoarseGrainedExecutorBackend: Got assigned task 80
+21/02/03 01:03:35 INFO Executor: Running task 79.0 in stage 1.0 (TID 80)
+21/02/03 01:03:35 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 10603200512-10737418240, partition values: [empty row]
+21/02/03 01:03:43 INFO MemoryStore: Block rdd_13_76 stored as values in memory (estimated size 1227.9 KiB, free 359.1 MiB)
+21/02/03 01:03:43 INFO MemoryStore: Block rdd_13_79 stored as values in memory (estimated size 1157.4 KiB, free 350.0 MiB)
+21/02/03 01:03:43 INFO Executor: Finished task 76.0 in stage 1.0 (TID 77). 2777 bytes result sent to driver
+21/02/03 01:03:43 INFO CoarseGrainedExecutorBackend: Got assigned task 98
+21/02/03 01:03:43 INFO Executor: Running task 97.0 in stage 1.0 (TID 98)
+21/02/03 01:03:43 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 13019119616-13153337344, partition values: [empty row]
+21/02/03 01:03:43 INFO Executor: Finished task 79.0 in stage 1.0 (TID 80). 2777 bytes result sent to driver
+21/02/03 01:03:43 INFO CoarseGrainedExecutorBackend: Got assigned task 100
+21/02/03 01:03:43 INFO Executor: Running task 99.0 in stage 1.0 (TID 100)
+21/02/03 01:03:43 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 13287555072-13421772800, partition values: [empty row]
+21/02/03 01:03:50 INFO MemoryStore: Block rdd_13_97 stored as values in memory (estimated size 1332.9 KiB, free 356.7 MiB)
+21/02/03 01:03:50 INFO MemoryStore: Block rdd_13_99 stored as values in memory (estimated size 1274.5 KiB, free 347.5 MiB)
+21/02/03 01:03:50 INFO Executor: Finished task 97.0 in stage 1.0 (TID 98). 2777 bytes result sent to driver
+21/02/03 01:03:50 INFO CoarseGrainedExecutorBackend: Got assigned task 118
+21/02/03 01:03:50 INFO Executor: Running task 117.0 in stage 1.0 (TID 118)
+21/02/03 01:03:50 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 15703474176-15837691904, partition values: [empty row]
+21/02/03 01:03:50 INFO Executor: Finished task 99.0 in stage 1.0 (TID 100). 2777 bytes result sent to driver
+21/02/03 01:03:50 INFO CoarseGrainedExecutorBackend: Got assigned task 119
+21/02/03 01:03:50 INFO Executor: Running task 118.0 in stage 1.0 (TID 119)
+21/02/03 01:03:50 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 15837691904-15971909632, partition values: [empty row]
+21/02/03 01:03:56 INFO MemoryStore: Block rdd_13_117 stored as values in memory (estimated size 1294.5 KiB, free 354.2 MiB)
+21/02/03 01:03:56 INFO MemoryStore: Block rdd_13_118 stored as values in memory (estimated size 1258.3 KiB, free 353.0 MiB)
+21/02/03 01:03:57 INFO Executor: Finished task 117.0 in stage 1.0 (TID 118). 2777 bytes result sent to driver
+21/02/03 01:03:57 INFO CoarseGrainedExecutorBackend: Got assigned task 138
+21/02/03 01:03:57 INFO Executor: Running task 137.0 in stage 1.0 (TID 138)
+21/02/03 01:03:57 INFO Executor: Finished task 118.0 in stage 1.0 (TID 119). 2777 bytes result sent to driver
+21/02/03 01:03:57 INFO CoarseGrainedExecutorBackend: Got assigned task 139
+21/02/03 01:03:57 INFO Executor: Running task 138.0 in stage 1.0 (TID 139)
+21/02/03 01:03:57 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 18387828736-18522046464, partition values: [empty row]
+21/02/03 01:03:57 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 18522046464-18656264192, partition values: [empty row]
+21/02/03 01:04:04 INFO MemoryStore: Block rdd_13_138 stored as values in memory (estimated size 1178.3 KiB, free 351.8 MiB)
+21/02/03 01:04:04 INFO MemoryStore: Block rdd_13_137 stored as values in memory (estimated size 1176.3 KiB, free 350.7 MiB)
+21/02/03 01:04:04 INFO Executor: Finished task 138.0 in stage 1.0 (TID 139). 2777 bytes result sent to driver
+21/02/03 01:04:04 INFO Executor: Finished task 137.0 in stage 1.0 (TID 138). 2777 bytes result sent to driver
+21/02/03 01:04:04 INFO CoarseGrainedExecutorBackend: Got assigned task 157
+21/02/03 01:04:04 INFO Executor: Running task 156.0 in stage 1.0 (TID 157)
+21/02/03 01:04:04 INFO CoarseGrainedExecutorBackend: Got assigned task 158
+21/02/03 01:04:04 INFO Executor: Running task 157.0 in stage 1.0 (TID 158)
+21/02/03 01:04:04 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 20937965568-21072183296, partition values: [empty row]
+21/02/03 01:04:04 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 21072183296-21206401024, partition values: [empty row]
+21/02/03 01:04:10 INFO MemoryStore: Block rdd_13_156 stored as values in memory (estimated size 1266.4 KiB, free 349.4 MiB)
+21/02/03 01:04:10 INFO MemoryStore: Block rdd_13_157 stored as values in memory (estimated size 1297.6 KiB, free 348.2 MiB)
+21/02/03 01:04:10 INFO Executor: Finished task 156.0 in stage 1.0 (TID 157). 2777 bytes result sent to driver
+21/02/03 01:04:10 INFO CoarseGrainedExecutorBackend: Got assigned task 175
+21/02/03 01:04:10 INFO Executor: Running task 174.0 in stage 1.0 (TID 175)
+21/02/03 01:04:10 INFO Executor: Finished task 157.0 in stage 1.0 (TID 158). 2777 bytes result sent to driver
+21/02/03 01:04:10 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 23353884672-23488102400, partition values: [empty row]
+21/02/03 01:04:10 INFO CoarseGrainedExecutorBackend: Got assigned task 176
+21/02/03 01:04:10 INFO Executor: Running task 175.0 in stage 1.0 (TID 176)
+21/02/03 01:04:10 INFO FileScanRDD: Reading File path: file:///Users/kinsho/Desktop/impressionLog.csv, range: 23488102400-23517392614, partition values: [empty row]
+21/02/03 01:04:11 INFO MemoryStore: Block rdd_13_175 stored as values in memory (estimated size 316.6 KiB, free 347.9 MiB)
+21/02/03 01:04:11 INFO Executor: Finished task 175.0 in stage 1.0 (TID 176). 2777 bytes result sent to driver
+21/02/03 01:04:14 INFO MemoryStore: Block rdd_13_174 stored as values in memory (estimated size 1308.9 KiB, free 346.6 MiB)
+21/02/03 01:04:14 INFO Executor: Finished task 174.0 in stage 1.0 (TID 175). 2777 bytes result sent to driver
+21/02/03 01:04:15 INFO CoarseGrainedExecutorBackend: Got assigned task 180
+21/02/03 01:04:15 INFO Executor: Running task 2.0 in stage 4.0 (TID 180)
+21/02/03 01:04:15 INFO MapOutputTrackerWorker: Updating epoch to 1 and clearing cache
+21/02/03 01:04:15 INFO TorrentBroadcast: Started reading broadcast variable 6 with 1 pieces (estimated total size 4.0 MiB)
+21/02/03 01:04:15 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 32.7 KiB, free 346.6 MiB)
+21/02/03 01:04:15 INFO TorrentBroadcast: Reading broadcast variable 6 took 9 ms
+21/02/03 01:04:15 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 85.2 KiB, free 346.5 MiB)
+21/02/03 01:04:15 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+21/02/03 01:04:15 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@192.168.11.7:58963)
+21/02/03 01:04:16 INFO MapOutputTrackerWorker: Got the output locations
+21/02/03 01:04:16 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:16 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 11 ms
+21/02/03 01:04:16 INFO CodeGenerator: Code generated in 34.760317 ms
+21/02/03 01:04:16 INFO Executor: Finished task 2.0 in stage 4.0 (TID 180). 3641 bytes result sent to driver
+21/02/03 01:04:16 INFO CoarseGrainedExecutorBackend: Got assigned task 188
+21/02/03 01:04:16 INFO CoarseGrainedExecutorBackend: Got assigned task 198
+21/02/03 01:04:16 INFO Executor: Running task 16.0 in stage 6.0 (TID 198)
+21/02/03 01:04:16 INFO TorrentBroadcast: Started reading broadcast variable 7 with 1 pieces (estimated total size 4.0 MiB)
+21/02/03 01:04:16 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 32.7 KiB, free 346.4 MiB)
+21/02/03 01:04:16 INFO TorrentBroadcast: Reading broadcast variable 7 took 23 ms
+21/02/03 01:04:16 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 85.2 KiB, free 346.4 MiB)
+21/02/03 01:04:16 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:16 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+21/02/03 01:04:16 INFO Executor: Finished task 16.0 in stage 6.0 (TID 198). 3641 bytes result sent to driver
+21/02/03 01:04:16 INFO Executor: Running task 6.0 in stage 6.0 (TID 188)
+21/02/03 01:04:16 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:16 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+21/02/03 01:04:16 INFO Executor: Finished task 6.0 in stage 6.0 (TID 188). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 207
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 217
+21/02/03 01:04:17 INFO Executor: Running task 5.0 in stage 8.0 (TID 207)
+21/02/03 01:04:17 INFO Executor: Running task 15.0 in stage 8.0 (TID 217)
+21/02/03 01:04:17 INFO TorrentBroadcast: Started reading broadcast variable 8 with 1 pieces (estimated total size 4.0 MiB)
+21/02/03 01:04:17 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 32.7 KiB, free 346.3 MiB)
+21/02/03 01:04:17 INFO TorrentBroadcast: Reading broadcast variable 8 took 8 ms
+21/02/03 01:04:17 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 85.2 KiB, free 346.2 MiB)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 5.0 in stage 8.0 (TID 207). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO Executor: Finished task 15.0 in stage 8.0 (TID 217). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 223
+21/02/03 01:04:17 INFO Executor: Running task 21.0 in stage 8.0 (TID 223)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 21.0 in stage 8.0 (TID 223). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 228
+21/02/03 01:04:17 INFO Executor: Running task 26.0 in stage 8.0 (TID 228)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 26.0 in stage 8.0 (TID 228). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 233
+21/02/03 01:04:17 INFO Executor: Running task 31.0 in stage 8.0 (TID 233)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 31.0 in stage 8.0 (TID 233). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 245
+21/02/03 01:04:17 INFO Executor: Running task 43.0 in stage 8.0 (TID 245)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 43.0 in stage 8.0 (TID 245). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 252
+21/02/03 01:04:17 INFO Executor: Running task 50.0 in stage 8.0 (TID 252)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 50.0 in stage 8.0 (TID 252). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 262
+21/02/03 01:04:17 INFO Executor: Running task 60.0 in stage 8.0 (TID 262)
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 267
+21/02/03 01:04:17 INFO Executor: Running task 65.0 in stage 8.0 (TID 267)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 65.0 in stage 8.0 (TID 267). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO Executor: Finished task 60.0 in stage 8.0 (TID 262). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 282
+21/02/03 01:04:17 INFO Executor: Running task 80.0 in stage 8.0 (TID 282)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 80.0 in stage 8.0 (TID 282). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 288
+21/02/03 01:04:17 INFO Executor: Running task 86.0 in stage 8.0 (TID 288)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 176 (18.2 KiB) non-empty blocks including 18 (1908.0 B) local and 0 (0.0 B) host-local and 158 (16.4 KiB) remote blocks
+21/02/03 01:04:17 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59016 after 0 ms (0 ms spent in bootstraps)
+21/02/03 01:04:17 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59023 after 1 ms (0 ms spent in bootstraps)
+21/02/03 01:04:17 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59031 after 1 ms (0 ms spent in bootstraps)
+21/02/03 01:04:17 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59024 after 1 ms (0 ms spent in bootstraps)
+21/02/03 01:04:17 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59028 after 11 ms (0 ms spent in bootstraps)
+21/02/03 01:04:17 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59025 after 2 ms (0 ms spent in bootstraps)
+21/02/03 01:04:17 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59029 after 1 ms (0 ms spent in bootstraps)
+21/02/03 01:04:17 INFO TransportClientFactory: Successfully created connection to /192.168.11.7:59033 after 8 ms (0 ms spent in bootstraps)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 9 remote fetches in 50 ms
+21/02/03 01:04:17 INFO Executor: Finished task 86.0 in stage 8.0 (TID 288). 3762 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 301
+21/02/03 01:04:17 INFO Executor: Running task 99.0 in stage 8.0 (TID 301)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 99.0 in stage 8.0 (TID 301). 3641 bytes result sent to driver
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 308
+21/02/03 01:04:17 INFO CoarseGrainedExecutorBackend: Got assigned task 318
+21/02/03 01:04:17 INFO Executor: Running task 16.0 in stage 10.0 (TID 318)
+21/02/03 01:04:17 INFO TorrentBroadcast: Started reading broadcast variable 9 with 1 pieces (estimated total size 4.0 MiB)
+21/02/03 01:04:17 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 32.7 KiB, free 346.2 MiB)
+21/02/03 01:04:17 INFO TorrentBroadcast: Reading broadcast variable 9 took 13 ms
+21/02/03 01:04:17 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 85.2 KiB, free 346.1 MiB)
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:17 INFO Executor: Finished task 16.0 in stage 10.0 (TID 318). 3641 bytes result sent to driver
+21/02/03 01:04:18 INFO Executor: Running task 6.0 in stage 10.0 (TID 308)
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:18 INFO Executor: Finished task 6.0 in stage 10.0 (TID 308). 3641 bytes result sent to driver
+21/02/03 01:04:18 INFO CoarseGrainedExecutorBackend: Got assigned task 324
+21/02/03 01:04:18 INFO Executor: Running task 22.0 in stage 10.0 (TID 324)
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:18 INFO Executor: Finished task 22.0 in stage 10.0 (TID 324). 3641 bytes result sent to driver
+21/02/03 01:04:18 INFO CoarseGrainedExecutorBackend: Got assigned task 335
+21/02/03 01:04:18 INFO Executor: Running task 33.0 in stage 10.0 (TID 335)
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:18 INFO Executor: Finished task 33.0 in stage 10.0 (TID 335). 3641 bytes result sent to driver
+21/02/03 01:04:18 INFO CoarseGrainedExecutorBackend: Got assigned task 343
+21/02/03 01:04:18 INFO Executor: Running task 41.0 in stage 10.0 (TID 343)
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:18 INFO Executor: Finished task 41.0 in stage 10.0 (TID 343). 3641 bytes result sent to driver
+21/02/03 01:04:18 INFO CoarseGrainedExecutorBackend: Got assigned task 357
+21/02/03 01:04:18 INFO Executor: Running task 55.0 in stage 10.0 (TID 357)
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:18 INFO Executor: Finished task 55.0 in stage 10.0 (TID 357). 3641 bytes result sent to driver
+21/02/03 01:04:18 INFO CoarseGrainedExecutorBackend: Got assigned task 363
+21/02/03 01:04:18 INFO Executor: Running task 61.0 in stage 10.0 (TID 363)
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:18 INFO Executor: Finished task 61.0 in stage 10.0 (TID 363). 3641 bytes result sent to driver
+21/02/03 01:04:18 INFO CoarseGrainedExecutorBackend: Got assigned task 374
+21/02/03 01:04:18 INFO Executor: Running task 72.0 in stage 10.0 (TID 374)
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/03 01:04:18 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/02/03 01:04:18 INFO Executor: Finished task 72.0 in stage 10.0 (TID 374). 3641 bytes result sent to driver
+21/02/03 01:04:18 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
